@@ -7,6 +7,7 @@ use Common\Model\PhonecodeModel;
 use Common\Model\PostsApplyModel;
 use  Api\Controller\AlipayController;
 use  Api\Controller\YipayController;
+use  Api\Controller\EzfpayController;
 use Think\Model;
 
 class MemberController extends HomeBaseController{
@@ -62,6 +63,7 @@ class MemberController extends HomeBaseController{
 
         $this->assign('parent_name', $parent_name);
         $this->assign('level_name', $level_name);
+       
         $msg = I('msg');
         if($msg){
             $this->assign('msg',$msg);
@@ -601,12 +603,26 @@ class MemberController extends HomeBaseController{
             $data['payment_type'] = $payment_type;
             $insert_id = M('recharge')->add($data);
             if( $insert_id ) {
-
                 $pay_method= sp_cfg('pay_method');
                 if($pay_method=='other_method'){
-                    $url='//'.$_SERVER['SERVER_NAME'].'/codepay/codepay.php?&id='.$order_no;
+                   /* $url=U('api/pay96/pay',array('order_no'=>$order_no));
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);*/
+
+
+                    $yipay   =  new EzfpayController();
+                    $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);
+
+
+              /*      //在线支付 个人免签
+                    $yipay   =  new YipayController();
+                    $url =  $yipay->pay($order_no);
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);*/
+
+
 
                 }else{
                     //线下扫码转账

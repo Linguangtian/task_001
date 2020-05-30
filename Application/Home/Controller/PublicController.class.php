@@ -25,7 +25,7 @@ class PublicController extends PublicBaseController
                 $d = M('recharge')->where(array('order_no'=>$order_sn))->find();
                 $pay_model = new PayModel();
                 $pay_model->pay_vip_success($d['id'], 'codepay', '66');
-                $this->redirect('Home/Member/vip',array('success'=>1));
+                $this->redirect('Home/Member/index',array('success'=>1));
 
             }
         }

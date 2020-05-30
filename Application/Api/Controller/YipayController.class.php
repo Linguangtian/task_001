@@ -9,8 +9,8 @@ use Think\Controller;
  */
 class YipayController extends Controller{
 
-    const UID = "67ec7d845824935e1504781c";//"此处填写PaysApi的uid";
-    const TOKEN = "8dce9c87f4569761cecfbf6937f33156";//"此处填写PaysApi的Token";
+    const UID = "5e2797a35226d92c801ec0d8";//"此处填写PaysApi的uid";
+    const TOKEN = "12db8c3bf179d4a4f061a9599827fa7c";//"此处填写PaysApi的Token";
     const POST_URL = "https://pay.bearsoftware.net.cn/?";
     const PLATFORM = "bearsoftware";
 
