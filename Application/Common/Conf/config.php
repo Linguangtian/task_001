@@ -28,11 +28,11 @@ return array(
         '__APP_IMAGES__'     => OSS_URL.trim(TMPL_PATH,'.').'App/Public/images'
     ),
 //***********************************URL设置**************************************
-    'MODULE_ALLOW_LIST'      => array('Home','Admin','Api','User','App'), //允许访问列表
+    'MODULE_ALLOW_LIST'      => array('Home','Lgt0708','Api','User','App'), //允许访问列表
     'DEFAULT_MODULE'         => 'Home',
     'URL_HTML_SUFFIX'        => 'html',  // URL伪静态后缀设置
     'URL_MODEL'              => 1,  //启用rewrite
-
+    'URL_MODULE_MAP'        =>array('lgt0708'=>'admin'),
     'URL_ROUTER_ON'          => false, // 是否开启URL路由
     'URL_ROUTE_RULES'        => array(
         'posts/:id'               => 'posts/show',

@@ -160,86 +160,24 @@
                 <input class="input col-xs-12 col-sm-12" type="text" name="app_ios_download" value="{$info.app_ios_download}" class="form-control"/>
             </td>
         </tr>
-		   <tr>
+		 <tr>
             <th>是否关闭网站</th>
             <td>
                 <label><input type="radio" name="stop_web" value="1" style="height: inherit" <if condition="$info['stop_web'] eq '1'">checked</if> >是</label> &nbsp; &nbsp; &nbsp;
                 <label><input type="radio" name="stop_web" value="0" style="height: inherit" <if condition="$info['stop_web'] neq '1'">checked</if> >否</label> &nbsp; &nbsp; &nbsp;
             </td>
         </tr>
-        <!--
+
+
         <tr>
-            <th width="150">
-                安卓下载地址
-            </th>
+            <th>防红域名</th>
             <td>
-                <input class="input col-xs-12 col-sm-12" type="text" name="app_android" value="{$info.app_android}" class="form-control"/>
+                <input class="input col-xs-12 col-sm-12" type="text" name="url_protected" value="{$info.url_protected}" class="form-control"/>
             </td>
         </tr>
-        <tr>
-            <th width="150">
-                安卓版本
-            </th>
-            <td>
-                <input class="input col-xs-12 col-sm-12" type="text" name="app_android_version" value="{$info.app_android_version}" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                IOS下载地址
-            </th>
-            <td>
-                <input class="input col-xs-12 col-sm-12" type="text" name="app_ios" value="{$info.app_ios}" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                IOS版本
-            </th>
-            <td>
-                <input class="input col-xs-12 col-sm-12" type="text" name="app_ios_version" value="{$info.app_ios_version}" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                开通VIP会员短信提示
-            </th>
-            <td>
-                <input class="input col-xs-12 col-sm-12"  type="text" name="vip_msg" value="{$info.vip_msg}" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                99元微信收款二维码
-            </th>
-            <td>
-                <input name="wxpay_99" id="wxpay99" type="text" class="input col-xs-12 col-sm-5" size="40" value="{$info.wxpay_99}" /> <input type="button" class="btn btn-info"  onclick="flashupload('wxpay99', '上传文件', 'wxpay99', return_value, '{:CONTROLLER_NAME}');" value="浏览..">
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                999元微信收款二维码
-            </th>
-            <td>
-                <input name="wxpay_999" id="wxpay999" type="text" class="input col-xs-12 col-sm-5" size="40" value="{$info.wxpay_999}" /> <input type="button" class="btn btn-info"  onclick="flashupload('wxpay999', '上传文件', 'wxpay999', return_value, '{:CONTROLLER_NAME}');" value="浏览..">
-            </td>
-        </tr>-->
-        <!--<tr>
-            <th width="150">
-                微信分享显示的logo
-            </th>
-            <td>
-                <input name="share_logo" id="sharelogo" type="text" class="input col-xs-12 col-sm-5" size="40" value="{$info.share_logo}" /> <input type="button" class="btn btn-info"  onclick="flashupload('sharelogo', '上传文件', 'sharelogo', return_value, '{:CONTROLLER_NAME}');" value="浏览..">
-            </td>
-        </tr>
-        <tr>
-            <th width="150">
-                公众号二维码
-            </th>
-            <td>
-                <input name="qrcode" id="qrcode" type="text" class="input col-xs-12 col-sm-5" size="40" value="{$info.qrcode}" /> <input type="button" class="btn btn-info"  onclick="flashupload('qrcode', '上传文件', 'qrcode', return_value, '{:CONTROLLER_NAME}');" value="浏览..">
-            </td>
-        </tr>-->
+
+
+
     </table>
     <table class="table table-bordered " style="max-width: 800px; margin-top: 10px;">
         <thead>

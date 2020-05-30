@@ -9,7 +9,7 @@
     }
     button{position: absolute;width: 100px;height: 30px;background: none;border: 1px #fff solid;border-radius: 5px; left: 50%; top: 510px; margin-left: -50px;color: #fff;}
 </style>
-<body style="background: #20255c">
+<body >
 <header class="top_header">
     <div class="left"><a onclick="history.back(-1)" class="return"></a></div>
     <div class="title">截图保存分享好友</div>
@@ -18,7 +18,7 @@
 <if condition="$member_client_info['platform'] eq 'app'">
     <button onClick="save_img()" type="button">保存到相册</button>
 </if>
-<include file="Public:footer"/>
+
 </body>
 </html>
 

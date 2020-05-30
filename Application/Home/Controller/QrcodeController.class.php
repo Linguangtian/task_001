@@ -33,8 +33,17 @@ class QrcodeController extends HomeBaseController
         }
 
         $qrcode_name = "share_" . $member_id;
-        $url = U('Public/reg',array('smid'=>$member_id),'',true);
-        echo $url;exit;
+
+        //是否开启域名保护
+        $url_protected=sp_cfg('url_protected');
+        if(!empty($url_protected)){
+            $url=$url_protected.'/index.php/Home/Public/reg/smid/'.$member_id;
+        }else{
+            $url = U('Public/reg',array('smid'=>$member_id),'',true);
+        }
+
+
+
 //        var_dump($this->sp_qrcode_physics_path($qrcode_name));die;
 
 
