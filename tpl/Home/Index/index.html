@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{$title}</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache, no-store, max-age=0, must-revalidate"/>
+    <META HTTP-EQUIV="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="cache" content="no-cache"/>
+    <!--JQ-->
+    <script type="text/javascript" src="__PUBLIC_JS__/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC_JS__/jquery-form.js"></script>
+    <script type="text/javascript" src="__PUBLIC_JS__/layer_mobile2/layer.js?{$version}"></script>
+    <script type="text/javascript" src="__PUBLIC_JS__/swiper.3.1.7.min.js"></script>
+
+    <script src="__PUBLIC_JS__/jquery.simplesidebar.js"></script>
+    <script src="__PUBLIC_JS__/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="__PUBLIC_JS__/TouchSlide.1.0.js"></script>
+
+    <script type="text/javascript" src="__PUBLIC_JS__/func.js"></script>
+
+    <link rel="stylesheet" href="__PUBLIC_CSS__/share.css"/>
+    <link rel="stylesheet" href="__PUBLIC_CSS__/font.css?3"/>
+
+    <style>
+
+
+        .bg-gray {
+            background: #f4f4f4 !important;
+        }
+
+        .swiper-container {
+            height: 120px;
+        }
+
+        .index_lb {
+            margin-top: 0.5rem;
+            background: none;
+        }
+
+        .body_main {
+            margin-bottom: 0;
+        }
+
+        .index_rwlb {
+            margin-top: 1rem;
+            margin-bottom: 55px;
+        }
+
+        .js-notis {
+            text-align: center;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            font-size: 0.5rem;
+            color: grey;
+            display: none;
+        }
+		 .get_task{
+            cursor: pointer;
+        }
+        .head_nav {
+            width: 100%;
+            height: 6rem;
+            background: #fff;
+        }
+        .head_nav li {
+            width: 25%;
+            height: 6rem;
+            float: left;
+        }
+        .head_nav li img {
+            width: 3rem;
+            height: 3rem;
+            display: block;
+            margin: 1rem auto 0;
+        }
+        .head_nav li p {
+            height: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            margin-top: 0.15rem;
+        }
+    </style>
+</head>
+<body class="gray_bg" style="background:#fff;">
+<div id="body">
+    <div class="body_main">
+        <if condition="$notice neq null">
+            <div class="pop-background flex" id="myModal">
+                <div class="ggnotice flex fw">
+                    <img src="/tpl/Public/images/topnotice.png" class="ggnotice-img">
+                    <div class="ggnotice-html"><p style="margin-left:0cm; margin-right:0cm; text-align:center"><span
+                            style="font-size:12pt"><span style="font-family:宋体"><strong><span
+                            style="font-size:13.5pt"><span style="font-family:宋体">
+					{$notice.title}  </span></span></strong></span></span></p>
+                        <p>
+                            {$notice.content}
+
+                        </p>
+                        <p>
+                            <!--<a class="page_index_ckxxnr"-->
+                              <!--href="/index.php/Home/Page/show/id/{$notice.id}.html">查看详细内容 </a>-->
+
+                        </p>
+                    </div>
+                    <img src="/tpl/Public/images/close_notice.png" class="close-img">
+                </div>
+            </div>
+
+        </if>
+
+        <div class="index_lb">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <volist name=":sp_get_advert(1,99)" id="vo">
+                        <div class="swiper-slide">
+                            <a href="{$vo.url}">
+                                <img src="{$vo.thumb|sp_img}"/>
+                            </a>
+                        </div>
+                    </volist>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <div class="head_nav">
+            <ul>
+
+
+
+                <a href="/index.php/Home/News/show/id/3.html">
+                    <li>
+                        <img src="/tpl/Public/images/case.png">
+                        <p>平台介绍</p>
+                    </li>
+                </a>
+
+
+                <a href="/index.php/Home/News/show/id/5.html">
+                    <li>
+                        <img src="/tpl/Public/images/book.png">
+                        <p>新手指南</p>
+                    </li>
+                </a>
+
+
+                <a href="/index.php/Home/Public/share">
+                    <li>
+                        <img src="/tpl/Public/images/qrcode.png">
+                        <p>邀请好友</p>
+                    </li>
+                </a>
+
+
+
+                <a href="/index.php/Home/page/kefu">
+                    <li>
+                        <img src="/tpl/Public/images/service.png">
+                        <p>联系客服</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+        <div class="index_rwlb">
+            <p class="index_tjrw">推荐任务</p>
+
+            <div id="js-page">
+                <volist name="task_list" id="vo">
+                    <a>
+                        <div class="index_rwxq">
+                            <a href='javascript:goto_detail("{$vo.id}");'>
+
+                                <img src="{$vo.task_logo}"/>
+                                <div class="index_wzns">
+                                    <p class="index_title">{$vo.title}</p>
+                                    <p class="index_ffl">
+                                        <span>{$vo.tasklb_alias}</span>
+                                        <span class="index_gjrw">{$vo.level_name}</span>
+                                    </p>
+                                    <p class="index_syrw">剩余数量：<span>{$vo.leftnum}</span></p>
+                                </div>
+                            </a>
+
+
+                            <div class="price_show  ">
+                                <if condition="$vo.task_on_top eq 1">    <p class="zhiding"></p></if>
+                                <p style="margin-top: 2rem">{$vo.price}元 </p>
+
+                                <if condition="$vo['ta_id'] neq null">
+                                    <span class="bg-gray">{$vo.ta_status}</span>
+                                    <else/>
+                                    <span class="get_task" data-id="{$vo['id']}">领取任务</span>
+                                </if>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </volist>
+            </div>
+            <div class="js-notis">已经是最底部了......</div>
+
+        </div>
+        <input id="page" value="{$pageVal}" hidden>
+        <input id="pageNum" value="{$pageNum}" hidden>
+        <!-- 底部联系部分 开始 -->
+        <include file="Public:footer"/>
+    </div>
+
+</div>
+</body>
+</html>
+
+<script>
+
+    function goto_detail(id) {
+
+        var url = '/index.php/Home/Task/show/id/' + id + '.html';
+        window.location.href = url;
+
+    }
+
+
+
+
+
+    $(document).ready(function () {
+        var range = 0;//距下边界高度
+        var total_height = 0;
+        var p = $("#page").val();
+        $(window).scroll(function () {
+            var total_page = $("#pageNum").val();
+            var srollPos = $(window).scrollTop();//滚动条距顶部距离
+            total_height = parseFloat($(window).height()) + parseFloat(srollPos);
+            if (($(document).height() - range) <= total_height) {
+                if (p < total_page){
+                    p++
+                    ajaxData(p);
+                }
+
+                else
+                    $('.js-notis').show();
+
+            }
+        });
+    });
+
+    function ajaxData(p) {
+        var html = '';
+        $.ajax({
+            type: "POST",
+            url: "/Home/Index/index.html",
+            data: {
+                page: p,
+            },
+            dataType: "json",
+            success: function (data) {
+                n = data.list;
+                if (n.length > 0) {
+                    $(n).each(function (key, li) {
+                        html = '<a>';
+                        html += '<div class="index_rwxq">';
+
+                        html += '<a href=\"/index.php/Home/Task/show/id/' + li.id + '.html\">';
+                        html += '<img src="'+li.task_logo+'"/>';
+                        html += '<div class="index_wzns">';
+                        html += '<p class="index_title">' + li.title + '</p>';
+                        html += '<p class="index_ffl">';
+                        html += '<span>' + li.tasklb_alias + '</span>';
+                        html += '<span class="index_gjrw">' + li.level_name + '</span>';
+                        html += '</p>';
+                        html += ' <p class="index_syrw">剩余数量：<span>' + li.leftnum + '</span></p>';
+                        html += '</div>';
+                        html += '</a>';
+
+                        html += '<div class="price_show">';
+                    if (li.task_on_top == 1) {
+                        html += '<p class="zhiding"></p>';
+                    }
+                        html += '<p style="margin-top: 2rem">' + li.price + '元  </p>';
+                        if (li.ta_id) {
+                            html += '<span class="bg-gray">已领取</span>';
+                        } else {
+                            html += '<span class="get_task"  data-id=\"' + li.id + '\">领取任务</span>';
+                        }
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</a>';
+
+                        $('#js-page').after(html)
+                    })
+
+
+
+                } else {
+                    $('#divGoodsLoading').css('display', 'none');
+                    $('#btnLoadMore3').css('display', '')
+                }
+            },
+            error: function (result) {
+            }
+        })
+    }
+
+
+    $("body").on("click", ".get_task", function () {
+        var task_id = $(this).data('id');
+        var url = "{:U('Task/get_task')}";
+        var item = $(this);
+
+        $.post(url, {id: task_id}, function (data) {
+            if (data.status == 1) {
+                item.html();
+                item.html('已领取');
+                item.removeClass('get_task');
+                item.addClass('bg-gray');
+            } else {
+                sp_alert(data.info);
+            }
+        }, 'json')
+    });
+
+    // 获取弹窗
+    var modal = document.getElementById('myModal');
+
+
+
+ /*   $(document).ready(function () {
+        if (getCookie('notice') == '23') {
+            modal.style.display = "none";
+        }
+    });
+*/
+
+    // 获取 <span> 元素，用于关闭弹窗 that closes the modal
+    var span = document.getElementsByClassName("close-img")[0];
+        if(span){
+            // 点击 <span> (x), 关闭弹窗
+            span.onclick = function () {
+                modal.style.display = "none";
+                setCookie('notice', 23);
+            }
+
+            // 在用户点击其他地方时，关闭弹窗
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    setCookie('notice', 23);
+                }
+            }
+
+            function setCookie(name, value) {
+                var mins = 60 * 24;
+                var mins = 60 ;
+                var exp = new Date();
+                exp.setTime(exp.getTime() + mins * 60 * 1000);
+                document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+            }
+
+            function getCookie(name) {
+                var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+                if (arr = document.cookie.match(reg))
+                    return unescape(arr[2]);
+                else
+                    return null;
+            }
+        }
+
+
+
+    $(document).ready(function () {
+        //幻灯片
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            scrollbar: '.swiper-scrollbar',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false,
+
+        });
+    });
+</script>
+<if condition="!empty($page_notice_list)">
+    <script>
+        //文字向上滚动
+        (function ($) {
+            $.fn.FontScroll = function (options) {
+                var d = {time: 3000, s: 'fontColor', num: 1}
+                var o = $.extend(d, options);
+
+                this.children('ul').addClass('line');
+                var _con = $('.line').eq(0);
+                var _conH = _con.height(); //滚动总高度
+                var _conChildH = _con.children().eq(0).height();//一次滚动高度
+                var _temp = _conChildH;  //临时变量
+                var _time = d.time;  //滚动间隔
+                var _s = d.s;  //滚动间隔
+
+
+                _con.clone().insertAfter(_con);//初始化克隆
+
+                //样式控制
+                var num = d.num;
+                var _p = this.find('li');
+                var allNum = _p.length;
+
+                _p.eq(num).addClass(_s);
+
+
+                var timeID = setInterval(Up, _time);
+                this.hover(function () {
+                    clearInterval(timeID)
+                }, function () {
+                    timeID = setInterval(Up, _time);
+                });
+
+                function Up() {
+                    _con.animate({marginTop: '-' + _conChildH});
+                    //样式控制
+                    _p.removeClass(_s);
+                    num += 1;
+                    _p.eq(num).addClass(_s);
+
+                    if (_conH == _conChildH) {
+                        _con.animate({marginTop: '-' + _conChildH}, "normal", over);
+                    } else {
+                        _conChildH += _temp;
+                    }
+                }
+
+                function over() {
+                    _con.attr("style", 'margin-top:0');
+                    _conChildH = _temp;
+                    num = 1;
+                    _p.removeClass(_s);
+                    _p.eq(num).addClass(_s);
+                }
+            }
+        })(jQuery);
+
+        $('#MScroll').FontScroll({time: 3000, num: 1});
+
+    </script>
+</if>

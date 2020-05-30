@@ -63,7 +63,7 @@ class MemberController extends HomeBaseController{
 
         $this->assign('parent_name', $parent_name);
         $this->assign('level_name', $level_name);
-       
+
         $msg = I('msg');
         if($msg){
             $this->assign('msg',$msg);

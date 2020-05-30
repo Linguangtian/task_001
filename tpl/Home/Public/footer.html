@@ -1,0 +1,35 @@
+<style type="text/css">
+	footer li{
+		width: 33.33%;
+	}
+</style>
+<footer class="footer">
+    <ul>
+        <li <if condition="CONTROLLER_NAME eq 'Index'"> class="active"</if> >
+            <a href="{:U('Index/index')}">
+                <span><i class="icon_home" style="width: 20px;height: 20px;"></i></span>
+                <p>首页</p>
+            </a>
+        </li>
+		<li <if condition="CONTROLLER_NAME eq 'Task' and ACTION_NAME neq 'index'  and ACTION_NAME neq  'task_list' and ACTION_NAME neq  'task_list_index'"> class="active"</if> >
+
+               <a href="{:U('Home/Task/lists_sub')}">
+                <span><i class="icon_xiaoxi" style="width: 20px;height: 20px;"></i></span>
+             <p>任务 </p>
+            </a>
+        </li>
+        <li <if condition="CONTROLLER_NAME eq 'Task' and ACTION_NAME eq 'index' or ACTION_NAME eq 'task_list' ">
+        class="active"</if> >
+            <a href="{:U('Task/index')}">
+                <span><i class="icon_task" style="width: 20px;height:20px;"></i></span>
+				<p>会员</p>
+            </a>
+        </li>
+        <li <if condition="CONTROLLER_NAME eq 'Member'  and ACTION_NAME neq 'vip'"> class="active"</if> >
+            <a href="{:U('Member/index')}">
+                <span><i class="icon_user" style="width: 20px;height: 20px;"></i></span>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+</footer>

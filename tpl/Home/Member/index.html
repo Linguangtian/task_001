@@ -1,0 +1,241 @@
+{~$title = "个人中心"}
+
+
+<include file="Public:header"/>
+<script type="text/javascript" src="__PUBLIC_JS__/layer_mobile2/layer.js"></script>
+
+<body class="gray_bg" style="background: #fff;">
+  
+
+
+	<div class="user_index_top">
+
+		<div class="user_index_top_t">
+		<!--	<a href="/index.php/Home/Member/info_edit/field/head_img.html">
+				<if condition="$data.head_img neq null">
+						<img src="{$data.head_img}"/>
+					<else/>
+					<img src="{$sys_config.web_logo}"/>
+				</if>
+			</a>-->
+			<img src="{$sys_config.web_logo}"/>
+			<p class="user_index_top_s">{$data.username}<span>{$level_name}</span></p>
+			<p class="user_index_top_x" style="width: 75%;overflow: hidden;   white-space:nowrap;">邀请码:{$data.id}
+
+				<if condition="$parent_name neq null">	| 推荐人:{$parent_name}</if>
+			</p>
+
+
+		</div>
+
+
+
+		<div class="user_index_top_ppp">
+			<ul>
+				<li >
+					<p style="margin-top: 0.5rem;font-size: 18px;font-weight: bold;color: #fff;" >{$data.price}元</p>
+					<p >我的余额</p>
+				</li>
+				<li >
+					<p style="margin-top: 0.5rem;font-size: 18px;font-weight: bold;color: #fff;">{$total_price.all|floatval}元</p>
+					<p>累计收益</p>
+				</li>
+
+				<li>
+					<a href="{:U('tixian')}">提现</a>
+				</li>
+
+			</ul>
+		</div>
+
+
+	</div>
+
+	<div class="task_index_rwsl">
+
+		<span>每日领取任务数：{$level_num}</span>
+
+		<span>今日剩余领取数：{$remain_task_num}</span>
+	</div>
+
+
+    <!--信用等级 开始-->
+    <div class="user_index_shz dengji">
+     <div >
+       <div class="feng">
+           <img src="__PUBLIC_IMAGES__/siliao.png">
+           <p>封号</p>
+       </div>
+	   <div class="tiao" id="myVue">
+			<div class="ystep1" style="width: 60%"></div>
+		</div>
+         <div class="zhi">
+           <img src="__PUBLIC_IMAGES__/haoping.png">
+           <p>超棒</p>
+       </div>
+      </div>
+
+	</div>
+	<!--信用等级 结束-->
+	<p style="width: 100%;height: 10px;background: #ededed;float: left;margin-top: 10px;"></p>
+	<!--<div class="user_index_shz">
+		<ul>
+			<a href="{:U('Task/submission_task')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1IzpDcRaE3KVjSZLe760sSFXaz.png"/>
+				<p>进行中</p>
+			</li>
+			</a>
+
+			<a href="{:U('Member/apply')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB11u0AcMmH3KVjSZKz7622OXXas.png"/>
+				<p>审核中</p>
+			</li>
+			</a>
+
+			<a href="{:U('Member/apply')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1k38AcUCF3KVjSZJn762nHFXau.png"/>
+				<p>已审核</p>
+			</li>
+			</a>
+		</ul>
+	</div>-->
+
+
+
+	<div class="user_index_shza">
+		<ul>
+			<a href="{:U('sale')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1fwdKcRKw3KVjSZTE763uRpXas.png"/>
+				<p>收益记录</p>
+			</li>
+			</a>
+
+			<a href="/index.php/Home/Member/tixian_log.html">
+				<li>
+					<img src="/Public/statics/images/xinyong.png"/>
+					<p>提现记录</p>
+				</li>
+			</a>
+
+		<!--	<a href="/index.php/Home/Page/show/id/30.html">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1vuRFcRGE3KVjSZFh763kaFXa8.png"/>
+				<p>新手问答</p>
+			</li>
+          </a>
+-->
+
+
+			<a href="{:U('team')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1aGpJcRKw3KVjSZFO761rDVXag.png"/>
+				<p>我的团队</p>
+			</li>
+			</a>
+
+			<a href="/index.php/Home/Public/share">
+				<li>
+					<img src="__PUBLIC_IMAGES__/HTB1kgzjXMFY.1VjSZFq761dbXXa4.png"/>
+					<p>分享邀请</p>
+				</li>
+			</a>
+
+
+
+			<a href="{:U('info')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB15lNDcRWD3KVjSZFs763qkpXav.png"/>
+				<p>完善资料</p>
+			</li>
+			</a>
+
+			<!---->
+			<!--<a href="{:U('index/about')}">-->
+			<!--<li>-->
+				<!--<img src="__PUBLIC_IMAGES__/HTB15lNDcRWD3KVjSZFs763qkpXav.png"/>-->
+				<!--<p>喵赚Q群</p>-->
+			<!--</li>-->
+			<!--</a>-->
+			<!---->
+			<!---->
+			<a href="{:U('password')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1QmBCcUGF3KVjSZFo762mpFXaM.png"/>
+				<p>修改密码</p>
+			</li>
+			</a>
+
+
+			<a href="/index.php/Home/Public/bdwx">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1kgzjXMFY.1VjSZFq761d.png"/>
+				<p>绑定微信</p>
+			</li>
+			</a>
+			<a href="/index.php/Home/Public/bdzh.html">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1kgzjXMFY.1VjSZFq761.png"/>
+				<p>绑定账号</p>
+			</li>
+			</a>
+
+			<a href="{:U('Public/logout')}">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1FXBEcSSD3KVjSZFK76210VXaE.png"/>
+				<p>退出登录</p>
+			</li>
+			</a>
+
+		</ul>
+	</div>
+
+<script type="text/javascript" src="__PUBLIC_JS__/ystep.js"></script>
+
+<script type="text/javascript">
+//根据jQuery选择器找到需要加载ystep的容器
+//loadStep 方法可以初始化ystep
+$(".ystep1").loadStep({
+  //ystep的外观大小
+  //可选值：small,large
+  size: "small",
+  //ystep配色方案
+  //可选值：green,blue
+  color: "green",
+  //ystep中包含的步骤
+  steps: [{
+	//步骤名称
+	title: "限制",
+	//步骤内容(鼠标移动到本步骤节点时，会提示该内容)
+
+  },{
+	title: "良好",
+
+  },{
+	title: "优秀",
+
+  }]
+});
+
+$(function () {
+    var msg="{$msg}";
+    if(msg){
+
+        sp_alert(msg);
+    }
+
+})
+
+
+$(".ystep1").setStep('{$setStep}');
+
+</script>
+  
+
+<include file="Public:footer"/>
+
+</body>
+</html>

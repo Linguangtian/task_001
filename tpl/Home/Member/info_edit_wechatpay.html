@@ -1,0 +1,107 @@
+{~$title = "修改" . $info}
+<include file="Public:header"/>
+<webuploadercss/>
+<webuploaderjs/>
+<style>
+
+    .alipay-title{
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+        height: 30px;
+
+    }
+    .alipay-title span{
+        color: #ff2f17;
+    }
+</style>
+<body style="background: #f6f6f6;">
+<!-- 头部部分 开始 -->
+<header class="top_header">
+    <div class="left"><a  onclick="history.back(-1)" class="return"></a></div>
+    <div class="title">{$title}</div>
+</header>
+<div class="mt">
+    <div class="alipay-title"><h5>上传微信收款码</h5> </div>
+    <section class="with-main ">
+        <if condition="$value eq null">
+            <form class="submit-ajax" data-callback="1" id="form1" name="form1" method="post"  action="{:U('info_edit')}">
+
+
+                <div class="search">
+                    <input type="hidden" name="wechat_number" value="{$wechat_number}">
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="value" value="{$value}" placeholder="微信账号">
+                </div>
+
+                <div class="search">
+                    <input type="hidden" name="wechat_username" value="{$wechat_number}">
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="value" value="{$value}" placeholder="姓名">
+                </div>
+
+
+
+                <div class="item">
+                    <p class="c">
+                    <div class="auto_upload add_upload" style="width: 292px; height: 180px; margin: 0 auto">
+                        <webuploader2 name="wechat_pay_src" word="" text="" w="292" h="179"/>
+                    </div>
+                    <input type="hidden" name="field" value="wechat_pay_src" hidden>
+
+                    <if condition="$backtixian eq 1">
+                    <input type="hidden" name="f" value="tixian" hidden>
+                    </if>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button type="submit">提交</button>
+                </div>
+            </form>
+        <else/>
+            <div style="text-align: center">
+
+
+          <!--      <div class="search">
+
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="wechat_number" value="{$wechat_number}" placeholder="微信账号">
+                </div>
+
+                <div class="search">
+
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="wechat_number" value="{$wechat_number}" placeholder="姓名">
+                </div>-->
+
+
+                <img src="{$value}" width="300px" >
+
+
+
+
+
+            </div>
+            <div class="btn">
+                <button type="submit" onclick="history.back(-1)">返回</button>
+            </div>
+        </if>
+    </section>
+    <if condition="$value eq null">  <div class="alipay-title"><span>提交后无法修改，请上传正确二维码</span> </div>   </if>
+</div>
+<include file="Public:footer"/>
+
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('.btn_small').click(function(){
+            $('#form1').submit();
+        })
+    });
+
+    function submit_callback(data){
+        if( data.status == 1 ) {
+            window.location.href = data.url;
+        } else {
+            sp_tip(data.info);
+        }
+    }
+</script>

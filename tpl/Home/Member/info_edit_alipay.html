@@ -1,0 +1,93 @@
+{~$title = "修改" . $info}
+<include file="Public:header"/>
+<webuploadercss/>
+<webuploaderjs/>
+<style>
+
+    .alipay-title{
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+        height: 30px;
+    }
+    .alipay-title span{
+        color: #ff2f17;
+    }
+
+</style>
+<body style="background: #f6f6f6;">
+<!-- 头部部分 开始 -->
+<header class="top_header">
+    <div class="left"><a href="javascript:" data-url="{:U('info')}" class="return go-back"></a></div>
+    <div class="title">{$title}</div>
+</header>
+
+
+<div class="mt">
+    <div class="alipay-title"><h5>上传支付宝收款码</h5> </div>
+    <section class="with-main ">
+        <if condition="$value eq null">
+            <form class="submit-ajax" data-callback="1" id="form1" name="form1" method="post"
+                  action="{:U('info_edit')}">
+
+
+           <!--     <div class="search">
+                    <input type="hidden" name="alipay_number" value="{$alipay_number}">
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="value" value="{$value}" placeholder="支付宝账号">
+                </div>
+
+                <div class="search">
+                    <input type="hidden" name="alipay_name" value="{$alipay_name}">
+                    <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="value" value="{$value}" placeholder="姓名">
+                </div>-->
+
+                <div class="item">
+                    <p class="c">
+                    <div class="auto_upload add_upload" style="width: 292px; height: 180px; margin: 0 auto">
+                        <webuploader2 name="alipay_src" word="" text="" w="292" h="179"/>
+                    </div>
+
+                    <input type="hidden" name="field" value="alipay_src" hidden>
+
+
+                    </p>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">提交</button>
+                </div>
+            </form>
+            <else/>
+                <div style="text-align: center;"><img src="{$value}" width="80%"></div>
+
+                <div class="btn">
+                    <button type="submit" onclick="history.back(-1)">返回</button>
+                </div>
+        </if>
+
+    </section>
+    <if condition="$value eq null">  <div class="alipay-title"><span>请上传正确二维码,提交后二维码无法修改</span> </div>   </if>
+</div>
+
+
+
+<include file="Public:footer"/>
+
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('.btn_small').click(function(){
+            $('#form1').submit();
+        })
+    });
+
+    function submit_callback(data){
+        if( data.status == 1 ) {
+            window.location.href = data.url;
+        } else {
+            sp_tip(data.info);
+        }
+    }
+</script>

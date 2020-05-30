@@ -1,0 +1,302 @@
+{~$title = "任务记录"}
+
+<include file="Public:header"/>
+<style>
+
+
+    .category-header{
+        background: url("{$sys_config.task_list_src}") no-repeat ;
+        background-size: 100% 100%;
+    }
+    .new_li{
+        padding: 0px 10px !important;
+        padding-top: 10px !important;
+        height: 8rem !important;
+        height: auto !important;
+    }
+
+</style>
+<script src="__PUBLIC_JS__/countdown.js"></script>
+
+<body class="gray_bg" style="background:#f8f8f8">
+
+<header class="top_header">
+    <div class="left"><a href="#" onclick="javascript:history.go(-1)" class="return"></a></div>
+    <div class="title">我的任务</div>
+</header>
+<div class="category-header flex"></div>
+
+<div class="category-select">
+    <a   href="{:U('Task/lists_sub')}">所有任务</a>
+    <a  class="active"  href="{:U('Task/submission_task')}">我的任务</a>
+</div>
+<div style="height:55px"></div>
+
+<div class="task_box mt " style="margin-top: -0px;    margin-bottom: 55px;">
+    <div class="con" >
+        <if condition="!empty($list)">
+            <ul id="js-page">
+                <volist name="list" id="vo">
+                    <if condition="$vo['status'] eq 0">
+                        <li>
+                                <a href="{:U('submission_task_do',array('id'=>$vo['id']))}" class="link">
+                                <p class="clear flex" >
+                                    <div class="fg1 flex">
+                                        <div class="myTask-img">
+                                            <img src="{$vo.task_logo}">
+                                        </div>
+                                        <div  class="myTask-text ">
+                                            <div>{$vo.title} </div>
+                                            <div class="index_ffl">
+                                                <span>{$vo.tasklb_alias}</span>
+                                                <span class="index_gjrw">{$vo.level_name}</span>
+                                            </div>
+                                        </div>
+                                        <div class="fg2">
+                                            <span class="zhuangtai">进行中</span>
+                                        </div>
+                                     </div>
+                                </p>
+                                <div class="djsbox clear">
+                                    <span class="djsspan">倒计时：</span>
+                                    <div class="container timeBar ys3" data="{$vo.cha_time}" ></div>
+                                </div>
+                           </a>
+                            <div class="act-task">
+                                <span class="task-submit" data-id="{$vo.id}">提交任务</span>
+                                <span class="view-detail" data-id="{$vo.task_id}">查看任务</span>
+                                <span class="give-up" data-id="{$vo.id}">放弃任务</span>
+                            </div>
+                        </li>
+                    <else/>
+                        <li class="new_li">
+                            <div class="item-task">
+                                <div class="item-t">
+                                    <span>{$vo.title}</span>
+                                    <span>已完成</span>
+                                </div>
+                                <p>任务收益：{$vo.price}</p>
+                                <p>申请时间：{$vo.update_time}</p>
+                            </div>
+                        </li>
+                    </if>
+                </volist>
+
+            </ul>
+
+        <else/>
+
+            <div class="none">
+
+                <div class="none_box">
+                    <img src="__PUBLIC_IMAGES__/none.png" alt="">
+                    <span>您并没有待完成的任务</span>
+                </div>
+
+            </div>
+
+        </if>
+
+    </div>
+    <div class="js-notis">已经是最底部了......</div>
+    <input id="page"  value="{$pageVal}" hidden>
+    <input id="pageNum"  value="{$pageNum}" hidden>
+</div>
+
+ <div class="bg" data-id="">
+     <div class="box">
+         <div class="xxkkuang">
+             <h2>提示</h2>
+             <p>是否放弃该任务？</p>
+         </div>
+         <div class="anniu">
+             <button class="queding">确定</button>
+             <button class="quxiao">取消</button>
+         </div>
+     </div>
+ </div>
+<script type="text/javascript">
+	$(function(){
+
+       loadCountDown();
+
+	});
+
+
+	//自动加载倒计时
+    function loadCountDown(){
+
+        $(".timeBar").each(function () {
+            $(this).countdownsync({
+                dayTag: "",
+                hourTag: "<label class='tt hh dib vam'>00</label><span>时</span>",
+                minTag: "<label class='tt mm dib vam'>00</label><span>分</span>",
+                secTag: "<label class='tt ss dib vam'>00</label><span>秒</span>",
+                dayClass: ".dd",
+                hourClass: ".hh",
+                minClass: ".mm",
+                secClass: ".ss",
+                isDefault: false,
+                showTemp:1
+
+            }, function () {
+                location.reload();
+            });
+        });
+    }
+
+
+
+    $(document).ready(function () {
+        var range = 0;//距下边界高度
+        var total_height = 0;
+
+        $(window).scroll(function () {
+
+            var p = $("#page").val();
+            var total_page = $("#pageNum").val();
+            p++;
+            var srollPos = $(window).scrollTop();//滚动条距顶部距离
+            total_height = parseFloat($(window).height()) + parseFloat(srollPos);
+            console.info(22);
+
+            if (($(document).height() - range) <= total_height) {
+                console.info(p);
+                if(p<=total_page)
+                    ajaxData(p);
+                else
+                    $('.js-notis').show();
+            }
+        });
+    });
+
+
+
+
+    function ajaxData(p) {
+        var   html = '';
+        $.ajax({
+            type: "POST",
+            url: "/Home/Task/submission_task.html",
+            data: {
+                page: p,
+            },
+            dataType: "json",
+            success: function (data) {
+                n = data.list;
+                if (n.length > 0) {
+                    $(n).each(function (key,li) {
+                        if(li.status==0) {
+                            html  = '<li>';
+                            html +=     '<a href="/index.php/Home/Task/show/id/'+li.task_id+'.html"  class="link">';
+                            html +=         '<p class="clear flex" ></p> ';
+                            html +=         ' <div class="fg1 flex">';
+                            html +=         '   <div class="myTask-img">';
+                            html +=             '   <img src="'+li.task_logo+'">';
+                            html +=         '   </div>';
+                            html +=         ' <div  class="myTask-text ">';
+                            html +=         '   <div>'+li.title+'</div>';
+                            html +=         '   <div class="index_ffl">';
+                            html +=         '      <span>'+li.tasklb_alias+'</span>';
+                            html +=         '      <span class="index_gjrw">'+li.level_name+'</span>';
+                            html +=         '    </div>';
+                            html +=         ' </div>';
+                            html +=         ' <div class="fg2">  <span class="zhuangtai">进行中</span>  </div> ';
+                            html +=         '</div> ';
+                            html +=         '  <p></p>';
+
+                            html +=         '<div class="djsbox clear">';
+                            html +=         '  <span  class="djsspan">倒计时：</span>';
+                            html +=         ' <div class="container timeBar ys3" data=" '+li.cha_time + '"></div>';
+                            html +=         '</div>';
+                            html +=     '</a>';
+                            html +=     ' <div class="act-task">';
+                            html +=         '<span class="task-submit" data-id=" '+li.id+'"> 提交任务</span> ';
+                            html +=         '<span class="view-detail" data-id="'+li.task_id+'"> 查看任务 </span>';
+                            html +=         '<span class="give-up" data-id="'+li.id+'" > 放弃任务</span>';
+                            html +=     '</div>';
+
+                            html += '</li>';
+                        }else{
+                            html  = '<li  class="new_li">';
+                            html +=     '<div class="item-task">';
+                            html +=         '<div class="item-t">';
+                            html +=             '<span>'+li.title+'</span>';
+                            html +=             '<span>已完成</span>';
+                            html +=         '</div>';
+                            html +=     '<p>任务收益：'+li.price+'</p>';
+                            html +=     '<p>申请时间：'+li.update_time+'</p>';
+                            html +=     '</div>';
+                            html += '</li>';
+                        }
+                        $('ul').append(html)
+                    })
+                    $(".timeBar").html(' ');
+                   loadCountDown();
+                    $('#pageNum').val(data.pageNum);
+                    $('#page').val(p);
+
+                } else {
+                    $('#divGoodsLoading').css('display', 'none');
+                    $('#btnLoadMore3').css('display', '')
+                }
+            },
+            error: function (result) {
+            }
+        })
+    }
+
+
+
+
+
+
+    //放弃任务
+    $(document).on('click','.give-up',function(){
+        var id = $(this).attr('data-id');
+        $('.bg').attr('data-id', id);
+        $(".bg").show()
+    })
+
+
+
+       $(document).on('click','.view-detail',function(){
+        var id = $(this).attr('data-id');
+        window.location.href="/index.php/Home/Task/show/id/"+id+".html";
+        })
+
+
+
+    //提交任务
+    $(document).on('click','.task-submit',function(){
+            var id = $(this).attr('data-id');
+            console.info(11);
+            window.location.href="/index.php/Home/Task/submission_task_do/id/"+id+".html";
+        })
+
+
+
+
+   $('.queding').click(function () {
+       var id = $('.bg').attr('data-id');
+       $.post("{:U('abandon')}", {id: id}, function (result) {
+           if (result.status == 1) {
+               window.location.reload();
+           } else {
+               layer.msg('操作失败');
+           }
+       });
+       $(".bg").hide();
+   })
+
+   $('.quxiao').click(function () {
+       $(".bg").hide();
+   })
+
+</script>
+
+<include file="Public:footer"/>
+
+</body>
+
+</html>

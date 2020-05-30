@@ -34,6 +34,7 @@ class QrcodeController extends HomeBaseController
 
         $qrcode_name = "share_" . $member_id;
         $url = U('Public/reg',array('smid'=>$member_id),'',true);
+        echo $url;exit;
 //        var_dump($this->sp_qrcode_physics_path($qrcode_name));die;
 
 

@@ -1,0 +1,200 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="__PUBLIC_CSS__/share.css"/>
+<style>
+	.body_main {
+		margin-bottom: 0;
+	}
+
+	.gray_bg {
+
+		margin-bottom: 55px;
+	}
+	.js-notis{
+		text-align: center;
+		height: 1.5rem;
+		line-height: 1.5rem;
+		font-size: 0.5rem;
+		color: grey;
+		display: none;
+	}
+	.category-select{
+		height: 3rem;
+	}
+	.bg-gray{
+		background: #f4f4f4 !important;
+	}
+	.category-header{
+		background: url("{$sys_config.task_list_src}") no-repeat ;
+		background-size: 100% 100%;
+
+	}
+
+</style>
+<body class="gray_bg">
+<!-- 头部部分 开始 -->
+
+<div class="body_main task_box mt tline" style="margin-top: 0px;border: none;">
+	<header class="top_header">
+		<div class="left"><a href="#" onclick="javascript:history.go(-1)" class="return"></a></div>
+		<div class="title">任务大厅</div>
+	</header>
+	<div class="category-header flex"></div>
+
+
+
+
+
+	<div class="category-select">
+		<a  class="active"    href="{:U('Task/lists_sub')}">所有任务</a>
+		<a href="{:U('Task/submission_task')}">我的任务</a>
+	</div>
+
+
+
+		<div id="js-page" >
+			<volist name="task_list" id="vo">
+				<a>
+					<div class="index_rwxq">
+						<a href="{:U('Task/show',array('id'=>$vo['id']))}">
+							<img src="{$vo.task_logo}"/>
+							<div class="index_wzns">
+								<p class="index_title">{$vo.title}</p>
+								<p class="index_ffl">
+									<span>{$vo.tasklb_alias}</span>
+									<span class="index_gjrw">{$vo.level_name}</span>
+								</p>
+								<p class="index_syrw">剩余数量：<span>{$vo.leftnum}</span></p>
+							</div>
+						</a>
+
+
+						<div class="price_show  ">
+							<if condition="$vo.task_on_top eq 1">    <p class="zhiding"></p></if>
+							<p style="margin-top: 2rem">{$vo.price}元  </p>
+
+							<if condition="$vo['ta_id'] neq null">
+								<span class="bg-gray"  >{$vo.ta_status}</span>
+								<else/>
+								<span class="get_task"  data-id="{$vo['id']}">领取任务</span>
+							</if>
+						</div>
+
+					</div>
+				</a>
+
+			</volist>
+		</div>
+		<div class="js-notis">已经是最底部了......</div>
+
+
+
+
+
+	<input id="page"  value="{$pageVal}" hidden>
+	<input id="pageNum"  value="{$pageNum}" hidden>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+        var range = 0;//距下边界高度
+        var total_height = 0;
+        var p = $("#page").val();
+        var total_page = $("#pageNum").val();
+        $(window).scroll(function () {
+            var srollPos = $(window).scrollTop();//滚动条距顶部距离
+            total_height = parseFloat($(window).height()) + parseFloat(srollPos);
+            if (($(document).height() - range) <= total_height) {
+                if(p<total_page){
+                    p++;
+                    ajaxData(p);
+
+				}
+
+                else
+                    $('.js-notis').show();
+
+            }
+        });
+    });
+
+    function ajaxData(p) {
+        var   html = '';
+        $.ajax({
+            type: "POST",
+            url: "/Home/task/lists_sub.html",
+            data: {
+                page: p,
+            },
+            dataType: "json",
+            success: function (data) {
+                n = data.list;
+                if (n.length > 0) {
+                    $(n).each(function (key,li) {
+                        html =   '<a>';
+                        html +=      '<div class="index_rwxq">';
+
+                        html +=         '<a href=\"/index.php/Home/Task/show/id/'+li.id+'.html\">';
+                        html += 			'<img src="'+li.task_logo+'"/>';
+                        html +=             '<div class="index_wzns">';
+                        html +=                 '<p class="index_title">' + li.title + '</p>';
+                        html +=                 '<p class="index_ffl">';
+                        html +=                     '<span>'+ li.tasklb_alias +'</span>';
+                        html +=                     '<span class="index_gjrw">'+ li.level_name +'</span>';
+                        html +=                 '</p>';
+                        html +=                 ' <p class="index_syrw">剩余数量：<span>' +li.leftnum + '</span></p>';
+                        html +=             '</div>';
+                        html +=         '</a>';
+                        html +=         '<div class="price_show">';
+                        if (li.task_on_top == 1) {
+                        html += '<p class="zhiding"></p>';
+                        }
+                        html +=             '<p style="margin-top: 2rem">' + li.price +'元  </p>';
+                        if(li.ta_id){
+                            html +=             '<span class="bg-gray">已领取</span>';
+                        }else{
+                            html +=             '<span class="get_task"  data-id=\"' + li.id + '\">领取任务</span>';
+                        }
+                        html +=         '</div>';
+                        html +=      '</div>';
+                        html +=  '</a>';
+
+                        $('#js-page').after(html)
+                    })
+
+
+                } else {
+                    $('#divGoodsLoading').css('display', 'none');
+                    $('#btnLoadMore3').css('display', '')
+                }
+            },
+            error: function (result) {
+            }
+        })
+    }
+
+
+
+
+    $("body").on("click",".get_task",function(){
+        var task_id = $(this).data('id');
+        var url = "{:U('Task/get_task')}";
+        var item=$(this);
+
+        $.post(url,{id:task_id},function(data){
+            if( data.status == 1 ) {
+                item.html();
+                item.html('已领取');
+                item.removeClass('get_task');
+                item.addClass('bg-gray');
+            } else {
+                sp_alert(data.info);
+            }
+        },'json')
+    });
+
+
+</script>
+<include file="Public:footer"/>
+</body>
+</html>

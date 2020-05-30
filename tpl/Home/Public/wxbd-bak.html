@@ -1,0 +1,43 @@
+{~$title = "绑定微信"}
+<include file="Public:header" />
+
+<body>
+
+<div id="body">
+    <!-- 头部部分 开始 -->
+    <header class="top_header">
+        <div class="left"><a href="javascript:" class="return go-back"></a></div>
+        <div class="title">{$title}</div>
+    </header>
+    <!-- 主体部分 开始 -->
+    <div class="body_main mt">
+        <form class="submit-ajax" action="{:U('password')}">
+            <div class="form_reg">
+                <p>
+                    <input type="text" name="old_password" id="old_password" placeholder="请输入微信账号" class="input-text" />
+                </p>
+                
+            </div>
+            <div class="reg_btn">
+                <button type="submit" id="submit" class="" disabled>确认绑定</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <include file="Public:footer" />
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('.input-text').keyup(function(){
+            if( $('#phone').val() != '' && $('#password').val() != '' && $('#code').val() != '' ) {
+                $('#submit').addClass('active');
+                $('#submit').removeAttr("disabled");
+            } else {
+                $('#submit').removeClass('active');
+                $('#submit').attr("disabled","disabled");
+            }
+        })
+    });
+</script>

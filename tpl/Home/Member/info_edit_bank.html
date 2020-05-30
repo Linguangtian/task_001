@@ -1,0 +1,184 @@
+{~$title = "提现账户"}
+<include file="Public:header"/>
+
+<style>
+    .wechat-pay{
+        text-align: center;
+    }
+    .wechat-pay img{
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .wechat-pay-t{
+        padding-left: 10px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .wechat-pay-t a:hover {
+        color: #062eff !important;
+    }
+    .wechat-pay-t a {
+        color: #ff140a !important;
+
+    }
+    .div-none{
+        display: none;
+    }
+    h5{
+        text-align: center;
+    }
+</style>
+<webuploadercss/>
+<webuploaderjs/>
+<body>
+<!-- 头部部分 开始 -->
+<header class="top_header">
+    <div class="left"><a href="javascript:history.back(-1);"    class="return "></a></div>
+    <div class="title">{$title}</div>
+</header>
+<div class="mt tline">
+    <section class="with-main">
+        <form    class="submit-ajax" data-callback="1" id="form1" name="form1" method="post" action="{:U('info_edit')}">
+            <input type="hidden" name="f" value="{$Think.get.f}">
+            <div class="search">
+                <select name="bank_name" id="bank_name" >
+                  <!--  <option value=""> -请选择收款方式- </option>-->
+                    <volist name="banks" id="vo">
+                        <option value="{$vo}" <if condition="$member.bank_name eq $vo"> selected </if> >{$vo}</option>
+                    </volist>
+                </select>
+            </div>
+
+            <div class="search  bank_user" id="bank_">
+                <input type="text" name="bank_user" value="{$member.bank_user}" placeholder="姓名">
+            </div>
+            <div class="search value">
+                <input type="hidden" name="field" value="{$field}">
+                <input style="width: 100%; height: 40px; line-height: 40px;" type="text" name="value" id="card_num" value="{$value}" placeholder="账号">
+            </div>
+
+
+
+            <div class="upload search wachat-pay"   <if condition="$member.bank_name neq '微信'"> style="display: none" </if>>
+                <div class="upload-img">
+                    <input  type="file"  data-field="wechat_pay_src"  class="user-profile-img"    >
+                    <div class="user-head-img-box-1" style="border-radius:0;">
+                        <if condition="$member.wechat_pay_src eq null">
+                            <img src="/tpl/Public/images/opposite.png">
+                            <else/>
+                            <img src="{$member.wechat_pay_src}">
+                        </if>
+                    </div>
+                </div>
+               <h5><if condition="$member.alipay_src eq null">上传后无法修改，请上传正确微信收款码<else/>微信收款码 </if></h5>
+                <input  name="wechat_pay_src" type="hidden" value="{$member.wechat_pay_src}">
+            </div>
+
+
+
+
+            <div class="upload search  alipay-pay"    <if condition="$member.bank_name eq '微信'">  style="display: none"  </if>  >
+                <div class="upload-img">
+                    <input  type="file"  data-field="alipay_src"  class="user-profile-img"   >
+                    <div class="user-head-img-box-1" style="border-radius:0;">
+                        <if condition="$member.alipay_src eq null">
+                            <img src="/tpl/Public/images/opposite.png">
+                            <else/>
+                            <img src="{$member.alipay_src}">
+                        </if>
+                    </div>
+                </div>
+               <h5><if condition="$member.alipay_src eq null">上传提交后无法修改，请上传正确支付宝收款码<else/>支付宝收款码 </if></h5>
+                <input  name="alipay_src" type="hidden" value="{$member.alipay_src}">
+            </div>
+
+
+
+            <div class="btn">
+                <button type="submit">确定</button>
+            </div>
+        </form>
+    </section>
+</div>
+<include file="Public:footer"/>
+</body>
+</html>
+
+<script>
+
+
+
+
+
+
+    $('#bank_name').change(function(){
+        // $('#subbranch_name_box').hide();
+
+        if($(this).val() == '支付宝') {
+            $('.alipay-pay').show();
+            $('.wachat-pay').hide();
+        }
+
+        if($(this).val() == '微信') {
+            $('.alipay-pay').hide();
+            $('.wachat-pay').show();
+        }
+        $('#card_num').attr('placeholder', $(this).val() + '账号');
+
+
+    })
+
+    function submit_callback(data){
+        if( data.status == 1 ) {
+            window.location.href = data.url;
+        } else {
+            sp_tip(data.info);
+        }
+    }
+    $('.user-profile-img').change(function(e){
+        var file = e.target.files[0];               //获取图片属性
+        var form = new FormData();
+        var max_size = 1024000 * 4;
+        var obj = $(this);
+
+
+        var field=$(this).data('field');
+
+
+
+        if(file.size > max_size) {
+            alert('上传图片不能超过4MB');
+            return false;
+        }
+        form.append('img', file);
+        form.append('field',$(this).data('field'));
+        var xhr;
+        if(window.ActiveXObject) {
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        } else if(window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        }
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                if(xhr.status == 200 || xhr.status == 0){
+                    var res = xhr.responseText;
+                    res = JSON.parse(res);
+                    if(res.error == 0){
+                        $(obj).siblings('.user-head-img-box-1').find("img").attr('src',  res.path);
+                        $('input[name='+field+']').val(res.path);
+                    }else{
+                        alert(res.msg);
+                    }
+                }
+            }
+        };
+        xhr.open("post", "{:U('member/uploadImage')}", true);
+        xhr.send(form);
+
+
+    })
+
+</script>

@@ -1,0 +1,96 @@
+{~$title = "余额"}
+
+<include file="Public:header"/>
+<link rel="stylesheet" href="__PUBLIC_CSS__/double-date.css"/>
+<script type="text/javascript" src="__PUBLIC_JS__/double-date.js"></script>
+<style>
+    .sale-notice{
+        padding:10px 0 !important;
+        font-weight: bold !important;
+        font-size: 15px;
+
+    }
+    .sale-team{
+        text-align: right;
+        padding-right:15px;
+        margin-top: 10px;
+    }
+    .sale-team a{
+        background: #FFFFFF;
+        color: #181818;
+        border-radius: 4px;
+        padding: 5px 8px;
+
+
+    }
+
+</style>
+<body style="background: #f6f6f6">
+<!-- 头部部分 开始 -->
+<header class="top_header">
+    <div class="left"><a href="javascript:" class="return go-back"></a></div>
+    <div class="title">
+        <if condition="$show_day eq ''">
+            收益记录
+            <else/>
+            {$show_day}
+        </if>
+    </div>
+</header>
+
+<header class="profit-head mt">
+    <div class="top">
+        <p>
+
+
+        </p>
+        <!--<span class="select_date ca" onclick="show_date()"></span>-->
+    </div>
+    <div class="btm">
+        <div class="sale-team"><a  href="/index.php/Home/Member/sale.html">我的任务收益</a> </div>
+        <p class="sale-notice">团队收益</p>
+        <h6 style="padding-top:0px">￥{$today_total_price}</h6>
+
+            <p>共计收益</p>
+
+    </div>
+
+</header>
+
+<div class="ceng"></div>
+
+
+<div class="category-select">
+    <a  <if condition="$type neq 3"> class="active"</if> href="/index.php/Home/Member/teamSale.html">团队做任务奖励</a>
+    <a <if condition="$type eq 3"> class="active"</if> href="/index.php/Home/Member/teamSale/type/3.html">推荐会员奖励</a>
+</div>
+
+
+<section class="profit-main" style="margin-bottom: 60px">
+    <ul>
+        <volist name="list" id="vo">
+            <li>
+                <p>
+                    <span class="p1">{$vo.remark}</span>
+                    <span class="p2" style="color: red;">￥{$vo.price}</span>
+                </p>
+                <p class="time">{$vo.create_time|date='Y-m-d',###}</p>
+            </li>
+        </volist>
+    </ul>
+
+    {$Page}
+
+</section>
+
+<div style="display: none">
+    <form id="form_1" class="form-search" method="get" action="{:U('sale')}" style="padding: 10px 0; ">
+        <input type="hidden" name="type" value="{$type}">
+        <input type="hidden" name="date" id="date" value="{$day}">
+    </form>
+</div>
+<include file="Public:footer"/>
+
+</body>
+
+</html>

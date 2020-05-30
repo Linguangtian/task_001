@@ -1,0 +1,93 @@
+<include file="Public:header"/>
+<style>
+	.task_news_nr li{
+		line-height: 1.5rem;
+		height: 1.5rem;
+		padding-left: 5px;
+		font-size: 0.8rem;
+
+	}
+
+</style>
+<body class="gray_bg" style="background: #fff;">
+<!-- 头部部分 开始 -->
+
+<div class="task_top"  onclick="window.open('/index.php/Home/Public/share','_self')">
+	
+</div>
+
+<div class="task_nav">
+	<ul>
+      <a href="/index.php/Home/page/index">
+		<li>
+			<img src="__PUBLIC_IMAGES__/HTB1FC0scMaH3KVjSZFj763FWpXab.png?v=3"/>
+			<p>会员介绍</p>
+		</li>
+        </a>
+		
+		<a href="/index.php/Home/member/vip.html">
+			<li>
+			<img src="__PUBLIC_IMAGES__/HTB1IGdvcL1G3KVjSZFk761K4XXaq.png?v=1"/>
+			<p>开通会员</p>
+		</li>
+		</a>
+
+
+
+		<a href="javascript:sp_alert('敬请期待')">
+			<li>
+				<img src="__PUBLIC_IMAGES__/one.png"/>
+				<p>发布任务</p>
+			</li>
+		</a>
+
+
+		<a href="/index.php/Home/Public/share">
+			<li>
+				<img src="__PUBLIC_IMAGES__/HTB1R2BvcUGF3KVjSZFv762_nXXa6.png?v=3"/>
+				<p>推广赚钱</p>
+			</li>
+		</a>
+
+		</a>
+		
+	</ul>
+</div>
+
+
+
+
+<div class="task_news">
+	<p class="task_news_title">文章公告</p>
+	
+	<div class="task_news_nr">
+	
+		<ul>
+			<volist name="list" id="vo">
+				<li>
+					<a href="{:U('showw',array('id'=>$vo['id']))}">{$vo.title}<span>&nbsp;</span></a>
+				</li>
+			</volist>
+		</ul>
+	
+	</div>
+	
+	
+	<div class="task_zwnr">
+		<img src="__PUBLIC_IMAGES__/HTB1wYXxcMKG3KVjSZFL761MvXXaA.png"/>
+		<p>没有更多啦</p>
+	</div>
+	
+
+	
+
+	
+</div>
+
+
+
+
+
+<include file="Public:footer"/>
+</body>
+</html>

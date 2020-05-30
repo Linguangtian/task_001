@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		 <link rel="stylesheet" href="__PUBLIC_CSS__/share.css">
+         <link rel="stylesheet" href="__PUBLIC_CSS__/font.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			.about{
+				width: 100%;
+				background: #fff;
+			}
+			.about img{
+              width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+			.about_Ss{
+				width: 100%;
+				background: #fff;
+				border-top: 1px solid #ededed;
+				border-bottom: 1px solid #ededed;
+				text-align: center;
+			}
+			.about_Ss p{
+				width: 100%;
+				box-sizing:border-box;
+				height: 4rem;
+				line-height: 4rem;
+				padding-left: 6%;
+				padding-right: 6%;
+
+				border-bottom: 1px solid #ededed;
+			}
+			.about_Ss span{
+				height: 5rem;
+				background: #1cb500;
+				margin-top: 1rem;
+				line-height: 2rem;
+				padding: 10px 20px;
+				color: #fff;
+				border-radius: 2rem;
+			}
+			.about_Ss img{ width:80%; display:block; margin:10px auto;}
+		</style>
+	</head>
+	<body style="background: #ededed;">
+		<header class="top_header">
+		<div class="left"><a href="javascript: history.back(-1)" class="return go-back"></a></div>
+		<div class="title">加入群聊</div>
+	</header>
+		
+		<div class="about">
+			
+			<img src="{$sys_config.qq_kf_qrcode}"/>
+			
+		</div>
+		
+		<div class="about_Ss">
+			<p> <span>QQ客服</span> </p>
+		</div>
+		
+		  <include file="Public:footer" />
+	</body>
+</html>

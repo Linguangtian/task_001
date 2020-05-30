@@ -1,0 +1,130 @@
+{~$title = "申请提现"}
+<include file="Public:header"/>
+<style>
+    .tixian_log{
+        text-align: right;
+        padding-right: 20px;
+        height: 15px;
+        line-height: 15px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .tixian_box{
+      padding-top: 5px;
+    }
+    .notis{
+        padding: 10px 15px;
+        line-height: 25px;
+        word-wrap: break-word;
+    }
+    .actived{
+        background: #c5c5c5;
+    }
+</style>
+
+<body class="gray_bg">
+<div id="body">
+    <!-- 头部部分 开始 -->
+    <header class="top_header">
+        <div class="left"><a href="javascript:" data-url="{:U('index')}" class="return go-back"></a></div>
+        <div class="title">申请提现</div>
+        <div class="right"></div>
+    </header>
+
+    <!--主体部分 开始-->
+    <div class="body_main mt">
+
+        <div class="tixian_box">
+         <!--   <div class="tixian_log"><a href="/index.php/Home/Member/tixian_log.html">提现记录</a></div>-->
+            <form id="form1" class="submit-ajax"  action="{:U('tixian')}" method="post" >
+
+                <if condition="empty($data['bank_name']) || empty($data['bank_user']) || empty($data['bank_number']) ">
+                    <div class="card no" >
+                        <a href="{:U('Member/info_edit',array('field'=>'bank_number','f'=>'tixian'))}">
+                            <h5>请先完善提现账户信息</h5>
+                        </a>
+                    </div>
+
+                <else/>
+                    <div class="card" style="border-top: 0px !important;">
+                        <a href="{:U('Member/info_edit',array('field'=>'bank_number','f'=>'tixian'))}">
+                            <h5>{$data.bank_name}</h5>
+                            <p>用户:{$data.bank_user} &nbsp; 尾号:{$data.bank_number_last} </p>
+                        </a>
+                    </div>
+                </if>
+<!--
+                <div class="con">
+                    <div class="t">提现金额</div>
+                    <div class="p">
+                        <input type="text" name="price" value="" placeholder="">
+                    </div>
+                    <div class="info">可用余额 {$data.price}元 </div>
+                </div>-->
+
+                <div class="con">
+                    <div class="t">提现金额</div>
+                    <div class="p">
+                        <div class="select-meney-list">
+                            <volist name="extract_money_level" id="vo">
+                                <li><span class="{$vo.actived}" id="item-{$vo.num}">{$vo.num}</span></li>
+                            </volist>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class="info">可用余额 {$data.price}元 </div>
+                </div>
+
+                <input type="text" name="price" value="0" placeholder="" hidden>
+
+                <div class="b">
+                    <button class="btn_type btn_tx">确定</button>
+                </div>
+            </form>
+
+            <div class="notis">
+                <p>提现说明：</p>
+                <p>1、10元、50元、为小额提现，单个账号仅有一次小额提现机会</p>
+                <p>2、单笔提现手续费为2元</p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<include file="Public:footer"/>
+<script>
+    var is_limit="{$tixian_limit}";
+    $('.select-meney-list').find('span').click(function () {
+      var num   =  $(this).html();
+      if( is_limit==1 && num<=50 ){
+        return false;
+      }
+
+
+      $('.select-meney-list').find('span').removeClass('active');
+      $(this).addClass('active');
+      $('input[name="price"]').val(parseInt(num));
+
+    })
+    
+    // function checkSubmit() {
+    //  var num   =   $('input[name="price"]').val();
+    //  if(!num || num==0){
+    //      sp_alert('请选择金额');
+    //      return false;
+    //  }
+    //
+    //     return true;
+    //
+    // }
+    //
+
+
+</script>
+
+</body>
+
+
+</html>

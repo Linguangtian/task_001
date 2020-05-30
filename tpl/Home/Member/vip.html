@@ -1,0 +1,137 @@
+{~$title = "购买会员"}
+
+<include file="Public:header"/>
+
+
+
+<body style="background-color:#ffffff;">
+
+<!-- 头部部分 开始 -->
+<header class="top_header">
+    <div class="left"><a href="{:U('Task/index')}" class="return"></a></div>
+    <div class="title">开通会员</div>
+</header>
+
+<section class="grade-main mt">
+    <form id="form1" class="submit-ajax" data-callback="1"  name="form1" method="post" action="{:U('vip')}" >
+        <input type="hidden" name="price" id="price" value="" />
+        <input type="hidden" name="level" id="level" value="" />
+        
+
+        <div class="btm">
+            <!--<div class="tit">
+                <span class="long01"></span>
+                <p>升级会员</p>
+                <span class="long02"></span>
+            </div>-->
+
+            <div class="list" id="vip_sel">
+                <volist name="member_level" id="vo">
+                    <div class="sub <if condition="$vo['level'] gt $member['level']">lv</if>" data-id="{$vo.level}" data-price="{$vo.price}" style="margin-bottom:20px">
+                        <p class="img"><img src="__PUBLIC_IMAGES__/medal_icon_{$vo.level}.png"  /></p>
+                        <p class="">{$vo.name}</p>
+                        <span>￥{$vo.price}</span>
+                    </div>
+                </volist>
+            </div>
+
+
+        <div class="vip-notice"><span class="up-vip"></span> 升级补差价</div>
+        <input type="hidden" name="payment_type" id="payment_type" value="alipay">
+        <input type="hidden" name="member_vip_price" id="member_vip_price" value="{$member_vip_price}">
+        <div class="dx_line">
+           <!--
+            <span>选择支付方式</span></div>
+
+            <div class="recharge_box" style="margin-top: 0;border-top: 0; padding-bottom: 40px;">
+                <input type="hidden" name="payment_type" id="payment_type" value="alipay">
+                &lt;!&ndash;<p>选择支付方式：</p>&ndash;&gt;
+
+                <if condition="$pay_method neq 'other_method'">
+                <label data-key="alipay">
+                    <i class="alipay"></i> 支付宝支付 <span class="active"></span>
+                </label>
+                <else/>
+                <label data-key="other_method">
+                    <i class="other_method"></i>第四方<span></span>
+                </label>
+                </if>
+              &lt;!&ndash; <label data-key="wxpay">
+                  <i class="wxpay"></i>微信支付<span></span>
+                </label>&ndash;&gt;
+            </div>-->
+
+        </div>
+
+        <button type="submit" id="submit" >立即缴纳<span id="show_price_1"></span></button>
+    </form>
+</section>
+<include file="Public:footer"/>
+
+</body>
+
+</html>
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.recharge_box label').click(function(){
+            $('.recharge_box label span').removeClass('active');
+            $(this).find('span').addClass('active');
+            var payment_type = $(this).attr('data-key');
+            $('#payment_type').val(payment_type);
+        });
+
+        $('#vip_sel .sub.lv').click(function(){
+            var price = $(this).attr('data-price');
+            var level = $(this).attr('data-id');
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var member_vip_price = "{$member_vip_price}";
+            price= parseFloat(price)-parseFloat(member_vip_price)
+            price=price<0?0:price;
+
+
+            $('#show_price_1').html("（￥" +price+"）");
+            $('#price').val(price);
+            $('#level').val(level);
+        });
+
+
+        $('#submit').click(function(){
+            var is_best_level="{$is_best_level}";
+            if( is_best_level ==1 ) {
+                sp_tip('你已经是最高等级会员，无需升级.');
+                return false;
+            }
+
+
+
+            var payment_type = $('#payment_type').val();
+            var level = $('#level').val();
+
+            if( level == '' ) {
+                sp_tip('请选择要升级的级别.');
+                return false;
+            }
+            if( payment_type == '' ) {
+                sp_tip('请选择支付渠道.');
+                return false;
+            }
+        })
+        $('#form1').submit();
+    });
+
+    function submit_callback(data){
+        if( data.error == 0 ) {
+            window.location.href=data.url;
+
+
+        }else if( data.error ==1 ){
+
+        } else {
+            sp_tip(data.info);
+        }
+    }
+</script>

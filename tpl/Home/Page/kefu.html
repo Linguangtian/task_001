@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<include file="Public:header"/>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>联系客服</title>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" href="/tpl/Public/css/share.css?1562721555">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+	.customer-send{
+		margin-top: 42px;
+	}
+			.customer-msg{
+
+				margin-top: 2rem;
+				width: 100%;
+				background: #fff;
+				text-align: center;
+				height: auto;
+			}
+
+			.customer-msg  p{
+				width: 100%;
+				box-sizing:border-box;
+				height: 2rem;
+				line-height: 2rem;
+			}
+			.customer-msg  p span:nth-child(1){
+				text-align: right;
+				width: 48.5%;
+				display: block;
+				float: left;
+			}
+			.customer-msg  p span:nth-child(2){
+				text-align: left;
+				width: 48.5%;
+				float: right;
+				display: block;
+			}
+			#send{
+				text-align: center;
+				margin-top:70px;
+				margin-bottom: 3rem;
+			}
+			#send textarea{
+				border: 1px solid #c5c5c5;
+				width: 90%;
+				padding-top: 5px;
+				margin-bottom: 20px;
+			}
+
+			#send .send-bnt{
+				margin-top: 40px;
+				padding: 8px 25px;
+				font-size: 15px;
+				background: #FFFFFF;
+				border: 1px solid #c5c5c5;
+				border-radius: 5px;
+
+			}
+
+		</style>
+	</head>
+	<body >
+	<header class="top_header">
+		<div class="left"><a href="{:U('Task/index')}" class="return go-back"></a></div>
+		<div class="title">联系客服</div>
+	</header>
+		
+		<div class="customer-send">
+			<form action="/index.php/Home/Page/kefuSmg" id="send" onsubmit="return false;" >
+				<textarea name="customer_msg" rows="10" id="customer-msg" placeholder="  请输入您要咨询的问题！" ></textarea>
+
+				<p>	<a  class="send-bnt">发送给客服 </a></p>
+		</form>
+
+		</div>
+	<hr/>
+		<div class="customer-msg">
+			<if condition="$sys_config.tel">	<p><span>客服电话：  </span> <span> {$sys_config.tel}</span>   </p>   </if>
+			<if condition="$sys_config.wx_kf">	<p><span>客服微信：  </span> <span> {$sys_config.wx_kf}</span> </p>   </if>
+			<if condition="$sys_config.qq_kf">	<p><span>客服QQ：  </span> <span> {$sys_config.qq_kf}</span>   </p>   </if>
+
+			<p>
+				工作时间 ：工作日早9:00-晚9:00<br/>
+				如有紧急情况请拨打客服电话
+			</p>
+
+
+		</div>
+		
+<include file="Public:footer"/>
+	</body>
+
+<script>
+		$('.send-bnt').click(function () {
+            var msg	=	$('#customer-msg').val();
+            if(!msg){
+                sp_alert('咨询内容不能为空');
+                return false
+            }
+
+            $.ajax({
+                url:'/index.php/Home/Page/kefuSmg',
+				data:{msg:msg},
+				datatype:'json',
+				type:'post',
+				success:function (data) {
+                    sp_alert(data.msg);
+                    $('#customer-msg').val('');
+                }
+				});
+
+
+        });
+
+	
+</script>
+
+</html>

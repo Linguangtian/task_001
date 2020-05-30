@@ -1,0 +1,129 @@
+{~$title = "个人信息"}
+<include file="Public:header"/>
+
+<body class="gray_bg">
+<style>
+    .webuploader-pick{
+
+        height:209px !important;
+    }
+    .auto_upload{
+        overflow: hidden;
+    }
+</style>
+<div id="body">
+    <!-- 头部部分 开始 -->
+    <header class="top_header">
+        <div class="left"><a href="javascript:" data-url="{:U('index')}" class="return go-back"></a></div>
+        <div class="title">{$title}</div>
+    </header>
+    <!--主体部分 开始-->
+    <div class="body_main tline mt info_main">
+        <ul>
+            <li>
+                <a href="{:U('info_edit',array('field'=>'nickname'))}"><p>姓名</p>
+                    <span>&nbsp;{$member.nickname}</span></a>
+            </li>
+          <!--  <li>
+                <a href="{:U('info_edit',array('field'=>'phone'))}"><p>手机</p>
+                    <span>&nbsp;{$member.phone}</span></a>
+            </li>-->
+
+            <!--<li>-->
+                <!--<a href="{:U('info_edit',array('field'=>'head_img'))}"><p>头像</p>-->
+                    <!--<span>&nbsp;</span></a>-->
+            <!--</li>-->
+
+            <li>
+                <a href="{:U('info_edit',array('field'=>'sex'))}"><p>性别</p>
+                    <span>&nbsp;
+                        <if condition="$member['sex'] eq '0'">男</if>
+                        <if condition="$member['sex'] eq '1'">女</if>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('info_edit',array('field'=>'address'))}"><p>地址</p>
+                    <span>&nbsp;{$member.address}</span></a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Member/info_edit/field/bank_number.html"><p>提现账户</p>
+                    <span>&nbsp;</span></a>
+            </li>
+
+
+      <!--      <li>
+                <a href="{:U('info_edit',array('field'=>'alipay_src'))}"><p>支付宝收款码</p>
+                    <span>&nbsp;</span></a>
+            </li>
+
+
+            <li>
+                <a href="{:U('info_edit',array('field'=>'wechat_pay_src'))}"><p>微信收款码</p>
+                <span>&nbsp;</span></a>
+            </li>-->
+
+        </ul>
+
+<!--
+
+        <ul style="margin-top: 7px">
+
+            <li style="border-bottom:0px;">
+               <p>支付宝收款码</p>
+            </li>
+                <div class="item">
+                    <p class="c">
+                    <div class="auto_upload add_upload" style="width: 292px; height: 180px; margin: 0 auto">
+                        <webuploader2 name="file" word="" text="" w="292" h="179"/>
+                    </div>
+                    </p>
+                </div>
+        </ul>
+
+
+
+        <ul style="margin-top: 7px">
+
+            <li style="border-bottom:0px;">
+                <p>微信收款码</p>
+            </li>
+            <div class="item">
+                <p class="c">
+                <div class="auto_upload add_upload" style="width: 292px; height: 180px; margin: 0 auto">
+                    <webuploader2 name="file" word="" text="" w="292" h="179"/>
+                </div>
+                </p>
+            </div>
+        </ul>
+-->
+
+
+        <!--<ul style="margin-top: 7px">-->
+            <!--<li>-->
+                <!--<a href="{:U('info_edit',array('field'=>'idc'))}"><p>身份证号</p>-->
+                    <!--<span>&nbsp;{$member.idc}</span></a>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<a href="{:U('info_edit',array('field'=>'bank_number'))}"><p>银行卡</p>-->
+                    <!--<span>&nbsp;{$member.bank_number}</span></a>-->
+            <!--</li>-->
+
+           <!--<li>-->
+                <!--<a href="{:U('info_edit',array('field'=>'occupation'))}">-->
+                    <!--<p>职业</p>-->
+                    <!--<span>{$member.occupation}</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+
+
+
+
+    </div>
+</div>
+  <include file="Public:footer" />
+</body>
+</html>
