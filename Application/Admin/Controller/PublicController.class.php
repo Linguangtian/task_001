@@ -99,4 +99,26 @@ class PublicController extends Controller{
         }
 
     }
+
+
+
+
+
+    //文件上传
+    public function swfupload2() {
+        //保存路径，不包含Uploads
+        $path = rtrim(isset($_REQUEST['path']) ? trim($_REQUEST['path']) : '/other', '/');
+        $path = implode('/', explode('_', $path) ).'/';
+        $this->assign('path', $path);
+        $this->assign('thumb_width', $_REQUEST['thumb_width']);
+        $this->assign('thumb_height', $_REQUEST['thumb_height']);
+        //上传文件类型
+        $file_type = explode(',', C('UPLOAD_FILES_TYPE'));
+        foreach( $file_type as $v ) $file_types .= '*.'.$v.';';
+        $this->assign('file_types', rtrim( $file_types, ',' ));
+
+        $this->display();
+    }
+
+
 }

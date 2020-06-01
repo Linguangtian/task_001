@@ -116,7 +116,7 @@ class BaseController extends Controller{
         $map = array();
         $map['t.status'] = 1;
         $map['t.end_time'] = ['gt',time()];
-        $map['t.timing_date'] = ['lt',time()];
+        $map['t.no_show'] = ['eq',0];
         $count = M('task as t')->where($map)->count();
 
         $pageNum =ceil($count/$pageSize);

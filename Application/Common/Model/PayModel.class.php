@@ -169,4 +169,28 @@ class PayModel extends BaseModel{
             throw_exception('添加收益失败');
         }
     }
+
+
+    //充值
+
+    public function member_recharge($user_id,$price,$platform,$platform_no){
+
+        //记录支付记录
+        $data = array();
+        $data['type'] = 2;//充值
+        $data['order_id'] = $user_id;
+        $data['order_no'] = $user_id;
+        $data['member_id'] = $user_id;
+        $data['price'] = $price;
+        $data['create_time'] = time();
+        $data['payment_type'] = $platform;
+        $data['platform_no'] = $platform_no;
+        M('pay')->add($data);
+
+        $model_member = new MemberModel();
+        $model_member->incPrice( $user_id,$price,12,'在线充值',$platform_no);
+
+    }
+
+
 }

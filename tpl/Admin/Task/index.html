@@ -17,15 +17,22 @@
     管理
 </div>
 <ul id="myTab" class="nav nav-tabs">
-   <li class="active">
-         <a href="{:U('index', $get)}">任务列表</a>
+    <li   <if condition="$get['type'] neq 2"> class="active" </if> >
+         <a href="{:U('index')}">任务列表</a>
    </li>
    <li>
         <a href="{:U('handle')}">添加任务</a>
     </li>
+
+    <li <if condition="$get['type'] eq 2">class="active"</if>  >
+    <a href="{:U('index', ['type'=>2])}">自助任务—待审核：<span style="color: red">{$on_show_total}</span></a>
+    </li>
+
+
+
 </ul>
 <form class="form-search form-inline" method="get" action="" style="padding: 10px 0; ">
-    类型：
+  <!--  类型：
     <div class="input-group">
         <select name="type">
             <option value="">所有类型</option>
@@ -33,7 +40,7 @@
                 <option value="{$key}" <if condition="$key eq $get['type'] and $get['type'] neq ''">selected</if>>{$vo}</option>
             </volist>
         </select>
-    </div>
+    </div>-->
 
     任务等级：
     <div class="input-group">
@@ -77,7 +84,16 @@
             <td><input type="checkbox" value="{$vo.id}" class="input checkbox_input" /></td>
             <td>{$vo.id}</td>
             <td>{$vo.title}</td>
-            <td>{$vo.type_name}</td>
+            <td>{$vo.type_name}
+                <if condition="$vo.no_show eq 1">
+                <span  style="color: red">待审核</span>
+                </if>
+
+                <if condition="$vo.no_show eq 2">
+                <span style="color: #5511ff">拒绝</span>
+                </if>
+
+            </td>
             <td><span class="level_{$vo.level}">{$vo.level_name}</span></td>
             <td>{$vo.apply_num}/{$vo.max_num}</td>
             <td>{$vo.end_time|date='Y-m-d',###}</td>

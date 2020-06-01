@@ -656,3 +656,51 @@ function sp_alert_gourl(msg,btn_text,btn_url){
         }
     });
 }
+
+
+
+function return_value(uploadid, returnid) {
+    //取得iframe对象
+    var d = uploadid.iframe.contentWindow;
+    //取得选择的图片
+    var in_content = d.$("#returnValue").val();
+    $('#' + returnid).val(in_content);
+    $('#' + returnid).next('img').attr('src',in_content);
+}
+
+
+function flashupload2(uploadid, name, inputid, funcName, path, thumb_width, thumb_height, authkey) {
+    var param = '?path=' + path + '&thumb_width=' + thumb_width + '&thumb_height=' + thumb_height + '&authkey=' + authkey;
+    art.dialog.open('/index.php/lgt0708/Public/swfupload2/' + param, {
+        title: name,
+        id: uploadid,
+        width: '650px',
+        height: '320px',
+        lock: true,
+        fixed: true,
+        background: "#CCCCCC",
+        opacity: 0,
+        ok: function () {
+            if (funcName) {
+                funcName.apply(this, [this, inputid]);
+            } else {
+                return_value.apply(this, [this, inputid]);
+            }
+        },
+        cancel: true
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

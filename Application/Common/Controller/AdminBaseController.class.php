@@ -123,7 +123,9 @@ class AdminBaseController extends BaseController{
      */
     public function _list($modelName = CONTROLLER_NAME, $map = array(), $fields ='', $sortBy = '', $pageRows = 20) {
         $model = M($modelName);
-        if( $sortBy == '' ) $sortBy = $model->getPk().' desc';
+        if( $sortBy == '' ) $sortBy =' no_show asc, '. $model->getPk().' desc';
+
+;
         $count = $model->where($map)->count();
         $page = sp_get_page($count,$pageRows);//分页
         $firstRow = $page->firstRow;

@@ -34,7 +34,8 @@
 
 
 
-		<a href="javascript:sp_alert('敬请期待')">
+	<!--	<a href="javascript:sp_alert('敬请期待')">-->
+		<a href="/index.php/Home/Task/handle.html">
 			<li>
 				<img src="__PUBLIC_IMAGES__/one.png"/>
 				<p>发布任务</p>
@@ -65,7 +66,7 @@
 		<ul>
 			<volist name="list" id="vo">
 				<li>
-					<a href="{:U('showw',array('id'=>$vo['id']))}">{$vo.title}<span>&nbsp;</span></a>
+					<a href="{:U('Home/News/show',array('id'=>$vo['id']))}">{$vo.title}<span>&nbsp;</span></a>
 				</li>
 			</volist>
 		</ul>

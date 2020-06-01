@@ -9,8 +9,8 @@ use Think\Controller;
  */
 class YipayController extends Controller{
 
-    const UID = "5e2797a35226d92c801ec0d8";//"此处填写PaysApi的uid";
-    const TOKEN = "12db8c3bf179d4a4f061a9599827fa7c";//"此处填写PaysApi的Token";
+    const UID = "b07ab35d89875abbea811e59";//"此处填写PaysApi的uid";
+    const TOKEN = "34293339a02a221190c3697e66b1e700";//"此处填写PaysApi的Token";
     const POST_URL = "https://pay.bearsoftware.net.cn/?";
     const PLATFORM = "bearsoftware";
 
@@ -40,7 +40,7 @@ class YipayController extends Controller{
         ksort($data);
         reset($data);
         $param = '';
-        $sign = '';
+
 
 
         foreach ($data as $key => $val) {
@@ -84,23 +84,91 @@ class YipayController extends Controller{
             //校验key成功
             $out_trade_no =$orderid;
             $d = M('recharge')->where(array('order_no'=>$out_trade_no))->find();
-            $pay_model = new PayModel();
-            $pay_model->pay_vip_success($d['id'], self::PLATFORM, $paysapi_id);
-            file_put_contents('/Runtime/alipay.txt', json_encode($_POST) . "/r/n", FILE_APPEND);
-            return true;
 
-
+                $pay_model = new PayModel();
+                $pay_model->pay_vip_success($d['id'], self::PLATFORM, $paysapi_id);
+                file_put_contents('Runtime/alipay.txt', json_encode($_POST) . "/r/n", FILE_APPEND);
+                return true;
         }
     }
 
 
 
 
+/*
+ * 充值模块
+ * */
+
+    public function online_recharge(){
+        $istype = 1;
+
+        $goodsname = "在线充值";
+        $notify_url = U('api/yipay/recharge_notify','','',true);
+        $return_url = U('api/yipay/recharge_return','','',true);
+        $orderid = $_GET['member_id'];
+        $orderuid =$_GET['member_id'];
+        $price =floatval($_GET['price']);
+
+        $key = md5($goodsname. $istype . $notify_url . $orderid . $orderuid . $price . $return_url . self::TOKEN . self::UID);
+        $data = array(
+            'goodsname'=>$goodsname,
+            'istype'=>$istype,
+            'notify_url'=>$notify_url,
+            'orderid'=>$orderid,
+            'orderuid'=>$orderuid,
+            'price'=>$price,
+            'return_url'=>$return_url,
+            'key'=>$key,
+            'uid'=>self::UID
+        );
+        ;
+        ksort($data);
+        reset($data);
+        $param = '';
 
 
 
+        foreach ($data as $key => $val) {
+            $param .= $key . '=' . urlencode($val) . '&';
+        }
+
+        $url= self::POST_URL . $param ;
+        header('Location:'.$url);
+
+    }
 
 
+    /**
+     * return_url接收页面
+     */
+    public function recharge_return()
+    {
+
+
+        header('location:'.U('Home/Member/index',array('msg'=>'支付成功')));
+    }
+
+    public function recharge_notify()
+    {
+        file_put_contents('Runtime/alipay2.txt', json_encode($_POST) . "/r/n", FILE_APPEND);
+        $paysapi_id = $_POST["paysapi_id"];
+        $orderid = $_POST["orderid"];
+        $price =floatval($_POST["price"]);
+        $realprice = $_POST["realprice"];
+        $orderuid = $_POST["orderuid"];
+        $key = $_POST["key"];
+        //校验传入的参数是否格式正确，略
+        $token = self::TOKEN;
+        $temps = md5($orderid . $orderuid . $paysapi_id . $price . $realprice . $token);
+
+        if ($temps != $key){
+            return jsonError("key值不匹配");
+        }else{
+                //充值
+                $pay_model = new PayModel();
+                $pay_model->member_recharge($orderuid, $price,self::PLATFORM, $paysapi_id);
+        }
+    }
 
 
 

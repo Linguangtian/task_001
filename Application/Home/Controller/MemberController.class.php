@@ -338,26 +338,35 @@ class MemberController extends HomeBaseController{
             if( !is_numeric($price) || !($price > 0) ) {
                 $this->error('价格必须为数字，且大于0');
             }
-            $price = $price * 100; //单位为分
+
+            if( $price%10 != 0 ) {
+                $this->error('充值金额必须为10的倍数');
+            }
 
             $data = array();
             $order_no = $this->create_order_no();
             $data['order_no'] = $order_no;
             $data['member_id'] = $this->member_id;
-            //$data['msg'] = strip_tags(I('msg'));
             $data['price'] = $price;
             $data['create_time'] = time();
             $data['is_pay'] = 0;
             $data['payment_id'] = 1;
+            $data['key_type'] = '2';//充值
             $insert_id = M('recharge')->add($data);
             if( $insert_id ) {
                 //跳转到微信支付
-                $host = $_SERVER['HTTP_HOST'];
-                header("Location: http://".$host."/wxpay/payapi/jsapi.php?out_trade_no={$order_no}&openid=".session('member.openid'));
-                exit();
-                //$this->redirect('Api/Weixinpay/pay',array('out_trade_no'=>$order_no));
+                $yipay   =  new YipayController();
+                $url =  $yipay->pay($order_no);
+                $data=['error'=>0,'url'=>$url];
+                $this->ajaxReturn($data);
+                exit;
+
+
+
             }
         } else {
+            $member= M('member')->where(array('id' => $this->member_id))->find();
+            $this->assign('member', $member);
             $this->display();
         }
     }
@@ -610,17 +619,17 @@ class MemberController extends HomeBaseController{
                     $this->ajaxReturn($data);*/
 
 
-                    $yipay   =  new EzfpayController();
-                    $url =  $yipay->pay($order_no);
-                    $data=['error'=>0,'url'=>$url];
-                    $this->ajaxReturn($data);
-
-
-              /*      //在线支付 个人免签
-                    $yipay   =  new YipayController();
+              /*      $yipay   =  new EzfpayController();
                     $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);*/
+
+
+                 //在线支付 个人免签
+                    $yipay   =  new YipayController();
+                    $url =  $yipay->pay($order_no);
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);
 
 
 

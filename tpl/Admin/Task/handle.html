@@ -168,6 +168,21 @@
                 <textarea id="page_content" class="col-xs-6 col-sm-6" style="height: 400px;" name="content">{$info.content}</textarea>
             </td>
         </tr>
+
+        <if condition="$info.type eq 2">
+
+        <tr>
+            <th>审核</th>
+            <td>
+                <label><input type="radio" name="no_show" value="0" style="height: inherit" <if condition="$info['no_show'] eq 0">checked</if> >通过</label> &nbsp; &nbsp; &nbsp;
+                <label><input type="radio" name="no_show" value="1" style="height: inherit" <if condition="$info['no_show'] eq 1">checked</if> >待审核</label> &nbsp;
+                <label><input type="radio" name="no_show" value="2" style="height: inherit" <if condition="$info['no_show'] eq 2">checked</if> >拒绝</label> &nbsp;
+            </td>
+        </tr>
+
+
+        </if>
+
         <tr>
             <th></th>
             <td>

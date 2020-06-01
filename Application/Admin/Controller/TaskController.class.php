@@ -17,6 +17,9 @@ class TaskController extends AdminBaseController{
 
         $map = $this->_search();
         $type = I('get.type');
+        if(!$type){
+            $type=1;
+        }
         $level = I('get.level');
         $start_date = I('get.start_date')?strtotime(I('get.start_date')):0;
         $end_date = I('get.end_date')?strtotime(I('get.end_date')):0;
@@ -27,14 +30,19 @@ class TaskController extends AdminBaseController{
         if( $start_date!='' )   $map['create_time'] =['gt',$start_date];
         if( $end_date!='' )  $map['_string'] = " create_time < {$end_date} ";
 
+
+        $on_show_total = M('task')->where(['no_show'=>1])->count();  //待审核
+
         //列表数据
         $list = $this->_list ('task', $map );
+
         $task_type = C('TASK_TYPE');
         foreach( $list as &$_list ) {
             $_list['level_name'] = $level_list[$_list['level']]['name'];
             $_list['type_name'] = $task_type[$_list['type']];
         }
         $this->assign('list',$list);
+        $this->assign('on_show_total',$on_show_total);
         $this->assign('get',$_GET);
 
 
@@ -106,6 +114,38 @@ class TaskController extends AdminBaseController{
             $timing_hour='';
             if( $id > 0) {
                 $info = $model->find ( $id );
+
+
+                //如果类型是自助发  和 描述是空就用
+                if($info['type']==2&&!$info['content']){
+                   $tushi = unserialize($info['tushi']);
+                    foreach ($tushi as $li){
+                        $info['content'].=$li;
+                    }
+                    $info['content'].='<br/>';
+                    $step_info = unserialize($info['step_info']);
+                    if(count($step_info['step_desc'])){
+                        foreach ($step_info['step_desc'] as $key=>$li) {
+                            $info['content'].='步骤:<br/>';
+                            $step_num=$key+1;
+                            $info['content'].=$step_num.'、'.$li;
+                        }
+                    }
+
+
+                    if(count($step_info['step_img'])){
+
+                        foreach ($step_info['step_img'] as $key=>$li) {
+                            $info['content'].='<br/>如图:<br/>';
+                            $step_num=$key+1;
+                            $info['content'].=$step_num.'、' . '<img src="' .$li. '" width="300px"/>';
+                        }
+                    }
+
+
+
+                }
+
 
                 $timing_hour=date('H',$info['timing_date']);
                 $this->assign ( 'info', $info );

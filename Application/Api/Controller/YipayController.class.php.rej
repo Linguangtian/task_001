@@ -1,0 +1,9 @@
+diff a/Application/Api/Controller/YipayController.class.php b/Application/Api/Controller/YipayController.class.php	(rejected hunks)
+@@ -84,7 +84,6 @@
+             //æ ¡éªŒkeyæˆåŠŸ
+             $out_trade_no =$orderid;
+             $d = M('recharge')->where(array('order_no'=>$out_trade_no))->find();
+-            $pay_model = new PayModel();
+ 
+             if($d['key_type']==2){
+                 //å……å€¼

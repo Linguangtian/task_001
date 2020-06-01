@@ -1082,3 +1082,163 @@ color: #fff;
 	line-height: 1.5rem;
 	margin-bottom: 0.5rem;
 }
+
+
+
+/*充值*/
+
+.z-line-header{
+	background:#f03851;
+	font-size:24px;
+	font-weight:600px;
+	color:#fff;
+	height:100px;
+	text-align:center;
+	padding-top:50px;
+}
+
+.rech_main{
+	width:100%;
+	text-align:center;
+	display:inline-block;
+}
+
+
+.rech_main h6{
+	margin: 20px;
+	font-size:16px;
+	color:#7552e6;
+}
+
+
+.rech_main ul{
+	margin:0px auto;
+	display: inline-block;
+}
+
+.rech_main ul li{
+	float:left;
+	width:75px;
+	padding:15px;
+	margin:5px;
+	background-color:#f92e4a;
+}
+
+.rech_main ul li a{
+	color:#fff;
+}
+
+.rech_main .rech_sea {
+	display:inline-block;
+	margin-top:10px;
+}
+
+.rech_main .rech_sea .money {
+	font-size: 16px;
+}
+
+.rech_main .rech_sea input{
+	width: 100px;
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	font-size: 16px;
+	height: 30px;
+	border-radius: 4px;
+	margin: 10px 0px;
+	text-align:center
+
+}
+
+.pay-menu{
+	margin:30px 0;
+	width:100%;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-flow:column nowrap;
+	flex-flow:column nowrap;
+	-ms-flex-align:center;
+	align-items:center;
+	-ms-flex-pack:center;
+	justify-content:center
+}
+
+.pay-menu .rech_botton{
+	width:90%;
+	height:50px;
+	margin-bottom:10px;
+	border-radius:6px;
+	color:#fff;
+	background:#4eaf00;
+	font-size:15px;
+	line-height:45px;
+	text-align:center
+
+}
+
+.pay-menu .rech_botton a{
+	color:#fff;
+
+}
+
+.recharge_box {
+	display:none;
+	background:#eeeeee;
+	border: solid 1px #dddddd;
+	left:50%;
+	top:50%;
+	position:fixed;
+	z-index: 999999;
+	width:300px;
+	height:180px;
+	margin-left:-170px;
+	margin-top:-90px;
+	padding:20px;
+	color:#000;
+
+}
+
+.recharge_box .vip_lijisj{
+	width: 80px;
+	height: 30px;
+	background: #228aff;
+	padding:5px;
+	margin:10px 10px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.recharge_box label {
+	display: block;
+	margin:0 40px;
+	padding: 10px 0;
+}
+.recharge_box label i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 12px;
+}
+.recharge_box label i.alipay {
+	background: url("../images/logo-alipay.png") no-repeat;
+	background-size: 100% 100%;
+}
+.recharge_box label i.wxpay {
+	background: url("../images/logo-wechat.png") no-repeat;
+	background-size: 100% 100%;
+}
+.recharge_box label span {
+	float: right;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 2px #CCCCCC solid;
+	border-radius: 50%;
+}
+.recharge_box label span.active {
+	width: 16px;
+	height: 16px;
+	background: url("../images/gou.png") no-repeat;
+	background-size: 100% 100%;
+	border: 0;
+}

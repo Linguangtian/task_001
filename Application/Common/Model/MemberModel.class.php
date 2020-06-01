@@ -126,7 +126,7 @@ class MemberModel extends BaseModel
      * 更新会员余额
      * @param $member_id
      * @param $price
-     * @param int $type
+     * @param int $type 12 充值
      * @param string $remark
      * @return bool
      */
@@ -196,7 +196,7 @@ class MemberModel extends BaseModel
      * 价格变化日志
      * @param $member_id
      * @param $price
-     * @param int $type 0充值 1提成收入 2提现 3消费 4其他
+     * @param int $type 0充值 1提成收入 2提现 3消费 4其他  12充值
      * @param string $remark
      */
     private function price_log($member_id, $price, $type=0, $remark = '', $no='')

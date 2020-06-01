@@ -2,15 +2,32 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php" line="91" />
+    <bookmark url="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" line="357" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" line="623" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e299543-39d2-4a15-96f0-28885ecc1e6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/systemConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/Upload/systemConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Admin/SystemConfig/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/SystemConfig/set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Home/Public/share.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Public/share.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Common/Controller/BaseController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Controller/BaseController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Admin/Category/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/Category/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Admin/Public/swfupload.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/Public/swfupload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Admin/Task/handle.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/Task/handle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Admin/Task/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/Task/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Home/Member/recharge_do.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Member/recharge_do.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Home/Member/vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Member/vip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Home/Task/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Task/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Public/css/share.css" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/css/share.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/js/base.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,38 +38,192 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QrcodeController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Admin/Task/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="253">
+              <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#if#0;n#td#3;n#tr#0;n#foreach#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#if#1;n#td#3;n#tr#0;n#foreach#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="share.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/Home/Public/share.html">
+      <file leaf-file-name="TaskController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="1736">
+              <caret line="140" column="92" selection-start-line="140" selection-start-column="92" selection-end-line="140" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <file leaf-file-name="TaskController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            <state relative-caret-position="391">
+              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+              <folding>
+                <element signature="e#191#436#0#PHP" />
+                <element signature="e#442#904#0#PHP" />
+                <element signature="e#518#665#0#PHP" />
+                <element signature="e#1463#1988#0#PHP" />
+                <element signature="e#1558#1623#0#PHP" />
+                <element signature="e#1747#1916#0#PHP" />
+                <element signature="e#1807#1870#0#PHP" />
+                <element signature="e#1871#1916#0#PHP" />
+                <element signature="e#1994#4284#0#PHP" />
+                <element signature="e#2316#2471#0#PHP" />
+                <element signature="e#2503#3696#0#PHP" />
+                <element signature="e#2549#3578#0#PHP" />
+                <element signature="e#2592#2943#0#PHP" />
+                <element signature="e#2769#2943#0#PHP" />
+                <element signature="e#2958#3111#0#PHP" />
+                <element signature="e#3112#3266#0#PHP" />
+                <element signature="e#3267#3451#0#PHP" />
+                <element signature="e#3452#3578#0#PHP" />
+                <element signature="e#3589#3696#0#PHP" />
+                <element signature="e#3706#3932#0#PHP" />
+                <element signature="e#3834#3932#0#PHP" />
+                <element signature="e#4290#4390#0#PHP" />
+                <element signature="e#4395#6440#0#PHP" />
+                <element signature="e#4443#4565#0#PHP" />
+                <element signature="e#5297#5392#0#PHP" />
+                <element signature="e#5297#5418#0#PHP" />
+                <element signature="e#5297#5450#0#PHP" />
+                <element signature="e#5297#5502#0#PHP" />
+                <element signature="e#5297#5538#0#PHP" />
+                <element signature="e#5297#5566#0#PHP" />
+                <element signature="e#5691#6092#0#PHP" />
+                <element signature="e#6103#6236#0#PHP" />
+                <element signature="e#6457#8769#0#PHP" />
+                <element signature="e#6509#6631#0#PHP" />
+                <element signature="e#6763#6852#0#PHP" />
+                <element signature="e#6862#6941#0#PHP" />
+                <element signature="e#6951#7035#0#PHP" />
+                <element signature="e#7045#8763#0#PHP" />
+                <element signature="e#7108#7182#0#PHP" />
+                <element signature="e#7401#7534#0#PHP" />
+                <element signature="e#7721#8375#0#PHP" />
+                <element signature="e#7820#8192#0#PHP" />
+                <element signature="e#7858#8174#0#PHP" />
+                <element signature="e#8315#8375#0#PHP" />
+                <element signature="e#8386#8763#0#PHP" />
+                <element signature="e#8775#8798#0#PHP" />
+                <element signature="e#8803#11291#0#PHP" />
+                <element signature="e#8844#8913#0#PHP" />
+                <element signature="e#9004#9065#0#PHP" />
+                <element signature="e#9292#9376#0#PHP" />
+                <element signature="e#9439#9577#0#PHP" />
+                <element signature="e#9712#9781#0#PHP" />
+                <element signature="e#9806#9907#0#PHP" />
+                <element signature="e#10081#10234#0#PHP" />
+                <element signature="e#10245#10686#0#PHP" />
+                <element signature="e#11058#11285#0#PHP" />
+                <element signature="e#11235#11285#0#PHP" />
+                <element signature="e#11297#11524#0#PHP" />
+                <element signature="e#11530#11582#0#PHP" />
+                <element signature="e#11587#11918#0#PHP" />
+                <element signature="e#11744#11912#0#PHP" />
+                <element signature="e#11831#11912#0#PHP" />
+                <element signature="e#11925#14338#0#PHP" />
+                <element signature="e#11998#12090#0#PHP" />
+                <element signature="e#12280#12445#0#PHP" />
+                <element signature="e#12373#12445#0#PHP" />
+                <element signature="e#12534#14331#0#PHP" />
+                <element signature="e#12693#14199#0#PHP" />
+                <element signature="e#14211#14331#0#PHP" />
+                <element signature="e#14345#17529#0#PHP" />
+                <element signature="e#14921#15717#0#PHP" />
+                <element signature="e#15011#15707#0#PHP" />
+                <element signature="e#15158#15693#0#PHP" />
+                <element signature="e#15313#15515#0#PHP" />
+                <element signature="e#15534#15693#0#PHP" />
+                <element signature="e#15742#16538#0#PHP" />
+                <element signature="e#15832#16528#0#PHP" />
+                <element signature="e#15979#16514#0#PHP" />
+                <element signature="e#16134#16336#0#PHP" />
+                <element signature="e#16355#16514#0#PHP" />
+                <element signature="e#16563#17523#0#PHP" />
+                <element signature="e#16747#17513#0#PHP" />
+                <element signature="e#16869#17499#0#PHP" />
+                <element signature="e#17028#17481#0#PHP" />
+                <element signature="e#17081#17291#0#PHP" />
+                <element signature="e#17314#17481#0#PHP" />
+                <element signature="e#17535#18215#0#PHP" />
+                <element signature="e#17977#18209#0#PHP" />
+                <element signature="e#18154#18209#0#PHP" />
+                <element signature="e#18221#18292#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="set.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/Admin/SystemConfig/set.html">
+      <file leaf-file-name="YipayController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="174" column="117" selection-start-line="174" selection-start-column="117" selection-end-line="174" selection-end-column="117" />
+            <state relative-caret-position="414">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#3004#4467#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1978">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recharge_do.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Home/Member/recharge_do.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Common/Controller/BaseController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Common/Model/PayModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="190" column="71" selection-start-line="190" selection-start-column="71" selection-end-line="190" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminBaseController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="125" column="51" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -61,37 +232,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Model</find>
-      <find>sql</find>
-      <find>user</find>
-      <find>DB_USERNAME</find>
-      <find>codepay_order</find>
-      <find>$sql</find>
-      <find>$codepay_config</find>
-      <find>PLATFORM</find>
-      <find>每日领取任务数</find>
-      <find>请输入邀请码。</find>
-      <find>.user_index_top_s</find>
-      <find>#7351e4</find>
-      <find>推广赚钱</find>
-      <find>qrcode</find>
-      <find>直接打开</find>
-      <find>YipayController</find>
-      <find>跳转链接</find>
+      <find>body</find>
+      <find>tixian</find>
+      <find>提现金额必须为10的倍数</find>
       <find>vip</find>
-      <find>DemoHandle</find>
-      <find>$pay_id</find>
-      <find>curlPost</find>
-      <find>EzfpayController</find>
-      <find>msg</find>
-      <find>是否关闭网站</find>
-      <find>stop_web</find>
-      <find>app_ios_download</find>
-      <find>create_qrcode</find>
-      <find>admin</find>
-      <find>MODULE_ALLOW_LIST</find>
-      <find>#20255c</find>
+      <find>recharge_box</find>
+      <find>submit</find>
+      <find>member_money</find>
+      <find>handle</find>
+      <find>layer.msg</find>
+      <find>price</find>
+      <find>setMoney</find>
+      <find>供应信息</find>
+      <find>提现</find>
+      <find>type</find>
+      <find>admin/</find>
+      <find>index.php/Admin/Member/</find>
+      <find>发布任务</find>
+      <find>cid</find>
+      <find>　　简单易懂的步骤有助于完成!</find>
+      <find>任务等级</find>
+      <find>step_img</find>
+      <find>task</find>
+      <find>DB_FIELDS_CACHE</find>
+      <find>false</find>
+      <find>DB_FIELDS</find>
+      <find>是否置顶</find>
+      <find>已领/名额</find>
+      <find>if</find>
+      <find>请选择充值金额</find>
+      <find>blue_btn</find>
     </findStrings>
+    <replaceStrings>
+      <replace>ffffff</replace>
+      <replace>sp_alert</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>E:\git\renwubao\Application\Home\Controller</dir>
       <dir>E:\git\renwubao\</dir>
@@ -104,19 +279,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Application/Index/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" />
-        <option value="$PROJECT_DIR$/tpl/Home/Member/vip.html" />
         <option value="$PROJECT_DIR$/../tgq/codepay/codepay_config.php" />
         <option value="$PROJECT_DIR$/codepay/codepay.php" />
-        <option value="$PROJECT_DIR$/tpl/Public/css/share.css" />
         <option value="$PROJECT_DIR$/tpl/Public/css/ystep.css" />
-        <option value="$PROJECT_DIR$/tpl/Home/Task/index.html" />
         <option value="$PROJECT_DIR$/tpl/Home/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Task/show.html" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Member/index.html" />
-        <option value="$PROJECT_DIR$/tpl/Admin/Task/handle.html" />
         <option value="$PROJECT_DIR$/codepay/pay.php" />
         <option value="$PROJECT_DIR$/codepay/codepay_config.php" />
         <option value="$PROJECT_DIR$/codepay/notify.php" />
@@ -124,11 +292,36 @@
         <option value="$PROJECT_DIR$/Application/Api/Controller/Pay96Controller.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Admin/SystemConfig/set.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Public/share.html" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Admin/Category/index.html" />
+        <option value="$PROJECT_DIR$/tpl/Public/js/base.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Public/css/share.css" />
+        <option value="$PROJECT_DIR$/tpl/Home/Member/vip.html" />
+        <option value="$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Controller/HomeBaseController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Home/Task/index.html" />
+        <option value="$PROJECT_DIR$/tpl/Home/Task/handle.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
+        <option value="$PROJECT_DIR$/Runtime/common~runtime.php" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Conf/convention.php" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Mode/Lite/convention.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Admin/Task/handle.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Admin/Task/index.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Controller/BaseController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Home/Member/recharge_do.html" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php" />
       </list>
     </option>
   </component>
@@ -150,10 +343,10 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-393" />
-    <option name="y" value="101" />
+    <option name="x" value="-14" />
+    <option name="y" value="67" />
     <option name="width" value="1460" />
-    <option name="height" value="915" />
+    <option name="height" value="855" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,7 +354,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,58 +369,34 @@
             <path>
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Runtime" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Runtime" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Logs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/BaiduNetdiskDownload/5.25/other区块链/other" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chongdianbao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\renwubao\tpl\Admin\Public" />
+      <recent name="E:\git\renwubao\tpl\Home\Task" />
       <recent name="E:\git\renwubao\Application\Api\Controller" />
     </key>
   </component>
@@ -261,24 +429,32 @@
       <workItem from="1590628130364" duration="16990000" />
       <workItem from="1590715094699" duration="12701000" />
       <workItem from="1590747201763" duration="5597000" />
-      <workItem from="1590801640229" duration="10846000" />
+      <workItem from="1590801640229" duration="14482000" />
+      <workItem from="1590855987957" duration="283000" />
+      <workItem from="1590889511613" duration="3003000" />
+      <workItem from="1590895510859" duration="6668000" />
+      <workItem from="1590905753456" duration="5170000" />
+      <workItem from="1590921493845" duration="307000" />
+      <workItem from="1590932443104" duration="3528000" />
+      <workItem from="1590980394294" duration="3510000" />
+      <workItem from="1591009727417" duration="11830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74503000" />
+    <option name="totallyTimeSpent" value="112438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-393" y="101" width="1460" height="915" extended-state="1" />
+    <frame x="-14" y="67" width="1460" height="855" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.050938338" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26385042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20637119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -342,221 +518,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3102">
-          <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="101" selection-start-line="100" selection-start-column="4" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/AlipayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/codepay_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Index/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Model/PayModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" selection-start-line="72" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/Alioss/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/Alipay/AlipayNotify.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2864">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Lite/Model.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1074">
-          <caret line="1073" column="20" selection-start-line="1073" selection-start-column="20" selection-end-line="1073" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.888/notify.php" />
-    <entry file="file://$PROJECT_DIR$/../tgq/codepay/notify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tgq/codepay/codepay_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Public/css/share.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11946">
-          <caret line="543" column="23" selection-start-line="543" selection-start-column="23" selection-end-line="543" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Public/css/ystep.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6226">
-          <caret line="283" selection-start-line="283" selection-end-line="283" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="140" column="70" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Controller.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1597">
-          <caret line="341" column="2" lean-forward="true" selection-start-line="335" selection-end-line="341" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/vip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/pay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#6#224#0#PHP" />
-            <element signature="e#356#495#0#PHP" />
-            <element signature="e#1081#1293#0#PHP" />
-            <element signature="e#1149#1219#0#PHP" />
-            <element signature="e#1220#1293#0#PHP" />
-            <element signature="e#3628#3831#0#PHP" />
-            <element signature="e#3836#3998#0#PHP" />
-            <element signature="e#3936#3998#0#PHP" />
-            <element signature="e#4962#5083#0#PHP" />
-            <element signature="e#5250#5578#0#PHP" />
-            <element signature="e#5328#5572#0#PHP" />
-            <element signature="e#5362#5454#0#PHP" />
-            <element signature="e#5968#6017#0#PHP" />
-            <element signature="e#6022#6070#0#PHP" />
-            <element signature="e#6075#6109#0#PHP" />
-            <element signature="e#6142#6483#0#PHP" />
-            <element signature="e#7056#7384#0#PHP" />
-            <element signature="n#getCodepayHtml#0;n#!!top" />
-            <element signature="e#7561#8376#0#PHP" />
-            <element signature="e#7767#8370#0#PHP" />
-            <element signature="e#8110#8370#0#PHP" />
-            <element signature="e#8381#9022#0#PHP" />
-            <element signature="e#8709#9022#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/codepay/notify.php" />
-    <entry file="file://$PROJECT_DIR$/codepay/codepay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="61" column="15" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/includes/M.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3904" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codepay/notify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3151">
@@ -597,9 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/RongController.class.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay/pay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -614,30 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/AlipayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="73" column="74" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="74" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1477">
           <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,195 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="116" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#33#74#0#PHP" expanded="true" />
-            <element signature="e#377#401#0#PHP" />
-            <element signature="e#406#671#0#PHP" />
-            <element signature="e#477#613#0#PHP" />
-            <element signature="e#677#702#0#PHP" />
-            <element signature="e#2877#2986#0#PHP" />
-            <element signature="e#2942#2986#0#PHP" />
-            <element signature="e#3659#3682#0#PHP" />
-            <element signature="e#3687#4789#0#PHP" />
-            <element signature="e#3813#3924#0#PHP" />
-            <element signature="e#3880#3924#0#PHP" />
-            <element signature="e#4197#4505#0#PHP" />
-            <element signature="e#4239#4447#0#PHP" />
-            <element signature="e#4377#4447#0#PHP" />
-            <element signature="e#4796#4819#0#PHP" />
-            <element signature="e#4824#4884#0#PHP" />
-            <element signature="e#4890#4915#0#PHP" />
-            <element signature="e#4920#9077#0#PHP" />
-            <element signature="e#5033#9071#0#PHP" />
-            <element signature="e#5177#5394#0#PHP" />
-            <element signature="e#5509#6557#0#PHP" />
-            <element signature="e#5742#5857#0#PHP" />
-            <element signature="e#5874#6191#0#PHP" />
-            <element signature="e#5979#6173#0#PHP" />
-            <element signature="e#6208#6543#0#PHP" />
-            <element signature="e#6324#6525#0#PHP" />
-            <element signature="e#6590#7192#0#PHP" />
-            <element signature="e#6760#6879#0#PHP" />
-            <element signature="e#7254#7697#0#PHP" />
-            <element signature="e#7432#7620#0#PHP" />
-            <element signature="e#7541#7620#0#PHP" />
-            <element signature="e#7635#7697#0#PHP" />
-            <element signature="e#7709#9071#0#PHP" />
-            <element signature="e#8046#9026#0#PHP" />
-            <element signature="e#8187#8542#0#PHP" />
-            <element signature="e#8358#8524#0#PHP" />
-            <element signature="e#8653#8896#0#PHP" />
-            <element signature="e#8897#8978#0#PHP" />
-            <element signature="e#8979#9026#0#PHP" />
-            <element signature="e#9083#9106#0#PHP" />
-            <element signature="e#9111#9984#0#PHP" />
-            <element signature="e#9431#9523#0#PHP" />
-            <element signature="e#9431#9583#0#PHP" />
-            <element signature="e#9431#9618#0#PHP" />
-            <element signature="e#9431#9651#0#PHP" />
-            <element signature="e#9431#9683#0#PHP" />
-            <element signature="e#9990#10013#0#PHP" />
-            <element signature="e#10018#10471#0#PHP" />
-            <element signature="e#10477#10498#0#PHP" />
-            <element signature="e#10503#11173#0#PHP" />
-            <element signature="e#10778#10904#0#PHP" />
-            <element signature="e#10913#11093#0#PHP" />
-            <element signature="e#10960#11083#0#PHP" />
-            <element signature="e#11179#11200#0#PHP" />
-            <element signature="e#11205#11389#0#PHP" />
-            <element signature="e#11395#11418#0#PHP" />
-            <element signature="e#11423#12530#0#PHP" />
-            <element signature="e#11467#12524#0#PHP" />
-            <element signature="e#11528#11632#0#PHP" />
-            <element signature="e#12114#12467#0#PHP" />
-            <element signature="e#12478#12524#0#PHP" />
-            <element signature="e#12547#12884#0#PHP" />
-            <element signature="e#12890#12913#0#PHP" />
-            <element signature="e#12918#16597#0#PHP" />
-            <element signature="e#13153#16591#0#PHP" />
-            <element signature="e#13319#13491#0#PHP" />
-            <element signature="e#13603#13684#0#PHP" />
-            <element signature="e#13697#13781#0#PHP" />
-            <element signature="e#13794#13876#0#PHP" />
-            <element signature="e#13889#13971#0#PHP" />
-            <element signature="e#13984#14083#0#PHP" />
-            <element signature="e#14102#14197#0#PHP" />
-            <element signature="e#14414#14511#0#PHP" />
-            <element signature="e#15279#15671#0#PHP" />
-            <element signature="e#15435#15598#0#PHP" />
-            <element signature="e#15532#15598#0#PHP" />
-            <element signature="e#15613#15671#0#PHP" />
-            <element signature="e#15682#16591#0#PHP" />
-            <element signature="e#16135#16300#0#PHP" />
-            <element signature="e#16313#16436#0#PHP" />
-            <element signature="e#16603#18250#0#PHP" />
-            <element signature="e#16953#17233#0#PHP" />
-            <element signature="e#17467#17588#0#PHP" />
-            <element signature="e#17467#17672#0#PHP" />
-            <element signature="e#17467#17705#0#PHP" />
-            <element signature="e#17467#17737#0#PHP" />
-            <element signature="e#17770#18090#0#PHP" />
-            <element signature="e#17882#18080#0#PHP" />
-            <element signature="e#18256#18280#0#PHP" />
-            <element signature="e#18285#18414#0#PHP" />
-            <element signature="e#18420#18443#0#PHP" />
-            <element signature="e#18448#19807#0#PHP" />
-            <element signature="e#18489#19801#0#PHP" />
-            <element signature="e#18547#18636#0#PHP" />
-            <element signature="e#18649#18735#0#PHP" />
-            <element signature="e#18749#18834#0#PHP" />
-            <element signature="e#18847#18935#0#PHP" />
-            <element signature="e#18948#19046#0#PHP" />
-            <element signature="e#19079#19212#0#PHP" />
-            <element signature="e#19378#19487#0#PHP" />
-            <element signature="e#19605#19744#0#PHP" />
-            <element signature="e#19684#19744#0#PHP" />
-            <element signature="e#19755#19801#0#PHP" />
-            <element signature="e#19813#19837#0#PHP" />
-            <element signature="e#19842#22827#0#PHP" />
-            <element signature="e#20125#20199#0#PHP" />
-            <element signature="e#20210#22821#0#PHP" />
-            <element signature="e#20387#20465#0#PHP" />
-            <element signature="e#20478#20605#0#PHP" />
-            <element signature="e#20618#20693#0#PHP" />
-            <element signature="e#21185#22397#0#PHP" />
-            <element signature="e#21271#22383#0#PHP" />
-            <element signature="e#21323#21479#0#PHP" />
-            <element signature="e#21495#21721#0#PHP" />
-            <element signature="e#21742#22383#0#PHP" />
-            <element signature="e#22408#22821#0#PHP" />
-            <element signature="e#22833#23183#0#PHP" />
-            <element signature="e#22996#23061#0#PHP" />
-            <element signature="e#23189#24256#0#PHP" />
-            <element signature="e#23236#24250#0#PHP" />
-            <element signature="e#23308#23389#0#PHP" />
-            <element signature="e#23403#23573#0#PHP" />
-            <element signature="e#23512#23573#0#PHP" />
-            <element signature="e#23857#24002#0#PHP" />
-            <element signature="e#23944#24002#0#PHP" />
-            <element signature="e#24013#24250#0#PHP" />
-            <element signature="e#24262#24285#0#PHP" />
-            <element signature="e#24290#25802#0#PHP" />
-            <element signature="e#24393#24600#0#PHP" />
-            <element signature="e#24465#24540#0#PHP" />
-            <element signature="e#24541#24600#0#PHP" />
-            <element signature="e#24816#24897#0#PHP" />
-            <element signature="e#24816#24939#0#PHP" />
-            <element signature="e#24816#24971#0#PHP" />
-            <element signature="e#25062#25313#0#PHP" />
-            <element signature="e#25821#27534#0#PHP" />
-            <element signature="e#26066#26339#0#PHP" />
-            <element signature="e#27029#27130#0#PHP" />
-            <element signature="e#27029#27156#0#PHP" />
-            <element signature="e#27029#27202#0#PHP" />
-            <element signature="e#27029#27235#0#PHP" />
-            <element signature="e#27029#27267#0#PHP" />
-            <element signature="e#27553#28821#0#PHP" />
-            <element signature="e#28352#28453#0#PHP" />
-            <element signature="e#28352#28479#0#PHP" />
-            <element signature="e#28352#28525#0#PHP" />
-            <element signature="e#28352#28558#0#PHP" />
-            <element signature="e#28352#28590#0#PHP" />
-            <element signature="e#28840#28961#0#PHP" />
-            <element signature="e#28967#29013#0#PHP" />
-            <element signature="e#29018#29167#0#PHP" />
-            <element signature="e#29185#31024#0#PHP" />
-            <element signature="e#29446#29575#0#PHP" />
-            <element signature="e#29587#29702#0#PHP" />
-            <element signature="e#29711#31018#0#PHP" />
-            <element signature="e#29840#31008#0#PHP" />
-            <element signature="e#30051#31008#0#PHP" />
-            <element signature="e#30302#30393#0#PHP" />
-            <element signature="e#30533#30994#0#PHP" />
-            <element signature="e#30865#30994#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Admin/Task/handle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="137" column="12" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -861,11 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Runtime/Logs/Admin/20_05_26.log">
+    <entry file="file://$PROJECT_DIR$/Runtime/Logs/Admin/20_05_26.log" />
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="155" column="81" selection-start-line="155" selection-start-column="81" selection-end-line="155" selection-end-column="81" />
-        </state>
+        <state relative-caret-position="-207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Home/Public/share.html">
@@ -875,10 +620,378 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Admin/Public/swfupload2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-988" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Public/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="676" column="23" selection-start-line="676" selection-start-column="23" selection-end-line="676" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Admin/Category/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Public/css/share.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="1244" lean-forward="true" selection-start-line="1244" selection-end-line="1244" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Lite/Controller.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="86" column="80" lean-forward="true" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
+          <folding>
+            <element signature="e#33#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/vip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="132" column="9" lean-forward="true" selection-start-line="126" selection-start-column="7" selection-end-line="132" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="201" column="77" selection-start-line="201" selection-start-column="74" selection-end-line="201" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Controller/HomeBaseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/Cache/Admin/394cd80b3f8943c4a42c1306a6b5e920.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Lite/Model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="312" column="20" selection-start-line="312" selection-start-column="20" selection-end-line="312" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/Data/_fields/dt_task.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="623" selection-start-line="623" selection-end-line="623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/db.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/common~runtime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret column="111583" selection-start-column="111583" selection-end-column="111583" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+            <element signature="e#22#28#1" expanded="true" />
+            <element signature="e#70#76#1" expanded="true" />
+            <element signature="e#106047#106065#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        <state relative-caret-position="93">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/handle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="130" column="10" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#volist#0;n#select#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#2;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#if#0;n#div#3;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#if#0;n#div#3;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#7;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#11;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#12;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#13;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#14;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#15;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Admin/Task/handle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="180" column="5" selection-start-line="180" selection-start-column="5" selection-end-line="181" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#label#2;n#td#0;n#tr#0;n#if#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7010#7016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Lite/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="125" column="51" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="140" column="92" selection-start-line="140" selection-start-column="92" selection-end-line="140" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Admin/Task/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#if#0;n#td#3;n#tr#0;n#foreach#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#if#1;n#td#3;n#tr#0;n#foreach#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="e#191#436#0#PHP" />
+            <element signature="e#442#904#0#PHP" />
+            <element signature="e#518#665#0#PHP" />
+            <element signature="e#1463#1988#0#PHP" />
+            <element signature="e#1558#1623#0#PHP" />
+            <element signature="e#1747#1916#0#PHP" />
+            <element signature="e#1807#1870#0#PHP" />
+            <element signature="e#1871#1916#0#PHP" />
+            <element signature="e#1994#4284#0#PHP" />
+            <element signature="e#2316#2471#0#PHP" />
+            <element signature="e#2503#3696#0#PHP" />
+            <element signature="e#2549#3578#0#PHP" />
+            <element signature="e#2592#2943#0#PHP" />
+            <element signature="e#2769#2943#0#PHP" />
+            <element signature="e#2958#3111#0#PHP" />
+            <element signature="e#3112#3266#0#PHP" />
+            <element signature="e#3267#3451#0#PHP" />
+            <element signature="e#3452#3578#0#PHP" />
+            <element signature="e#3589#3696#0#PHP" />
+            <element signature="e#3706#3932#0#PHP" />
+            <element signature="e#3834#3932#0#PHP" />
+            <element signature="e#4290#4390#0#PHP" />
+            <element signature="e#4395#6440#0#PHP" />
+            <element signature="e#4443#4565#0#PHP" />
+            <element signature="e#5297#5392#0#PHP" />
+            <element signature="e#5297#5418#0#PHP" />
+            <element signature="e#5297#5450#0#PHP" />
+            <element signature="e#5297#5502#0#PHP" />
+            <element signature="e#5297#5538#0#PHP" />
+            <element signature="e#5297#5566#0#PHP" />
+            <element signature="e#5691#6092#0#PHP" />
+            <element signature="e#6103#6236#0#PHP" />
+            <element signature="e#6457#8769#0#PHP" />
+            <element signature="e#6509#6631#0#PHP" />
+            <element signature="e#6763#6852#0#PHP" />
+            <element signature="e#6862#6941#0#PHP" />
+            <element signature="e#6951#7035#0#PHP" />
+            <element signature="e#7045#8763#0#PHP" />
+            <element signature="e#7108#7182#0#PHP" />
+            <element signature="e#7401#7534#0#PHP" />
+            <element signature="e#7721#8375#0#PHP" />
+            <element signature="e#7820#8192#0#PHP" />
+            <element signature="e#7858#8174#0#PHP" />
+            <element signature="e#8315#8375#0#PHP" />
+            <element signature="e#8386#8763#0#PHP" />
+            <element signature="e#8775#8798#0#PHP" />
+            <element signature="e#8803#11291#0#PHP" />
+            <element signature="e#8844#8913#0#PHP" />
+            <element signature="e#9004#9065#0#PHP" />
+            <element signature="e#9292#9376#0#PHP" />
+            <element signature="e#9439#9577#0#PHP" />
+            <element signature="e#9712#9781#0#PHP" />
+            <element signature="e#9806#9907#0#PHP" />
+            <element signature="e#10081#10234#0#PHP" />
+            <element signature="e#10245#10686#0#PHP" />
+            <element signature="e#11058#11285#0#PHP" />
+            <element signature="e#11235#11285#0#PHP" />
+            <element signature="e#11297#11524#0#PHP" />
+            <element signature="e#11530#11582#0#PHP" />
+            <element signature="e#11587#11918#0#PHP" />
+            <element signature="e#11744#11912#0#PHP" />
+            <element signature="e#11831#11912#0#PHP" />
+            <element signature="e#11925#14338#0#PHP" />
+            <element signature="e#11998#12090#0#PHP" />
+            <element signature="e#12280#12445#0#PHP" />
+            <element signature="e#12373#12445#0#PHP" />
+            <element signature="e#12534#14331#0#PHP" />
+            <element signature="e#12693#14199#0#PHP" />
+            <element signature="e#14211#14331#0#PHP" />
+            <element signature="e#14345#17529#0#PHP" />
+            <element signature="e#14921#15717#0#PHP" />
+            <element signature="e#15011#15707#0#PHP" />
+            <element signature="e#15158#15693#0#PHP" />
+            <element signature="e#15313#15515#0#PHP" />
+            <element signature="e#15534#15693#0#PHP" />
+            <element signature="e#15742#16538#0#PHP" />
+            <element signature="e#15832#16528#0#PHP" />
+            <element signature="e#15979#16514#0#PHP" />
+            <element signature="e#16134#16336#0#PHP" />
+            <element signature="e#16355#16514#0#PHP" />
+            <element signature="e#16563#17523#0#PHP" />
+            <element signature="e#16747#17513#0#PHP" />
+            <element signature="e#16869#17499#0#PHP" />
+            <element signature="e#17028#17481#0#PHP" />
+            <element signature="e#17081#17291#0#PHP" />
+            <element signature="e#17314#17481#0#PHP" />
+            <element signature="e#17535#18215#0#PHP" />
+            <element signature="e#17977#18209#0#PHP" />
+            <element signature="e#18154#18209#0#PHP" />
+            <element signature="e#18221#18292#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Model/PayModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="190" column="71" selection-start-line="190" selection-start-column="71" selection-end-line="190" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/recharge_do.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Controller/BaseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#3004#4467#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

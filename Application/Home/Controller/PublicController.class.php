@@ -86,6 +86,12 @@ class PublicController extends PublicBaseController
          $user = "gxyd"; //短信平台帐号
         $pass = md5("gxyd++"); //短信平台密码
 
+
+        $user = "15830801167"; //短信平台帐号
+        $pass = md5("123456mm"); //短信平台密码
+
+
+
         $content = "【云赞】您的验证码为{$code}，验证码5分钟内有效。";
         $phone = $tel;//要发送短信的手机号码
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
