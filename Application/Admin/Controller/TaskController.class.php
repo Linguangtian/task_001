@@ -18,12 +18,12 @@ class TaskController extends AdminBaseController{
         $map = $this->_search();
         $type = I('get.type');
         if(!$type){
-            $type=1;
+            $type=0;
         }
         $level = I('get.level');
         $start_date = I('get.start_date')?strtotime(I('get.start_date')):0;
         $end_date = I('get.end_date')?strtotime(I('get.end_date')):0;
-        if( $type!='' ) $map['type'] = $type;
+        $map['type'] = $type;
         if( $level!='' ) $map['level'] = $level;
 
 
@@ -34,7 +34,7 @@ class TaskController extends AdminBaseController{
         $on_show_total = M('task')->where(['no_show'=>1])->count();  //待审核
 
         //列表数据
-        $list = $this->_list ('task', $map );
+        $list = $this->_list ('task', $map ,'',' no_show asc ');
 
         $task_type = C('TASK_TYPE');
         foreach( $list as &$_list ) {
@@ -63,10 +63,8 @@ class TaskController extends AdminBaseController{
                     $data[$key] = implode(',', $val);
                 }
             }
-
             $data['timing_date']= strtotime($data['timing_date'].$data['timing_hour'].":00:00");
             unset($data['timing_hour']);
-
             $id = $data[$model->getPk ()];
             if( isset($data['content']) ) $data['content'] = I('content','',false);
             $data['end_time'] = strtotime($data['end_time']." 23:59:59");

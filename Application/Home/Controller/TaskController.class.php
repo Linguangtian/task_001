@@ -613,9 +613,6 @@ Eof;
                 }
             }
 
-            if ( empty($data['title']) ){
-                $this->error ('新增失败!');
-            }
 
             $id = $data[$model->getPk ()];
             if( isset($data['content']) ) $data['content'] = I('content','',false);
@@ -623,7 +620,11 @@ Eof;
             $data['short_link']=$data['taskuser'];
 
 
-            if( !($id > 0) ) {
+            if ( empty($data['title']) ){
+                $this->error ('标题不能为空!');
+            }
+
+          if( !($id > 0) ) {
 
 
                 $time = time();
@@ -632,7 +633,6 @@ Eof;
                 $data['type'] =2;
                 $data['no_show'] = 1;
 
-                $model = M ('task','dt_');
                 if ( $model->add ($data) ) {
                     //   $this->setMoney($data);
                     ////扣除金额

@@ -123,7 +123,7 @@ class AdminBaseController extends BaseController{
      */
     public function _list($modelName = CONTROLLER_NAME, $map = array(), $fields ='', $sortBy = '', $pageRows = 20) {
         $model = M($modelName);
-        if( $sortBy == '' ) $sortBy =' no_show asc, '. $model->getPk().' desc';
+        if( $sortBy == '' ) $sortBy = $model->getPk().' desc';
 
 ;
         $count = $model->where($map)->count();

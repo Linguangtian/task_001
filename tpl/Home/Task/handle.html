@@ -79,6 +79,11 @@
     #cid{
         width: 60%;
     }
+    .login-inp input {
+        width: 60%;
+        text-align: left;
+        padding-left: 5%;
+    }
 </style>
 
 <!-- 导航栏开始 -->
@@ -111,28 +116,30 @@
 
     </div>
 
+
     <div class="login-inp" style="">
         <label>标　　题</label>
-        <input type="text" name="title" placeholder="请输入标题" value="{$info.title}" >
+        <input type="text" name="title" placeholder="请输入标题:如 " value="{$info.title}" >
     </div>
+
 
     <div class="login-inp" style="">
         <label style="margin-top: -35px">任务简介</label>
-        <textarea id="info"  name="info" placeholder="　　　请输入简介" style="padding:10px;min-height: 50px;width:60%;background: #ffffff;border:none;" >{$info.info}</textarea>
+        <textarea id="info"  name="info" placeholder="请输入简介:如 点赞 + 关注 +评论" style="padding:10px;min-height: 50px;width:60%;background: #ffffff;border:none;" >{$info.info}</textarea>
     </div>
 
     <div class="login-inp" style="">
-        <label>任务单价</label>
+        <label>单价/元</label>
         <if condition="$info['id'] gt 0">
             <input  type="text" name="price" value="{$info.price|floatval}" style="color: #999;">元
             <else/>
-            <input  type="text" name="price" value="3" style="color: #999;">
+            <input  type="text" name="price" value="0.9" style="color: #999;">
         </if>
     </div>
 
     <div class="login-inp" style="background: #ffffff;border: none;">
         <label>领取数量</label>
-        <input class="integer" type="text" name="max_num" placeholder="　　请输入领取数量" value="{$info.max_num}"  style="color: #999;">
+        <input class="integer" type="text" name="max_num" placeholder="请输入领取数量，不小于50个" value="{$info.max_num}"  style="color: #999;">
     </div>
 
     <div class="login-inp" style="background: #ffffff;border: none;">
@@ -166,7 +173,7 @@
     <div class="login-inp" style="background: #ffffff;border: none;">
         <label>截止日期</label>
         <span class="right_jt"> ＞ </span>
-        <input class="date-picker" style="width: 60%;" data-date-format="yyyy-mm-dd" placeholder="　点击选择日期" autocomplete="off" type="text" name="end_time" value="<if condition='$info[end_time] gt 0'>{$info.end_time|date='Y-m-d',###}</if>">
+        <input class="date-picker" style="width: 60%;" data-date-format="yyyy-mm-dd" placeholder="点击选择日期" autocomplete="off" type="text" name="end_time" value="<if condition='$info[end_time] gt 0'>{$info.end_time|date='Y-m-d',###}</if>">
     </div>
     <div class="login-inp" style="background: #ffffff;border: none;">
         <label style="margin-top: -20px;;">完成条件</label>
@@ -211,7 +218,7 @@
     <div class="login-inp" style="background: #ffffff;border: none;">
         <label>操作步骤</label>
         <span class="right_jt"> ＞ </span>
-        <input type="text" name="step_info" onclick="AlertSetStep(1)" placeholder="　　简单易懂的步骤有助于完成!"  style="color: #999;">
+        <input type="text" name="step_info" onclick="AlertSetStep(1)" placeholder="简单易懂的步骤有助于完成!"  style="color: #999;">
     </div>
     <div class="buzhou" style="display:none ;">
         <div style="height: 450px;overflow: scroll">
@@ -254,16 +261,16 @@
 
                     <div id="LastFang"></div>
                     <div class="caozuo" id="add" onclick="AddHtml()" style="position: relative;width:30px;height: 30px;right: 0px;bottom: 1px;display: block;text-align: right;">
-                        <span style="background-color: #f92e4a!important;border-color: #f92e4a;" class="btn btn-sm btn-success">+</span>
+                        <span style="background-color: #458dde!important;border-color: #458dde;" class="btn btn-sm btn-success">+</span>
                     </div>
                     <div class="caozuo" id="jian" onclick="JianHtml()" style="position: relative;width:30px;height: 30px;right: -38px;top: -31px;display: block;text-align: right;">
-                        <span style="background-color: #f92e4a!important;border-color: #f92e4a;" class="btn btn-sm btn-success">-</span>
+                        <span style="background-color: #458dde!important;border-color: #458dde;" class="btn btn-sm btn-success">-</span>
                     </div>
                 </div>
             </div>
         </div>
         <div style="text-align: center;">
-            <span style="background-color: #f92e4a!important;" class="btn btn-sm btn-primary" onclick="AlertSetStep(2)">确定</span>
+            <span style="background-color: #458dde!important;" class="btn btn-sm btn-primary" onclick="AlertSetStep(2)">确定</span>
         </div>
     </div>
 
@@ -301,8 +308,8 @@
                 font-size: 10px!important;;-webkit-transform:scale(0.8);
             }
             .task_need label.select{
-                border:1px solid #f92e4a;
-                color: #f92e4a;
+                border:1px solid #458dde;
+                color: #458dde;
             }
 
             #taskBuzhou .item{
@@ -333,7 +340,7 @@
 
     <div class="login-inp" style="margin-bottom: 3px;background: #fff;">
         <!-- <p>平台手续费约 ¥<span id="shouxu"></span></p>-->
-         <p>本次发布需支付约 ¥<span id="all_money"></span>，请保证账户余额充足 <a style="color:#f92e4a" href="{:U('Member/recharge_do')}">去充值</a></p>
+         <p>本次发布需支付约 ¥<span id="all_money"></span>，请保证账户余额充足 <a style="color:#458dde" href="{:U('Member/recharge_do')}">去充值</a></p>
         <br>
         <p style="line-height: 14px">
             提示: 本平台禁止发布黄赌毒及涉政等一切法律所禁止的内容，如发现扣除积分，封禁账号。
@@ -342,7 +349,7 @@
 
     <div style="clear: both;height: 20px"></div>
 
-    <div class="login-inp" style="border: none;background: #f92e4a;text-align: center">
+    <div class="login-inp" style="border: none;background: #458dde;text-align: center">
         <input style="width:100%;line-height:20px;color:#fff;background-color:transparent!important;text-align: center" type="submit" value="提交">
     </div>
 
@@ -352,6 +359,9 @@
 <icheckjs color="blue" />
 
 <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+
+<script src="/tpl/Public/js/base.js?v=101"></script>
+
 <script type="text/javascript">
     $(function(){
         //引入编辑器
@@ -427,8 +437,6 @@
 
 
             if ($("input[name='title']").val() == "") {
-
-
                 sp_alert('标题不能为空!');
                 return false;
             }
@@ -440,9 +448,9 @@
             }
 
 
-            if ($("input[name='max_num']").val()<40) {
+            if ($("input[name='max_num']").val()<50) {
 
-                sp_alert('领取数量不小于40!');
+                sp_alert('领取数量不小于50!');
 
                 return false;
             }

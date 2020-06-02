@@ -12,7 +12,7 @@ class TaskApplyController extends AdminBaseController{
      * 列表
      */
     public function index() {
-        $apply_status = C('APPLY_STATUS');
+
         $apply_status = C('APPLY_STATUS');
         $task_level = C('TASK_LEVEL');
         $status = I('get.status');
