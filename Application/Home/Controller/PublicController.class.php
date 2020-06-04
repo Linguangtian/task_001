@@ -233,9 +233,9 @@ class PublicController extends PublicBaseController
             if ($code != session('yzmcode')) {
                 $this->error('短信验证码不正确。');
             }
-            if ($invite_code  == '') {
+         /*   if ($invite_code  == '') {
                 $this->error('请输入邀请码。');
-            }
+            }*/
 
 
           /*  if ($nickname == '') {

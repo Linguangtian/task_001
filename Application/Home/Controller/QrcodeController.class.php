@@ -49,10 +49,10 @@ class QrcodeController extends HomeBaseController
 
 
 
-
-        if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
+        $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
+     /*   if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
             $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
-        }
+        }*/
 
 
         $path = $this->sp_qrcode_http_path($qrcode_name);
@@ -77,8 +77,9 @@ class QrcodeController extends HomeBaseController
         $fontColor_2 = imagecolorallocate($img, 251,249,44);//字体颜色 RGB
         $fontSize = 48;   //字体大小
         $circleSize = 0; //旋转角度
-        $left = 620;      //左边距  387
-        $top = 130;       //顶边距  807
+        $left = 120;      //左边距  387
+        $top = 530;       //顶边距  807
+
         //imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, "我是\r\n我为{~echo sp_cfg('website')}钱包代言");
         imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, $this->get_member_id());
 
