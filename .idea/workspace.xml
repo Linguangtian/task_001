@@ -8,195 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8e299543-39d2-4a15-96f0-28885ecc1e6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315738.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315739.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315740.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315746.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315747.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315749.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315751.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315757.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315758.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315759.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315763.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315767.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315769.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315770.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315771.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315776.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315778.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315779.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315780.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315781.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315785.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315787.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315788.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315789.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315791.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315795.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315796.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315797.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315798.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315801.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315803.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315807.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315814.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315815.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315816.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315819.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315820.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315822.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315827.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315829.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315832.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315837.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315838.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315839.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315846.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315849.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315850.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315851.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315854.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315858.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315859.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315862.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315865.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315867.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315870.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315872.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315873.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315874.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315876.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315877.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315880.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315882.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315883.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315885.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315886.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315887.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315888.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315891.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315894.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315896.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315897.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315898.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315899.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315901.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315902.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315903.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315904.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315907.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315908.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315909.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315914.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315915.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315916.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315917.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315919.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315920.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315922.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315923.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315927.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315932.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315933.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315934.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315935.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315939.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315941.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315942.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315945.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315946.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315947.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315948.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315949.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315955.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315956.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315958.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315961.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315977.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_315994.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316023.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316028.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316029.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316039.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316040.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316043.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316044.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316045.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316047.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316050.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316051.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316052.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316054.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316055.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316062.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316069.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316073.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316074.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316077.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316078.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316079.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316084.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316088.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316089.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316093.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316099.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316108.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316129.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316143.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316156.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316162.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316166.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316167.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316169.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316170.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316179.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316184.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316185.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316186.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316193.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316197.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316201.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316202.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316206.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316212.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316213.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316217.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316218.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316222.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316226.png" beforeDir="false" afterPath="$PROJECT_DIR$/Upload/qrcode/share_316226.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Home/Public/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Public/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Public/images/agent_bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/images/agent_bg1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Conf/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Home/Member/tixian.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Member/tixian.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -207,56 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recharge_do.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/Home/Member/recharge_do.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="141" column="82" selection-start-line="141" selection-start-column="82" selection-end-line="141" selection-end-column="82" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="149" column="31" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EpayController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="126" column="35" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="35" />
-              <folding>
-                <element signature="e#33#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tixian.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/Home/Member/tixian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
+            <state relative-caret-position="492">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -264,47 +33,17 @@
       <file leaf-file-name="MemberController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="368" column="43" selection-start-line="368" selection-start-column="36" selection-end-line="368" selection-end-column="43" />
+            <state relative-caret-position="169">
+              <caret line="455" column="55" selection-start-line="455" selection-start-column="36" selection-end-line="455" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QrcodeController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reg.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/Home/Public/reg.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="169" column="43" selection-start-line="169" selection-start-column="40" selection-end-line="169" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#4;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="265" column="13" lean-forward="true" selection-start-line="261" selection-end-line="265" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -313,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DB_FIELDS</find>
       <find>是否置顶</find>
       <find>已领/名额</find>
       <find>if</find>
@@ -334,15 +72,16 @@
       <find>提现说明：</find>
       <find>PLATFORM</find>
       <find>tixian_log</find>
-      <find>EXTRACT_MONEY_LEVEL</find>
       <find>$tixian_limit</find>
       <find>vip</find>
-      <find>tixian</find>
       <find>http://pay.r3o.cn/submit.php?</find>
       <find>tix</find>
       <find>recharge_do</find>
       <find>必填项</find>
       <find>邀请码</find>
+      <find>5元</find>
+      <find>EXTRACT_MONEY_LEVEL</find>
+      <find>tixian</find>
     </findStrings>
     <replaceStrings>
       <replace>ffffff</replace>
@@ -401,15 +140,15 @@
         <option value="$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/YipayController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php" />
-        <option value="$PROJECT_DIR$/tpl/Home/Member/tixian.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Member/recharge_do.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Index/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Public/reg.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Home/Member/tixian.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
       </list>
     </option>
   </component>
@@ -431,8 +170,8 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-183" />
-    <option name="y" value="40" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
@@ -467,17 +206,6 @@
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -487,7 +215,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../caiji" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fenfa423534647@cnmmm.com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
@@ -539,16 +267,15 @@
       <workItem from="1591009727417" duration="15681000" />
       <workItem from="1591063642195" duration="7449000" />
       <workItem from="1591149255549" duration="8979000" />
-      <workItem from="1591246843953" duration="4590000" />
+      <workItem from="1591246843953" duration="7523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137307000" />
+    <option name="totallyTimeSpent" value="140240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.049543675" />
@@ -828,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3335">
-          <caret line="634" selection-start-line="634" selection-end-line="634" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Home/Task/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
@@ -918,20 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/tixian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -959,23 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="149" column="31" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="368" column="43" selection-start-line="368" selection-start-column="36" selection-end-line="368" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -995,8 +684,138 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="265" column="13" lean-forward="true" selection-start-line="261" selection-end-line="265" selection-end-column="13" />
+        <state relative-caret-position="-1186">
+          <caret line="267" column="42" lean-forward="true" selection-start-line="267" selection-start-column="42" selection-end-line="267" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="149" column="31" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/tixian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="640" column="34" selection-start-line="640" selection-start-column="34" selection-end-line="640" selection-end-column="34" />
+          <folding>
+            <element signature="e#191#436#0#PHP" />
+            <element signature="e#442#904#0#PHP" />
+            <element signature="e#518#665#0#PHP" />
+            <element signature="e#1463#1988#0#PHP" />
+            <element signature="e#1558#1623#0#PHP" />
+            <element signature="e#1747#1916#0#PHP" />
+            <element signature="e#1807#1870#0#PHP" />
+            <element signature="e#1871#1916#0#PHP" />
+            <element signature="e#1994#4284#0#PHP" />
+            <element signature="e#2316#2471#0#PHP" />
+            <element signature="e#2503#3696#0#PHP" />
+            <element signature="e#2549#3578#0#PHP" />
+            <element signature="e#2592#2943#0#PHP" />
+            <element signature="e#2769#2943#0#PHP" />
+            <element signature="e#2958#3111#0#PHP" />
+            <element signature="e#3112#3266#0#PHP" />
+            <element signature="e#3267#3451#0#PHP" />
+            <element signature="e#3452#3578#0#PHP" />
+            <element signature="e#3589#3696#0#PHP" />
+            <element signature="e#3706#3932#0#PHP" />
+            <element signature="e#3834#3932#0#PHP" />
+            <element signature="e#4290#4390#0#PHP" />
+            <element signature="e#4395#6440#0#PHP" />
+            <element signature="e#4443#4565#0#PHP" />
+            <element signature="e#5297#5392#0#PHP" />
+            <element signature="e#5297#5418#0#PHP" />
+            <element signature="e#5297#5450#0#PHP" />
+            <element signature="e#5297#5502#0#PHP" />
+            <element signature="e#5297#5538#0#PHP" />
+            <element signature="e#5297#5566#0#PHP" />
+            <element signature="e#5691#6092#0#PHP" />
+            <element signature="e#6103#6236#0#PHP" />
+            <element signature="e#6457#8769#0#PHP" />
+            <element signature="e#6509#6631#0#PHP" />
+            <element signature="e#6763#6852#0#PHP" />
+            <element signature="e#6862#6941#0#PHP" />
+            <element signature="e#6951#7035#0#PHP" />
+            <element signature="e#7045#8763#0#PHP" />
+            <element signature="e#7108#7182#0#PHP" />
+            <element signature="e#7401#7534#0#PHP" />
+            <element signature="e#7721#8375#0#PHP" />
+            <element signature="e#7820#8192#0#PHP" />
+            <element signature="e#7858#8174#0#PHP" />
+            <element signature="e#8315#8375#0#PHP" />
+            <element signature="e#8386#8763#0#PHP" />
+            <element signature="e#8775#8798#0#PHP" />
+            <element signature="e#8803#11291#0#PHP" />
+            <element signature="e#8844#8913#0#PHP" />
+            <element signature="e#9004#9065#0#PHP" />
+            <element signature="e#9292#9376#0#PHP" />
+            <element signature="e#9439#9577#0#PHP" />
+            <element signature="e#9712#9781#0#PHP" />
+            <element signature="e#9806#9907#0#PHP" />
+            <element signature="e#10081#10234#0#PHP" />
+            <element signature="e#10245#10686#0#PHP" />
+            <element signature="e#11058#11285#0#PHP" />
+            <element signature="e#11235#11285#0#PHP" />
+            <element signature="e#11297#11524#0#PHP" />
+            <element signature="e#11530#11582#0#PHP" />
+            <element signature="e#11587#11918#0#PHP" />
+            <element signature="e#11744#11912#0#PHP" />
+            <element signature="e#11831#11912#0#PHP" />
+            <element signature="e#11925#14338#0#PHP" />
+            <element signature="e#11998#12090#0#PHP" />
+            <element signature="e#12280#12445#0#PHP" />
+            <element signature="e#12373#12445#0#PHP" />
+            <element signature="e#12534#14331#0#PHP" />
+            <element signature="e#12693#14199#0#PHP" />
+            <element signature="e#14211#14331#0#PHP" />
+            <element signature="e#14345#17529#0#PHP" />
+            <element signature="e#14921#15717#0#PHP" />
+            <element signature="e#15011#15707#0#PHP" />
+            <element signature="e#15158#15693#0#PHP" />
+            <element signature="e#15313#15515#0#PHP" />
+            <element signature="e#15534#15693#0#PHP" />
+            <element signature="e#15742#16538#0#PHP" />
+            <element signature="e#15832#16528#0#PHP" />
+            <element signature="e#15979#16514#0#PHP" />
+            <element signature="e#16134#16336#0#PHP" />
+            <element signature="e#16355#16514#0#PHP" />
+            <element signature="e#16563#17523#0#PHP" />
+            <element signature="e#16747#17513#0#PHP" />
+            <element signature="e#16869#17499#0#PHP" />
+            <element signature="e#17028#17481#0#PHP" />
+            <element signature="e#17081#17291#0#PHP" />
+            <element signature="e#17314#17481#0#PHP" />
+            <element signature="e#17535#18215#0#PHP" />
+            <element signature="e#17977#18209#0#PHP" />
+            <element signature="e#18154#18209#0#PHP" />
+            <element signature="e#18221#18292#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="455" column="55" selection-start-line="455" selection-start-column="36" selection-end-line="455" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>

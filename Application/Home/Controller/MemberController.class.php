@@ -405,8 +405,8 @@ class MemberController extends HomeBaseController{
             if( $price%5 != 0 ) {
                 $this->error('提现金额必须为5的倍数');
             }
-            if($tixian_limit==1&&$price<=50){
-                $this->error('无小额提现权限，提现金额必须大于50');
+            if($tixian_limit==1&&$price<=30){
+                $this->error('无小额提现权限，提现金额必须大于30');
             }
             $map =[
                 'member_id'=>$this->member_id,
@@ -427,7 +427,7 @@ class MemberController extends HomeBaseController{
             $data['status'] = 0;
             //   $data['charge'] = sp_cfg('charge');
             $data['charge'] = 2;
-            $data['actual_price'] = $price > 50 ? $price - $data['charge'] : $price;
+            $data['actual_price'] = $price > 30 ? $price - $data['charge'] : $price;
             $data['payment_code'] = $member_data['bank_name'] == '微信' ? $member_data['wechat_pay_src'] : $member_data['alipay_src']; //收款码
             $data['extract_way'] = $member_data['bank_name'];
             $data['account_username'] = $member_data['bank_user'];
