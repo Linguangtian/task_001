@@ -139,25 +139,7 @@
             type    =   1;
 
 
-            window.location.href='/index.php/api/yipay/online_recharge/member_id/'+2+'/price/'+price;
-
-
-          /*  $.post(
-                "/pay/aoyun.php",
-                {
-                    price : $("#price").val(),
-                    istype : type,
-
-                },
-                function(data){
-                    if( data.error == 0 ) {
-                        window.location.href=data.url;
-                    } else {
-                        sp_tip(data.info);
-                    }
-                }, "json"
-            );*/
-
+            window.location.href='/index.php/api/epay/online_recharge/member_id/'+{$member.id}+'/price/'+price;
 
 
 

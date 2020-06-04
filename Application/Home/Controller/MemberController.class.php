@@ -393,8 +393,8 @@ class MemberController extends HomeBaseController{
             }
             $member_price = $member_data['price'];
             $price = floatval(I('post.price'));
-            if( !($price >= 10) ) {
-                $this->error('提现金额不能少于10');
+            if( !($price >= 5) ) {
+                $this->error('提现金额不能少于5');
             }
             if( !($member_price > 0) ) {
                 $this->error('没有可提现的余额');
@@ -402,8 +402,8 @@ class MemberController extends HomeBaseController{
             if( $price > $member_price ) {
                 $this->error('余额不足');
             }
-            if( $price%10 != 0 ) {
-                $this->error('提现金额必须为10的倍数');
+            if( $price%5 != 0 ) {
+                $this->error('提现金额必须为5的倍数');
             }
             if($tixian_limit==1&&$price<=50){
                 $this->error('无小额提现权限，提现金额必须大于50');
@@ -455,8 +455,8 @@ class MemberController extends HomeBaseController{
             $limit_num = M('member_tixian')->field('price')->where($map)->select();
             $extract_money_level=C('EXTRACT_MONEY_LEVEL');
             if($tixian_limit==1){
-                $extract_money_level['10']['actived']='actived';
-                $extract_money_level['50']['actived']='actived';
+                $extract_money_level['5']['actived']='actived';
+             /*   $extract_money_level['50']['actived']='actived';*/
             }
             foreach ($limit_num as $li){
                 $extract_money_level[intval($li['price'])]['actived']='actived';
@@ -618,18 +618,25 @@ class MemberController extends HomeBaseController{
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);*/
 
-
-              /*      $yipay   =  new EzfpayController();
-                    $url =  $yipay->pay($order_no);
-                    $data=['error'=>0,'url'=>$url];
-                    $this->ajaxReturn($data);*/
-
-
-                 //在线支付 个人免签
-                    $yipay   =  new YipayController();
+/*
+                    $yipay   =  new EzfpayController();
                     $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);
+*/
+
+
+
+                    $url=U('api/epay/pay',array('order_no'=>$order_no));
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);
+
+
+                 //在线支付 个人免签
+              /*      $yipay   =  new YipayController();
+                    $url =  $yipay->pay($order_no);
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);*/
 
 
 

@@ -34,7 +34,7 @@ class TaskController extends AdminBaseController{
         $on_show_total = M('task')->where(['no_show'=>1])->count();  //待审核
 
         //列表数据
-        $list = $this->_list ('task', $map ,'',' no_show asc ');
+        $list = $this->_list ('task', $map ,'',' end_time asc ,no_show asc ');
 
         $task_type = C('TASK_TYPE');
         foreach( $list as &$_list ) {

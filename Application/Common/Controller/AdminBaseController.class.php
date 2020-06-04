@@ -121,7 +121,7 @@ class AdminBaseController extends BaseController{
      * @param int $pageRows 默认分页条数
      * @return mixed
      */
-    public function _list($modelName = CONTROLLER_NAME, $map = array(), $fields ='', $sortBy = '', $pageRows = 20) {
+    public function _list($modelName = CONTROLLER_NAME, $map = array(), $fields ='', $sortBy = '', $pageRows = 25) {
         $model = M($modelName);
         if( $sortBy == '' ) $sortBy = $model->getPk().' desc';
 
