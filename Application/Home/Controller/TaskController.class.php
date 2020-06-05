@@ -291,7 +291,7 @@ class TaskController extends HomeBaseController
         }
 
 
-        if ($member_id['is_auto']!=1) {
+        if ($member_id['is_auth']!=1) {
             $this->error("请先支付认证");
         }
 

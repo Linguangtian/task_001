@@ -409,7 +409,7 @@ function xbDeleteCookie(name) {
  */
 function flashupload(uploadid, name, inputid, funcName, path, thumb_width, thumb_height, authkey) {
     var param = '?path=' + path + '&thumb_width=' + thumb_width + '&thumb_height=' + thumb_height + '&authkey=' + authkey;
-    art.dialog.open('/index.php/Admin/Public/swfupload/' + param, {
+    art.dialog.open('/index.php/lgt0708/Public/swfupload/' + param, {
         title: name,
         id: uploadid,
         width: '650px',

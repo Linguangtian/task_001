@@ -199,6 +199,13 @@ class PayModel extends BaseModel{
 
     public function auto_recharge($user_id,$price,$platform,$platform_no){
 
+     $is_auto = M('member')->where(['id' =>$user_id])->getField('is_auth');
+
+     if($is_auto == 1){
+         return true;
+     }
+
+
         //记录支付记录
         $data = array();
         $data['type'] = 3;//充值
@@ -212,7 +219,7 @@ class PayModel extends BaseModel{
         M('pay')->add($data);
 
 
-        M('member')->where(array('id'=>$user_id))->setField('is_auto',1);
+        M('member')->where(array('id'=>$user_id))->setField('is_auth',1);
 
 
 

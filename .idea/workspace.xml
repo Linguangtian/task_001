@@ -10,15 +10,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/qrcode/share_316226.png" beforeDir="false" afterPath="$PROJECT_DIR$/Upload/qrcode/share_316226.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Upload/SystemConfig/5ecc822e3f99b.png" beforeDir="false" afterPath="$PROJECT_DIR$/Upload/SystemConfig/5ecc822e3f99b.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpl/Home/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpl/Home/Member/vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Member/vip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Home/Task/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Task/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Public/images/agent_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/images/agent_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/js/base.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="EpayController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="300" column="41" selection-start-line="300" selection-start-column="41" selection-end-line="300" selection-end-column="41" />
+            <state relative-caret-position="370">
+              <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
               <folding>
                 <element signature="e#33#59#0#PHP" expanded="true" />
                 <element signature="e#2999#4325#0#PHP" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="PayModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Common/Model/PayModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="199" column="33" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="33" />
+            <state relative-caret-position="399">
+              <caret line="219" selection-start-line="219" selection-end-line="219" />
             </state>
           </provider>
         </entry>
@@ -56,17 +53,29 @@
       <file leaf-file-name="TaskController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="278" column="11" lean-forward="true" selection-start-line="278" selection-start-column="11" selection-end-line="278" selection-end-column="11" />
+            <state relative-caret-position="-1280">
+              <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QrcodeController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
+      <file leaf-file-name="vip.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Home/Member/vip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="486">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+              <folding>
+                <element signature="n#style#0;n#h5#0;n#form#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodepayController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/CodepayController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="54" column="9" selection-start-line="52" selection-start-column="6" selection-end-line="54" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -74,11 +83,38 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="160" column="64" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="64" />
+            <state relative-caret-position="309">
+              <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/Public/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="411" column="38" selection-start-line="411" selection-start-column="32" selection-end-line="411" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QrcodeController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -87,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -96,13 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>no_show</find>
-      <find>url_common_param</find>
-      <find>审核</find>
-      <find>口令/短链接</find>
-      <find>max_num</find>
-      <find>placeholder</find>
-      <find>发布任务</find>
       <find>handle</find>
       <find>vip()</find>
       <find>提现说明：</find>
@@ -122,10 +151,17 @@
       <find>sms</find>
       <find>.task_news_nr</find>
       <find>vip</find>
-      <find>if condi</find>
-      <find>&lt;if conditi</find>
+      <find />
       <find>rzpay</find>
       <find>get_task</find>
+      <find>云赞</find>
+      <find>Admin/</find>
+      <find>Admin/Public/swfupload/</find>
+      <find>请先升级</find>
+      <find>rzpay_return</find>
+      <find>先</find>
+      <find>rzpay_notify</find>
+      <find>getField</find>
     </findStrings>
     <replaceStrings>
       <replace>ffffff</replace>
@@ -135,6 +171,7 @@
     <dirStrings>
       <dir>E:\git\renwubao\Application\Home\Controller</dir>
       <dir>E:\git\renwubao\</dir>
+      <dir>E:\git\renwubao\Application</dir>
       <dir>E:\git\renwubao</dir>
     </dirStrings>
   </component>
@@ -161,7 +198,6 @@
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Admin/Category/index.html" />
-        <option value="$PROJECT_DIR$/tpl/Public/js/base.js" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Public/css/share.css" />
         <option value="$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php" />
@@ -181,16 +217,17 @@
         <option value="$PROJECT_DIR$/tpl/Home/Member/recharge_do.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/TaskController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Public/reg.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Member/tixian.html" />
         <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
-        <option value="$PROJECT_DIR$/tpl/Home/Member/vip.html" />
         <option value="$PROJECT_DIR$/tpl/Home/Task/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Public/js/base.js" />
+        <option value="$PROJECT_DIR$/tpl/Home/Member/vip.html" />
         <option value="$PROJECT_DIR$/tpl/Home/Index/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Model/PayModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php" />
       </list>
@@ -214,7 +251,8 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-93" />
+    <option name="x" value="246" />
+    <option name="y" value="30" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
@@ -266,6 +304,39 @@
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Member" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -330,15 +401,16 @@
       <workItem from="1591149255549" duration="8979000" />
       <workItem from="1591246843953" duration="7523000" />
       <workItem from="1591292098281" duration="1994000" />
-      <workItem from="1591331329377" duration="9229000" />
+      <workItem from="1591331329377" duration="9829000" />
+      <workItem from="1591375026336" duration="5985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151463000" />
+    <option name="totallyTimeSpent" value="158048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-93" y="0" width="1456" height="876" extended-state="0" />
+    <frame x="246" y="30" width="1456" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -365,19 +437,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24097222" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -422,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1477">
           <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/CodepayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="116" />
         </state>
       </provider>
     </entry>
@@ -553,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Public/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15433">
-          <caret line="671" column="9" selection-start-line="671" selection-start-column="9" selection-end-line="671" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -692,37 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#33#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/vip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#h5#0;n#form#0;n#section#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Model/SmsModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
           <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1259">
-          <caret line="89" column="28" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -740,10 +771,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Public/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="411" column="38" selection-start-line="411" selection-start-column="32" selection-end-line="411" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="63" column="12" selection-start-line="63" selection-end-line="63" selection-end-column="112" />
+          <folding>
+            <element signature="e#33#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/CodepayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="54" column="9" selection-start-line="52" selection-start-column="6" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Home/Member/vip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#form#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="160" column="64" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="64" />
+        <state relative-caret-position="309">
+          <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
@@ -753,35 +832,28 @@
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TaskController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="278" column="11" lean-forward="true" selection-start-line="278" selection-start-column="11" selection-end-line="278" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QrcodeController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="-1280">
+          <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Model/PayModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="199" column="33" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="33" />
+        <state relative-caret-position="399">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/EpayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="300" column="41" selection-start-line="300" selection-start-column="41" selection-end-line="300" selection-end-column="41" />
+        <state relative-caret-position="370">
+          <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
           <folding>
             <element signature="e#33#59#0#PHP" expanded="true" />
             <element signature="e#2999#4325#0#PHP" />

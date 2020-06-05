@@ -92,7 +92,7 @@ class PublicController extends PublicBaseController
 
 
 
-        $content = "【云赞】您的验证码为{$code}，验证码5分钟内有效。";
+        $content = "【抖音热门】您的验证码为{$code}，验证码5分钟内有效。";
         $phone = $tel;//要发送短信的手机号码
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
         $result = file_get_contents($sendurl);
