@@ -15,13 +15,22 @@ class IndexController extends HomeBaseController{
             $this->ajaxReturn($data);
         }
 
-        $notice =  M('page')->where('index_notice=1')->find();
-        $this->assign ( 'notice', $notice );
+   /*     $notice =  M('page')->where('index_notice=1')->find();
+        $this->assign ( 'notice', $notice );*/
+
+
+        $member           = M('member')->find($this->member_id);
+        $this->assign('member', $member);
+        $is_menber=$member?1:0;
+
+
+
         $this->assign ( 'pageNum', $data['pageNum'] );
         $this->assign ( 'pageVal', $data['pageVal'] );
         $this->assign('task_list', $data['task_list']);
         $title = sp_cfg('website');
         $this->assign('title', $title);
+        $this->assign('is_menber', $is_menber);
         $this->display();
     }
 

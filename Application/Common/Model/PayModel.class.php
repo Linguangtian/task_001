@@ -193,4 +193,31 @@ class PayModel extends BaseModel{
     }
 
 
+
+
+    //认证充值模块
+
+    public function auto_recharge($user_id,$price,$platform,$platform_no){
+
+        //记录支付记录
+        $data = array();
+        $data['type'] = 3;//充值
+        $data['order_id'] = $user_id;
+        $data['order_no'] = $user_id;
+        $data['member_id'] = $user_id;
+        $data['price'] = $price;
+        $data['create_time'] = time();
+        $data['payment_type'] = $platform;
+        $data['platform_no'] = $platform_no;
+        M('pay')->add($data);
+
+
+        M('member')->where(array('id'=>$user_id))->setField('is_auto',1);
+
+
+
+
+
+    }
+
 }

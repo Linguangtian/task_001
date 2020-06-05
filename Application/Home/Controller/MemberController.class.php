@@ -74,7 +74,7 @@ class MemberController extends HomeBaseController{
 
 
         //新消息条数
-        if( $data['role'] == 1 ) {
+        if( $data['role'] == 1 ){
             $role_type = 2;
         } else {
             $role_type = 1;
@@ -623,21 +623,34 @@ class MemberController extends HomeBaseController{
                     $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);
-*/
+*//*
+                if($data['price']>400){
 
+                    $yipay   =  new EzfpayController();
+                    $url =  $yipay->pay($order_no);
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);
 
-
+                }else{
                     $url=U('api/epay/pay',array('order_no'=>$order_no));
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);
 
+                }
+
+
+
+/*
 
                  //在线支付 个人免签
-              /*      $yipay   =  new YipayController();
+                $yipay   =  new YipayController();
                     $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
                     $this->ajaxReturn($data);*/
 
+                    $url=U('api/epay/pay',array('order_no'=>$order_no));
+                    $data=['error'=>0,'url'=>$url];
+                    $this->ajaxReturn($data);
 
 
                 }else{

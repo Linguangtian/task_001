@@ -289,6 +289,14 @@ class TaskController extends HomeBaseController
         if (!($id > 0)) {
             $this->error("参数错误");
         }
+
+
+        if ($member_id['is_auto']!=1) {
+            $this->error("请先支付认证");
+        }
+
+
+
         $member_level = M('member')->where(array('id' => $this->get_member_id()))->getField('level');
         $task_data = M('task')->field('level,price,max_num,apply_num,end_time')->where(array('id' => $id))->find();
         if ($task_data['end_time'] < time()) {

@@ -49,10 +49,10 @@ class QrcodeController extends HomeBaseController
 
 
 
-        $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
-     /*   if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
-            $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
-        }*/
+
+       if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
+           $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
+        }
 
 
         $path = $this->sp_qrcode_http_path($qrcode_name);
@@ -68,7 +68,7 @@ class QrcodeController extends HomeBaseController
         Vendor('Phpqrcode.phpqrcode');
         \QRcode::png($url,$save_path,QR_ECLEVEL_L,$size,2,false,0xFFFFFF,0x000000);
         //合成文字
-        $backgroud = 'tpl/Public/images/agent_bg1.png';
+        $backgroud = 'tpl/Public/images/agent_bg.png';
         $img = imagecreatefromstring(file_get_contents($backgroud));
 //        var_dump($img);die;
 
@@ -77,15 +77,15 @@ class QrcodeController extends HomeBaseController
         $fontColor_2 = imagecolorallocate($img, 251,249,44);//字体颜色 RGB
         $fontSize = 48;   //字体大小
         $circleSize = 0; //旋转角度
-        $left = 120;      //左边距  387
-        $top = 530;       //顶边距  807
+        $left = 530;      //左边距  387
+        $top = 610;       //顶边距  807
 
         //imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, "我是\r\n我为{~echo sp_cfg('website')}钱包代言");
         imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, $this->get_member_id());
 
         $qCodeImg = imagecreatefromstring(file_get_contents($save_path));
         list($qCodeWidth, $qCodeHight, $qCodeType) = getimagesize($save_path);
-          imagecopyresampled($img, $qCodeImg, 325, 1160, 0, 0, 340, 340,$qCodeWidth, $qCodeHight);
+          imagecopyresampled($img, $qCodeImg, 355, 1260, 0, 0, 340, 340,$qCodeWidth, $qCodeHight);
 
         //imagecopymerge($img, $qCodeImg, 220, 170, 0, 0, $qCodeWidth, $qCodeHight, 100);
 
