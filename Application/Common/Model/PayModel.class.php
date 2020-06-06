@@ -222,6 +222,8 @@ class PayModel extends BaseModel{
         M('member')->where(array('id'=>$user_id))->setField('is_auth',1);
 
 
+        $model_member = new MemberModel();
+        $model_member->incPrice( $user_id,$price,12,'在线充值',$platform_no);
 
 
 

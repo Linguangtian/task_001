@@ -15,8 +15,8 @@ class IndexController extends HomeBaseController{
             $this->ajaxReturn($data);
         }
 
-   /*     $notice =  M('page')->where('index_notice=1')->find();
-        $this->assign ( 'notice', $notice );*/
+        $notice =  M('page')->where('index_notice=1')->find();
+        $this->assign ( 'notice', $notice );
 
 
         $member           = M('member')->find($this->member_id);

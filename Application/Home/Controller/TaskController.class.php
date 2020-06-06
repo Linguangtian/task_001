@@ -289,9 +289,9 @@ class TaskController extends HomeBaseController
         if (!($id > 0)) {
             $this->error("参数错误");
         }
+        $is_auth = M('member')->where(array('id' => $this->get_member_id()))->getField('is_auth');
 
-
-        if ($member_id['is_auth']!=1) {
+        if ($is_auth!=1) {
             $this->error("请先支付认证");
         }
 

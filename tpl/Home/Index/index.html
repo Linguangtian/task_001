@@ -26,8 +26,20 @@
     <link rel="stylesheet" href="__PUBLIC_CSS__/font.css?3"/>
 
     <style>
-
-
+        .page_index_ckxxnr {
+            display: block;
+            width: 100%;
+            height: 2.5rem;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2.5rem;
+            bottom: 0;
+            color: #a520fa;
+        }
+        .ggnotice-html{
+            height: auto;
+        }
         .bg-gray {
             background: #f4f4f4 !important;
         }
@@ -96,15 +108,30 @@
                             style="font-size:12pt"><span style="font-family:宋体"><strong><span
                             style="font-size:13.5pt"><span style="font-family:宋体">
 					{$notice.title}  </span></span></strong></span></span></p>
-                        <p>
-                            {$notice.content}
 
-                        </p>
-                        <p>
-                            <!--<a class="page_index_ckxxnr"-->
-                              <!--href="/index.php/Home/Page/show/id/{$notice.id}.html">查看详细内容 </a>-->
+                        <if condition="$member.is_auth eq 1 || $is_menber eq 0 ">
 
-                        </p>
+                            <p>
+                                {$notice.content}
+
+                            </p>
+
+                        <else/>
+                                    <p style="font-size: 14px;">
+                                     为了防止恶意注册。
+                                        需要先充值0.1元的进行支付认证。
+
+
+                                    </p>
+                                    <p>
+                                        <a class="page_index_ckxxnr" href="/index.php/api/epay/rzpay/member_id/{$member.id}.html">前往支付认证 </a>
+
+                                    </p>
+
+                        </if>
+
+
+
                     </div>
                     <img src="/tpl/Public/images/close_notice.png" class="close-img">
                 </div>
