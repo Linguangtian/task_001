@@ -170,6 +170,15 @@
 
 
         <tr>
+            <th>是否开启充值认证</th>
+            <td>
+                <label><input type="radio" name="first_recharge" value="1" style="height: inherit" <if condition="$info['first_recharge'] eq '1'">checked</if> >是</label> &nbsp; &nbsp; &nbsp;
+                <label><input type="radio" name="first_recharge" value="0" style="height: inherit" <if condition="$info['first_recharge'] neq '1'">checked</if> >否</label> &nbsp; &nbsp; &nbsp;
+            </td>
+        </tr>
+
+
+        <tr>
             <th>防红域名</th>
             <td>
                 <input class="input col-xs-12 col-sm-12" type="text" name="url_protected" value="{$info.url_protected}" class="form-control"/>

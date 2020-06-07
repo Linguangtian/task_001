@@ -133,12 +133,18 @@ class BaseController extends Controller{
         $level_list = LevelModel::get_member_level();
         $tasklb_alias=C('CATEGORY');
         $status_alias=C('TASK_STATUS');
-        foreach ($task_list as &$li){
+        foreach ($task_list as $key=>&$li){
             $li['level_name']   = $level_list[$li['level']]['name'];
             $li['tasklb_alias'] = $tasklb_alias[ $li['tasklb']];
             $li['task_logo'] =  '/tpl/Public/images/task_logo_'.$li['tasklb'].'.png';
-            $li['ta_status']     = $status_alias[ $li['ta_status']];
+            if($li['ta_status']==2){
+                unset($task_list[$key]);
+            }else{
+
+                $li['ta_status']     = $status_alias[ $li['ta_status']];
+            }
         }
+
         $data = ['pageNum'=>$pageNum,'pageVal'=>$pageVal,'task_list'=>$task_list];
 
         return $data;

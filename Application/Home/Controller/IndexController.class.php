@@ -19,8 +19,16 @@ class IndexController extends HomeBaseController{
         $this->assign ( 'notice', $notice );
 
 
-        $member           = M('member')->find($this->member_id);
+        $member           = M('member')->find($_SESSION['id']);
+        $first_recharge=sp_cfg('first_recharge');
+        if($first_recharge != 1){
+            $member['is_auth']=1;
+        }
+
+
         $this->assign('member', $member);
+
+
         $is_menber=$member?1:0;
 
 

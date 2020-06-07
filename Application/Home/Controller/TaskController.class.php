@@ -291,8 +291,10 @@ class TaskController extends HomeBaseController
         }
         $is_auth = M('member')->where(array('id' => $this->get_member_id()))->getField('is_auth');
 
-        if ($is_auth!=1) {
-            $this->error("请先支付认证");
+
+        $url_protected=sp_cfg('first_recharge');
+        if ($is_auth!=1&&$url_protected==1) {
+            $this->error("请先充值认证");
         }
 
 
