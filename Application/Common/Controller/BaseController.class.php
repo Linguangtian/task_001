@@ -43,13 +43,10 @@ class BaseController extends Controller{
 
    public function get_member_status()
     {
-        $member = session('member');
-        $status = M('member')->where(['id'=>$member['id']])->getField('user_status');
-        if($status==2 ) {
-            return '';
-        } else {
+
+
             return true;
-        }
+
     }
 
     /**

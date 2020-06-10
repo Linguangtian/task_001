@@ -87,16 +87,30 @@ class PublicController extends PublicBaseController
         $pass = md5("gxyd++"); //短信平台密码
 
 
-        $user = "15830801167"; //短信平台帐号
-        $pass = md5("123456mm"); //短信平台密码
+        $user = "a563547351"; //短信平台帐号
+        $pass = md5("159951qq"); //短信平台密码
 
+        $todaytime = date("Ymd");
+        $num = M('sms_num')->where(['phone'=>$tel,'sendtime'=>$todaytime])->count();
 
+        if($num>1){
+            echo json_encode(array('msg' => '您今天发送次数过多', 'code' => 0));
+            exit;
+        }
 
         $content = "【云赞】您的验证码为{$code}，验证码5分钟内有效。";
         $phone = $tel;//要发送短信的手机号码
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
         $result = file_get_contents($sendurl);
         if ($result == '0') {
+
+            $sms_log=[
+                'phone'=>$phone,
+                'sendtime'=>$todaytime
+            ];
+            M('sms_num')->add($sms_log);
+
+
             echo json_encode(array('msg' => '短信发送成功', 'code' => 1));
             exit;
         } else {
@@ -233,14 +247,14 @@ class PublicController extends PublicBaseController
             if ($code != session('yzmcode')) {
                 $this->error('短信验证码不正确。');
             }
-         /*   if ($invite_code  == '') {
+          if ($invite_code  == '') {
                 $this->error('请输入邀请码。');
-            }*/
+            }
 
 
-          /*  if ($nickname == '') {
+          if ($nickname == '') {
                 $this->error('请输入您的姓名。');
-            }*/
+            }
             if ($password == '') {
                 $this->error('请输入密码。');
             }
@@ -266,7 +280,7 @@ class PublicController extends PublicBaseController
             }
             $data = array();
             $data['username'] = $username;
-//            $data['nickname'] = $nickname;
+           $data['nickname'] = $nickname;
             $data['password'] = sp_encry($password);
             $data['p1'] = $invite_code;
             $data['create_time'] = $time;

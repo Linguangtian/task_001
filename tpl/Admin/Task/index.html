@@ -74,7 +74,7 @@
         <th>任务级别</th>
         <th>已领/名额</th>
         <th>截止日期</th>
-        <th>添加时间</th>
+        <th>开始时间</th>
         <th>是否置顶</th>
         <th>操作</th>
     </tr>
@@ -96,8 +96,20 @@
             </td>
             <td><span class="level_{$vo.level}">{$vo.level_name}</span></td>
             <td>{$vo.apply_num}/{$vo.max_num}</td>
-            <td>{$vo.end_time|date='Y-m-d',###}</td>
-            <td>{$vo.create_time|date='Y-m-d H:i',###}</td>
+            <td>
+
+
+                <if condition="$vo.end_time lt $time">
+                    <a class="color:red">     {$vo.end_time|date='Y-m-d H:i',###}</a>
+                    <else/>
+                    <a style="color: #337ab7">     {$vo.end_time|date='Y-m-d H:i',###}</a>
+
+                </if>
+
+
+            </td>
+            <td>
+                {$vo.timing_date|date='Y-m-d H:i',###}
             <td>
 
                 <div class="tDiv">

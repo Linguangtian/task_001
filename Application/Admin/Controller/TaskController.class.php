@@ -42,6 +42,7 @@ class TaskController extends AdminBaseController{
             $_list['type_name'] = $task_type[$_list['type']];
         }
         $this->assign('list',$list);
+        $this->assign('time',time());
         $this->assign('on_show_total',$on_show_total);
         $this->assign('get',$_GET);
 
