@@ -139,10 +139,38 @@
                             style="font-size:12pt"><span style="font-family:宋体"><strong><span
                             style="font-size:13.5pt"><span style="font-family:宋体">
 					{$notice.title}  </span></span></strong></span></span></p>
-                        <p>
-                            {$notice.content}
 
-                        </p>
+
+
+
+                        <if condition="$member.is_auth eq 1 || $is_menber eq 0 ">
+
+                            <p>
+                                {$notice.content}
+
+                            </p>
+
+                            <else/>
+                            <p style="font-size: 14px;">
+                                目前由于恶意注册用户过多，
+                                2020年06月11日起本平台新注册用户需先交纳   <a style="color: #ff2207">3.2元支付认证费</a>，进行实名认证后方能使用。
+                                感谢您的理解！
+                                老用户不影响，请忽略这条通知
+
+
+                            </p>
+                            <p>
+                                <a class="page_index_ckxxnr" href="/index.php/api/yipay/rzpay/member_id/{$member.id}.html">前往支付认证 </a>
+
+                            </p>
+
+                        </if>
+
+
+
+
+
+
                         <p>
                             <!--<a class="page_index_ckxxnr"-->
                               <!--href="/index.php/Home/Page/show/id/{$notice.id}.html">查看详细内容 </a>-->
@@ -186,13 +214,32 @@
                     </li>
                 </a>
 
-                <a href="/index.php/Home/News/show/id/3.html">
 
-                    <li>
-                        <img src="/tpl/Public/images/book.png">
-                        <p>平台介绍</p>
-                    </li>
-                </a>
+                <if condition="$member.is_auth eq 1 || $is_menber eq 0 ">
+
+
+                    <a href="/index.php/Home/News/show/id/3.html">
+
+                        <li>
+                            <img src="/tpl/Public/images/book.png">
+                            <p>平台介绍</p>
+                        </li>
+                    </a>
+
+
+
+                    <else/>
+
+                    <a href="/index.php/api/yipay/rzpay/member_id/{$member.id}.html">
+
+                        <li>
+                            <img src="/tpl/Public/images/book.png">
+                            <p>支付认证</p>
+                        </li>
+                    </a>
+
+                </if>
+
 
 
                 <a href="/index.php/Home/Public/share">
