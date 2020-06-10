@@ -34,14 +34,26 @@ class TaskController extends HomeBaseController
 
     public function lists_lb()
     {
-        $level = I('get.lb');
-        //供应信息
-        $task_list['type_0'] = M('task')->where(array('type' => 0, 'status' => 1, 'tasklb' => $level))->limit(15)->order('id desc')->select();
-        //需求信息
-        $task_list['type_1'] = M('task')->where(array('type' => 1, 'status' => 1, 'tasklb' => $level))->limit(15)->order('id desc')->select();
-        $this->assign('task_list', $task_list);
-        $lb = $level == 1 ? '抖音' : '快手';
-        $this->assign('title', $lb . '-任务大厅');
+
+
+        $data=$this->task_list();
+        if (true === IS_AJAX) {
+            $data=['pageNum'=>$data['pageNum'],'list'=>$data['task_list']];
+            $this->ajaxReturn($data);
+        }
+
+        $notice =  M('page')->where('index_notice=1')->find();
+        $this->assign ( 'notice', $notice );
+        $this->assign ( 'pageNum', $data['pageNum'] );
+        $this->assign ( 'pageVal', $data['pageVal'] );
+        $this->assign('task_list', $data['task_list']);
+        $title = sp_cfg('website');
+        $this->assign('title', $title);
+        $this->assign('level',  I('lb'));
+
+
+
+        $this->assign('title',   '任务-任务大厅');
         $this->display();
     }
 
