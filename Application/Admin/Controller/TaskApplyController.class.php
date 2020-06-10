@@ -21,7 +21,7 @@ class TaskApplyController extends AdminBaseController{
         $start_date = I('get.start_date');
         $end_date = I('get.end_date');
         $map = array();
-        if( $status != '' ) $map['a.status'] = $status;
+
 
         //搜索时间
         if( !empty($start_date) && !empty($end_date) ) {
@@ -49,7 +49,7 @@ class TaskApplyController extends AdminBaseController{
             ->join(C('DB_PREFIX').'member as c on a.member_id = c.id','left')
             ->where($map)
             ->field('a.*,b.title,b.level,b.type,c.username,c.phone, c.nickname')
-            ->order('a.id desc')->limit("$firstRow , $listRows")
+           ->limit("$firstRow , $listRows")
             ->select();
         foreach( $list as &$_list ) {
             $_list['status_text'] = $apply_status[$_list['status']];

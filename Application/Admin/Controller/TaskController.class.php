@@ -36,11 +36,35 @@ class TaskController extends AdminBaseController{
         //列表数据
         $list = $this->_list ('task', $map ,'',' end_time asc ,no_show asc ');
 
+        $nowtime=time();
         $task_type = C('TASK_TYPE');
         foreach( $list as &$_list ) {
             $_list['level_name'] = $level_list[$_list['level']]['name'];
             $_list['type_name'] = $task_type[$_list['type']];
+         /*  echo  date('Y-m-d H:i:s',$_list['timing_date'] );
+           echo  date('Y-m-d H:i:s',$nowtime );
+
+           exit;*/
+            if($_list['timing_date'] > $nowtime){
+              $timing_alias= timediff($_list['timing_date'],$nowtime);
+
+                $_list['timing_alias'] ='距离开始：'.$timing_alias['day'].'天'.$timing_alias['hour'].'时'.$timing_alias['min'].'分'.$timing_alias['sec'].'秒';
+            }else{
+                $_list['timing_alias'] ='已开始';
+            }
+
+
+
+            if($_list['end_time'] > $nowtime){
+                $timing_alias= timediff($nowtime,$_list['end_time'] );
+                $_list['end_time_alias'] ='距离结束：'.$timing_alias['day'].'天'.$timing_alias['hour'].'时'.$timing_alias['min'].'分'.$timing_alias['sec'].'秒';
+            }else{
+                $_list['end_time_alias'] ='已结束';
+            }
+
         }
+
+
         $this->assign('list',$list);
         $this->assign('time',time());
         $this->assign('on_show_total',$on_show_total);

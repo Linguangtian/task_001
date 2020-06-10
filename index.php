@@ -11,6 +11,41 @@
 
 // 应用入口文件
 
+
+
+//代理IP直接退出
+empty($_SERVER['HTTP_VIA']) or exit('Access Denied');
+//防止快速刷新
+session_start();
+$seconds = '3'; //时间段[秒]
+$refresh = '6'; //刷新次数
+//设置监控变量
+$cur_time = time();
+if(isset($_SESSION['last_time'])){
+    $_SESSION['refresh_times'] += 1;
+}else{
+    $_SESSION['refresh_times'] = 1;
+    $_SESSION['last_time'] = $cur_time;
+}
+//处理监控结果
+if($cur_time - $_SESSION['last_time'] < $seconds){
+    if($_SESSION['refresh_times'] >= $refresh){
+        //跳转至攻击者服务器地址
+
+        exit('访问过于频繁！');
+    }
+}else{
+    $_SESSION['refresh_times'] = 0;
+    $_SESSION['last_time'] = $cur_time;
+}
+
+
+
+
+
+
+
+
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 

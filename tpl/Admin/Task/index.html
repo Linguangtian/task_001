@@ -100,16 +100,19 @@
 
 
                 <if condition="$vo.end_time lt $time">
-                    <a class="color:red">     {$vo.end_time|date='Y-m-d H:i',###}</a>
+                       {$vo.end_time|date='Y-m-d H:i',###}
                     <else/>
-                    <a style="color: #337ab7">     {$vo.end_time|date='Y-m-d H:i',###}</a>
-
+                      {$vo.end_time|date='Y-m-d H:i',###}
+                    <br>
+                    <a style="color: #b70532"> {$vo.end_time_alias}</a>
                 </if>
 
 
             </td>
             <td>
                 {$vo.timing_date|date='Y-m-d H:i',###}
+            <br>
+                <a style="color: #337ab7"> {$vo.timing_alias}</a>
             <td>
 
                 <div class="tDiv">

@@ -99,12 +99,12 @@
                 <if condition="$vo.user_status eq 1">正常<else />封号</if>
             </td>
             <td>
-              <!--  <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="set_pid(this)">调整团队</a>-->
+              <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="set_pid(this)">调整团队</a>
                 <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="recharge(this)">线下充值VIP</a>
                 <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="chongzhi(this)">余额充值</a>
-                <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="point_chongzhi(this)">信用分充值</a>
+<!--                <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="point_chongzhi(this)">信用分充值</a>-->
                 <a href="{:U('Pay/price_log',array('member_id'=>$vo['id']))}" class="btn btn-default btn-xs layer-dialog" title="资金明细：{$vo.nickname}">资金明细</a>
-                <a href="{:U('Pay/point_log',array('member_id'=>$vo['id']))}" class="btn btn-default btn-xs layer-dialog" title="信用分明细：{$vo.nickname}">信用分明细</a>
+<!--                <a href="{:U('Pay/point_log',array('member_id'=>$vo['id']))}" class="btn btn-default btn-xs layer-dialog" title="信用分明细：{$vo.nickname}">信用分明细</a>-->
                 <a href="{:U('handle',array('id'=>$vo['id'],'role'=>1))}" class="btn btn-default btn-xs layer-dialog" title="详细信息：{$vo.nickname}">详细信息</a>
 
              <!--   | &nbsp;<a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-nickname="{$vo.nickname}" onclick="edit(this)">发送消息</a>-->

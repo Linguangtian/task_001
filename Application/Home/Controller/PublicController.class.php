@@ -93,12 +93,17 @@ class PublicController extends PublicBaseController
         $todaytime = date("Ymd");
         $num = M('sms_num')->where(['phone'=>$tel,'sendtime'=>$todaytime])->count();
 
+
+        echo json_encode(array('msg' => '今日注册人数上限', 'code' => 0));
+        exit;
+
+
         if($num>1){
             echo json_encode(array('msg' => '您今天发送次数过多', 'code' => 0));
             exit;
         }
 
-        $content = "【云赞】您的验证码为{$code}，验证码5分钟内有效。";
+        $content = "【热门邦】您的验证码为{$code}，验证码5分钟内有效。";
         $phone = $tel;//要发送短信的手机号码
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
         $result = file_get_contents($sendurl);
