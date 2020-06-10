@@ -301,6 +301,17 @@ class TaskController extends HomeBaseController
         if (!($id > 0)) {
             $this->error("参数错误");
         }
+        $is_auth = M('member')->where(array('id' => $this->get_member_id()))->getField('is_auth');
+
+
+        $url_protected=sp_cfg('first_recharge');
+        if ($is_auth!=1&&$url_protected==1) {
+            $this->error("请先进行支付认证");
+        }
+
+
+
+
         $member_level = M('member')->where(array('id' => $this->get_member_id()))->getField('level');
         $task_data = M('task')->field('level,price,max_num,apply_num,end_time')->where(array('id' => $id))->find();
         if ($task_data['end_time'] < time()) {
