@@ -50,7 +50,7 @@ class QrcodeController extends HomeBaseController
 
 
 
-       if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
+      if( file_exists($this->sp_qrcode_physics_path($qrcode_name)) == false ) {
            $this->create_qrcode($url, $this->sp_qrcode_physics_path($qrcode_name));
         }
 
@@ -77,15 +77,15 @@ class QrcodeController extends HomeBaseController
         $fontColor_2 = imagecolorallocate($img, 251,249,44);//字体颜色 RGB
         $fontSize = 48;   //字体大小
         $circleSize = 0; //旋转角度
-        $left = 530;      //左边距  387
-        $top = 610;       //顶边距  807
+        $left = 200;      //左边距  387
+        $top = 1310;       //顶边距  807
 
         //imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, "我是\r\n我为{~echo sp_cfg('website')}钱包代言");
-        imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, $this->get_member_id());
+        imagefttext($img, $fontSize, $circleSize, $left, $top, $fontColor, $font, '邀请码：'.$this->get_member_id());
 
         $qCodeImg = imagecreatefromstring(file_get_contents($save_path));
         list($qCodeWidth, $qCodeHight, $qCodeType) = getimagesize($save_path);
-          imagecopyresampled($img, $qCodeImg, 355, 1260, 0, 0, 340, 340,$qCodeWidth, $qCodeHight);
+          imagecopyresampled($img, $qCodeImg, 235, 850, 0, 0, 340, 340,$qCodeWidth, $qCodeHight);
 
         //imagecopymerge($img, $qCodeImg, 220, 170, 0, 0, $qCodeWidth, $qCodeHight, 100);
 

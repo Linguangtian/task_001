@@ -37,7 +37,7 @@
 
 
         <div class="vip-notice"><span class="up-vip"></span> 升级补差价</div>
-        <h5 style="display: inline-block;text-align: center;font-size: 16px;width: 100%;margin-top: 20px">高级升尊享补差400元</h5>
+   <!--     <h5 style="display: inline-block;text-align: center;font-size: 16px;width: 100%;margin-top: 20px">高级升尊享补差400元</h5>-->
         <input type="hidden" name="payment_type" id="payment_type" value="alipay">
         <input type="hidden" name="member_vip_price" id="member_vip_price" value="{$member_vip_price}">
         <div class="dx_line">
@@ -123,11 +123,13 @@
                 sp_tip('请选择要升级的级别.');
                 return false;
             }
+/*
 
             if(self_level!=level){
                 sp_tip('请先升级为高级会员');
                 return false;
             }
+*/
 
 
             if( payment_type == '' ) {

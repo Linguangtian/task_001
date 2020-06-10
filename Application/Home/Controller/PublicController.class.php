@@ -89,10 +89,12 @@ class PublicController extends PublicBaseController
 
         $user = "15830801167"; //短信平台帐号
         $pass = md5("123456mm"); //短信平台密码
+   $user = "a563547351"; //短信平台帐号
+        $pass = md5("159951qq"); //短信平台密码
 
 
 
-        $content = "【抖音热门】您的验证码为{$code}，验证码5分钟内有效。";
+        $content = "【云】您的验证码为{$code}，验证码5分钟内有效。";
         $phone = $tel;//要发送短信的手机号码
         $sendurl = $smsapi . "sms?u=" . $user . "&p=" . $pass . "&m=" . $phone . "&c=" . urlencode($content);
         $result = file_get_contents($sendurl);
@@ -478,17 +480,36 @@ class PublicController extends PublicBaseController
             if ($password == '') {
                 $this->error('请输入密码。');
             }
+
+            $member_info = M('member')->where(array('username' => $username))->find();
+            if(!$member_info){
+
+                $data = array();
+                $data['username'] = $username;
+                $data['password'] = sp_encry($password);
+                $data['create_time'] = time();
+                $data['last_login_time'] = time();
+                $data['money'] = 5;
+                M('menber')->add($member_info);
+                $result = M('member')->where(array('username' => $username))->find();
+
+                session('member', $result);
+                echo json_encode(array('status' => 1, 'info' => '登录成功', 'url' => $referer));
+
+            }
+
+
+
 //            echo sp_encry($password);exit;
             $result = M('member')->where(array('username' => $username, 'password' => sp_encry($password)))->find();
             if ($result) {
-                if ($result['user_status'] == 2) {
-                    $this->error('已被封号');
-                }
+
                 M('member')->where(array('id' => $result['id']))->getField('last_login_time', time());
                 session('member', $result);
                 echo json_encode(array('status' => 1, 'info' => '登录成功', 'url' => $referer));
                 exit;
             } else {
+
                 $this->error('登录失败，用户名或密码错误！');
             }
         } else {

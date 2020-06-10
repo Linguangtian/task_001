@@ -638,19 +638,19 @@ class MemberController extends HomeBaseController{
 
                 }
 
+*/
 
 
-/*
 
                  //在线支付 个人免签
                 $yipay   =  new YipayController();
                     $url =  $yipay->pay($order_no);
                     $data=['error'=>0,'url'=>$url];
-                    $this->ajaxReturn($data);*/
-
+                    $this->ajaxReturn($data);
+/*
                     $url=U('api/epay/pay',array('order_no'=>$order_no));
                     $data=['error'=>0,'url'=>$url];
-                    $this->ajaxReturn($data);
+                    $this->ajaxReturn($data);*/
 
 
                 }else{

@@ -11,6 +11,9 @@ class TaskController extends HomeBaseController
     public function index()
     {
         $list = M('news')->field('id,title,create_time')->order('sort asc,id asc')->limit(10)->select();
+
+            unset($list[0]);
+            unset($list[1]);
         $this->assign('list', $list);
 
         $this->assign('title', '任务大厅');
