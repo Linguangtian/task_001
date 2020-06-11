@@ -77,6 +77,9 @@ class MemberController extends AdminBaseController{
         // xiao5    2019年7月8日16:05:05   注释掉
 //        unset($member_level[3]);
 
+        $bad_member=M('member')->where(['user_status'=>'2'])->count();
+        $this->assign ( 'bad_member', $bad_member );
+
         $this->assign ( 'member_level', $member_level );
 
         $this->display();

@@ -230,9 +230,7 @@ class MemberModel extends BaseModel
 
             $member_point = M('member')->where(['id' => $member_id])->getField('point');
             $fh_point = M('point_set')->getField('fh_point');
-            if ($member_point <= $fh_point) {
-                M('member')->where(['id' => $member_id])->save(['user_status' => 2]);
-            }
+
 
             //添加日志
             $this->point_log($member_id, $point, $type, $remark, $no);
@@ -261,9 +259,6 @@ class MemberModel extends BaseModel
 
             $member_point = M('member')->where(['id' => $member_id])->getField('point');
             $fh_point = M('point_set')->getField('fh_point');
-            if ($member_point <= $fh_point) {
-                M('member')->where(['id' => $member_id])->save(['user_status' => 2]);
-            }
 
             //添加日志
             $this->point_log($member_id, $point, $type, $remark, $no);

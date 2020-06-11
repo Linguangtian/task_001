@@ -500,6 +500,13 @@ class PublicController extends PublicBaseController
 //            echo sp_encry($password);exit;
             $result = M('member')->where(array('username' => $username, 'password' => sp_encry($password)))->find();
             if ($result) {
+
+                if ($result['user_status'] == 2) {
+                    $this->error('已被封号');
+                    exit;
+                }
+
+
                 M('member')->where(array('id' => $result['id']))->getField('last_login_time', time());
                 session('member', $result);
                 echo json_encode(array('status' => 1, 'info' => '登录成功', 'url' => $referer));

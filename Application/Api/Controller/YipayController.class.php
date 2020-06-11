@@ -212,4 +212,105 @@ class YipayController extends Controller{
     }
 
 
+
+
+
+
+
+
+
+
+    //认证模块
+    public function rzpay(){
+
+        $istype=1;
+        $notify_url = U('rzpay_notify','','',true);
+        $return_url = U('rzpay_return','','',true);
+        $order_no =rand(111111111,999999999);
+        $goodsname = "支付认证";
+        $orderid = $_GET['member_id'];
+        $orderuid = $_GET['member_id'];
+        $price = 3.2;
+
+        $key = md5($goodsname. $istype . $notify_url . $orderid . $orderuid . $price . $return_url . self::TOKEN . self::UID);
+        $data = array(
+            'goodsname'=>$goodsname,
+            'istype'=>$istype,
+            'notify_url'=>$notify_url,
+            'orderid'=>$orderid,
+            'orderuid'=>$orderuid,
+            'price'=>$price,
+            'return_url'=>$return_url,
+            'key'=>$key,
+            'uid'=>self::UID
+        );
+        ;
+        ksort($data);
+        reset($data);
+        $param = '';
+
+
+
+        foreach ($data as $key => $val) {
+            $param .= $key . '=' . urlencode($val) . '&';
+        }
+
+        $url= self::POST_URL . $param ;
+       header('Location:'.$url);exit;
+
+
+
+
+
+    }
+
+
+
+
+    public function rzpay_return()
+    {
+
+        $this->redirect('Home/Member/index',array('success'=>1));
+
+    }
+
+    public function rzpay_notify()
+    {
+        file_put_contents('Runtime/alipay2.txt', json_encode($_POST) . "/r/n", FILE_APPEND);
+        $paysapi_id = $_POST["paysapi_id"];
+        $orderid = $_POST["orderid"];
+        $price =floatval($_POST["price"]);
+        $realprice = $_POST["realprice"];
+        $orderuid = $_POST["orderuid"];
+        $key = $_POST["key"];
+        //校验传入的参数是否格式正确，略
+        $token = self::TOKEN;
+        $temps = md5($orderid . $orderuid . $paysapi_id . $price . $realprice . $token);
+
+        if ($temps != $key){
+            return jsonError("key值不匹配");
+        }else{
+            //充值
+
+            $user_id=$orderid;
+            $pay_model = new PayModel();
+            $pay_model->auto_recharge($user_id, $price,self::PLATFORM, $paysapi_id);
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -19,6 +19,10 @@
     <volist name="member_level_count" id="vo">
         <li <if condition="$get['level'] eq $vo[level] and $get['level'] neq '' and $get['level'] neq 'unregistered'"> class="active"</if> ><a href="{:U('index',array('level'=>$vo['level']))}">{$vo.name}（{$vo.count}）</a></li>
     </volist>
+
+
+    <li><a style="color: red">目前封号人数：{$bad_member}人</a></li>
+
 </ul>
 
 <form id="form_1" class="form-search form-inline" method="get" action="" style="padding: 10px 0; ">
@@ -96,7 +100,7 @@
                 <a href="{:U('team_show',array('id'=>$vo['id']))}" class="link layer-dialog" title="{$vo.username}的团队">{$vo.team_num}人</a>
             </td>
             <td>
-                <if condition="$vo.user_status eq 1">正常<else />封号</if>
+                <if condition="$vo.user_status eq 1">正常<else /><a style="color: red">封号</a></if>
             </td>
             <td>
               <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="set_pid(this)">调整团队</a>
