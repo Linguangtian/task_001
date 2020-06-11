@@ -128,10 +128,10 @@ class BaseController extends Controller{
             $task_apply_sql=' (select * from dt_task_apply where member_id = '.$member_id.') AS ta ON ta.task_id = t.id';
             $task_list = M('task as t')->field('t.*,t.max_num-apply_num as leftnum,ta.id as  ta_id,IF(ta.status=0,5,ta.status) as ta_status')
                 ->join($task_apply_sql,'left')
-                ->where($map)->order('task_on_top desc,t.level asc,t.price desc  ,t.id desc')->limit($page,$pageSize)->select();
+                ->where($map)->order('t.task_on_top desc,t.create_time desc,t.level asc,t.price desc  ,t.id desc')->limit($page,$pageSize)->select();
 
         }else{
-            $task_list = M('task as t')->field('t.*,t.max_num-apply_num as leftnum')  ->where($map)->order('task_on_top desc,t.level asc,t.price desc  ,t.id desc')->limit($page,$pageSize)->select();
+            $task_list = M('task as t')->field('t.*,t.max_num-apply_num as leftnum')  ->where($map)->order('t.task_on_top desc,t.create_time desc,t.level asc,t.price desc  ,t.id desc')->limit($page,$pageSize)->select();
         }
         $level_list = LevelModel::get_member_level();
         $tasklb_alias=C('CATEGORY');

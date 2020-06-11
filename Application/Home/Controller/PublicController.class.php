@@ -98,8 +98,20 @@ class PublicController extends PublicBaseController
         $customer_ip_num = M('sms_num')->where(['customer_ip'=>$customer_ip,'sendtime'=>$todaytime])->count();
 
 
+        $sms_log=[
+            'phone'=>$tel,
+            'sendtime'=>date('Y-m-d H:i:s'),
+            'customer_ip'=>$customer_ip
+        ];
+        M('sms_log')->add($sms_log);
+
+
+
+
+
         if($this->limit_menber_reg()){
-            $this->error('今日注册人数已到达上限！');
+            echo json_encode(array('msg' => '今日注册人数已到达上限', 'code' => 0));
+            exit;
         }
 
         if($phone_num>1||$customer_ip_num>1){
