@@ -36,6 +36,7 @@ class MemberController extends AdminBaseController{
             $map['level'] = I('get.level');
         }
         if( I('get.id') != '' ) $map['id'] = I('get.id');
+        if( I('get.bank_user') != '' ) $map['bank_user'] = I('get.bank_user');
 
         $province = I('get.province');
         $city = I('get.city');

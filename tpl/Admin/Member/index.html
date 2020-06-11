@@ -40,6 +40,14 @@
         <input type="text" name="keywords" value="{$get.keywords}" class="input-sm search-query" placeholder="账号/昵称/手机号">
     </div>
     &nbsp;&nbsp;
+
+    提现姓名：
+    <div class="input-group">
+
+        <input type="text" name="bank_user" value="{$get.bank_user}" class="input-sm search-query" placeholder="提现姓名">
+    </div>
+    &nbsp;&nbsp;
+
     关注时间：
     <div class="input-group">
         <input type="text" name="start_date" value="{$get.start_date}"  autocomplete="off" class="input-sm search-query date-picker" data-date-format="yyyy-mm-dd" placeholder="起始日期">
@@ -67,7 +75,7 @@
         <th>账号</th>
         <th>推荐人</th>
         <th>姓名</th>
-       <!-- <th>电话</th>-->
+      <th>提现用户名</th>
         <th>地址</th>
         <th>会员等级</th>
         <th>余额</th>
@@ -85,7 +93,7 @@
             <td>{$vo.username}</td>
             <td>{$vo.p1_name}</td>
             <td>{$vo.nickname}</td>
-        <!--    <td>{$vo.phone}</td>-->
+          <td>{$vo.bank_user}</td>
             <td>{$vo.province}{$vo.province}{$vo.city}{$vo.area}{$vo.address}</td>
             <td>
                 <span class="level_{$vo.level}"> {$vo.level_name}</span>

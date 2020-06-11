@@ -174,6 +174,7 @@ class PayController extends AdminBaseController{
         $TIXIAN_STATUS = C('TIXIAN_STATUS');
 
         $status = I('get.status');
+        $member_id = I('get.member_id');
         $start_date = I('get.start_date');
         $end_date = I('get.end_date');
         $end_date = I('get.end_date');
@@ -181,7 +182,10 @@ class PayController extends AdminBaseController{
         $map = array();
 
         if ($status != '') $map['a.status'] = $status;
+        if ($member_id != '') $map['a.member_id'] = $member_id;
         if ($extract_way != '') $map['a.extract_way'] = trim($extract_way);
+
+
 
         //搜索时间
         if (!empty($start_date) && !empty($end_date)) {
