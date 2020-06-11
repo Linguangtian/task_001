@@ -91,14 +91,18 @@ class PublicController extends PublicBaseController
         $pass = md5("159951qq"); //短信平台密码
 
         $todaytime = date("Ymd");
-        $num = M('sms_num')->where(['phone'=>$tel,'sendtime'=>$todaytime])->count();
+        $customer_ip=get_real_ip();
 
 
-        echo json_encode(array('msg' => '今日注册人数上限', 'code' => 0));
-        exit;
+        $phone_num = M('sms_num')->where(['phone'=>$tel,'sendtime'=>$todaytime])->count();
+        $customer_ip_num = M('sms_num')->where(['customer_ip'=>$customer_ip,'sendtime'=>$todaytime])->count();
 
 
-        if($num>1){
+        if($this->limit_menber_reg()){
+            $this->error('今日注册人数已到达上限！');
+        }
+
+        if($phone_num>1||$customer_ip_num>1){
             echo json_encode(array('msg' => '您今天发送次数过多', 'code' => 0));
             exit;
         }
@@ -111,7 +115,8 @@ class PublicController extends PublicBaseController
 
             $sms_log=[
                 'phone'=>$phone,
-                'sendtime'=>$todaytime
+                'sendtime'=>$todaytime,
+                'customer_ip'=>$customer_ip
             ];
             M('sms_num')->add($sms_log);
 
