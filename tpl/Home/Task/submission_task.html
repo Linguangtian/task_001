@@ -14,7 +14,9 @@
         height: 8rem !important;
         height: auto !important;
     }
-
+.act-task a{
+    color: #ffffff;
+}
 </style>
 <script src="__PUBLIC_JS__/countdown.js"></script>
 
@@ -63,8 +65,8 @@
                                 </div>
                            </a>
                             <div class="act-task">
-                                <span class="task-submit" data-id="{$vo.id}">提交任务</span>
-                                <span class="view-detail" data-id="{$vo.task_id}">查看任务</span>
+                                <span  data-id="{$vo.id}"> <a href="{:U('submission_task_do',array('id'=>$vo['id']))}">提交任务</a></span>
+                                <span class="view-detail" data-id="{$vo.task_id}"><a href="{:U('show',array('id'=>$vo['task_id']))}">查看任务</a></span>
                                 <span class="give-up" data-id="{$vo.id}">放弃任务</span>
                             </div>
                         </li>

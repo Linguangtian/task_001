@@ -83,7 +83,7 @@ class PublicController extends PublicBaseController
 
         $user = "03421148"; //短信平台帐号
         $pass = md5("03421148"); //短信平台密码
-         $user = "gxyd"; //短信平台帐号
+        $user = "gxyd"; //短信平台帐号
         $pass = md5("gxyd++"); //短信平台密码
 
 
@@ -140,57 +140,57 @@ class PublicController extends PublicBaseController
             exit;
         }
 
-/*
-        include dirname(__FILE__) . '/Alisms.class.php';
-        $Alisms = new \Alisms('LTAI17wCRrzxDYa6', 'deln1BPGQO7onAjTA5Rnk0OqYXXDZb', '点点网', 'SMS_168590830');
-        $arr = $Alisms->sendSms($tel, $code);
+        /*
+                include dirname(__FILE__) . '/Alisms.class.php';
+                $Alisms = new \Alisms('LTAI17wCRrzxDYa6', 'deln1BPGQO7onAjTA5Rnk0OqYXXDZb', '点点网', 'SMS_168590830');
+                $arr = $Alisms->sendSms($tel, $code);
 
 
-        if ($arr['Message'] == "OK" && $arr['Code'] == "OK") {
-            echo json_encode(array('msg' => '短信发送成功', 'code' => 1));
-            exit;
-        } else {
+                if ($arr['Message'] == "OK" && $arr['Code'] == "OK") {
+                    echo json_encode(array('msg' => '短信发送成功', 'code' => 1));
+                    exit;
+                } else {
 
-            echo json_encode(array('msg' => '短信发送失败:' . $arr['Message'], 'code' => 0));
-            exit;
-        }*/
+                    echo json_encode(array('msg' => '短信发送失败:' . $arr['Message'], 'code' => 0));
+                    exit;
+                }*/
 
-/*
-        header('content-type:text/html;charset=utf-8');
-        $sendUrl = 'http://v.juhe.cn/sms/send'; //短信接口的URL
-        $smsConf = array(
-            'key' => 'b0044997fa6c2435cb99405f6c451358', //您申请的APPKEY
-            'mobile' => $tel, //接受短信的用户手机号码
-            'tpl_id' => '147086', //您申请的短信模板ID，根据实际情况修改
-            'tpl_value' => '#code#=' . $code //您设置的模板变量，根据实际情况修改
-        );
-        $content = $this->juhecurl($sendUrl, $smsConf, 1); //请求发送短信
+        /*
+                header('content-type:text/html;charset=utf-8');
+                $sendUrl = 'http://v.juhe.cn/sms/send'; //短信接口的URL
+                $smsConf = array(
+                    'key' => 'b0044997fa6c2435cb99405f6c451358', //您申请的APPKEY
+                    'mobile' => $tel, //接受短信的用户手机号码
+                    'tpl_id' => '147086', //您申请的短信模板ID，根据实际情况修改
+                    'tpl_value' => '#code#=' . $code //您设置的模板变量，根据实际情况修改
+                );
+                $content = $this->juhecurl($sendUrl, $smsConf, 1); //请求发送短信
 
-        if ($content) {
-            $result = json_decode($content, true);
-            $error_code = $result['error_code'];
-            if ($error_code == 0) {
-                //状态为0，说明短信发送成功
+                if ($content) {
+                    $result = json_decode($content, true);
+                    $error_code = $result['error_code'];
+                    if ($error_code == 0) {
+                        //状态为0，说明短信发送成功
 
-                session('yzmtime', time());
+                        session('yzmtime', time());
 
-                echo json_encode(array('msg' => '短信发送成功', 'code' => 1));
-                exit;
-            } else {
-                //状态非0，说明失败
-                $msg = $result['reason'];
-                # echo "短信发送失败(".$error_code.")：".$msg; exit;
+                        echo json_encode(array('msg' => '短信发送成功', 'code' => 1));
+                        exit;
+                    } else {
+                        //状态非0，说明失败
+                        $msg = $result['reason'];
+                        # echo "短信发送失败(".$error_code.")：".$msg; exit;
 
-                echo json_encode(array('msg' => '短信发送失败:' . $msg, 'code' => 0));
-                exit;
+                        echo json_encode(array('msg' => '短信发送失败:' . $msg, 'code' => 0));
+                        exit;
 
-            }
-        } else {
-            //返回内容异常，以下可根据业务逻辑自行修改
-            # echo "请求发送短信失败";  exit;
-            echo json_encode(array('msg' => '请求发送短信失败:' . $msg, 'code' => 0));
-            exit;
-        }*/
+                    }
+                } else {
+                    //返回内容异常，以下可根据业务逻辑自行修改
+                    # echo "请求发送短信失败";  exit;
+                    echo json_encode(array('msg' => '请求发送短信失败:' . $msg, 'code' => 0));
+                    exit;
+                }*/
 
 
     }
@@ -269,12 +269,12 @@ class PublicController extends PublicBaseController
             if ($code != session('yzmcode')) {
                 $this->error('短信验证码不正确。');
             }
-          if ($invite_code  == '') {
+            if ($invite_code  == '') {
                 $this->error('请输入邀请码。');
             }
 
 
-          if ($nickname == '') {
+            if ($nickname == '') {
                 $this->error('请输入您的姓名。');
             }
             if ($password == '') {
@@ -302,7 +302,7 @@ class PublicController extends PublicBaseController
             }
             $data = array();
             $data['username'] = $username;
-           $data['nickname'] = $nickname;
+            $data['nickname'] = $nickname;
             $data['password'] = sp_encry($password);
             $data['p1'] = $invite_code;
             $data['create_time'] = $time;
@@ -523,12 +523,13 @@ class PublicController extends PublicBaseController
                     exit;
                 }
 
-
-                M('member')->where(array('id' => $result['id']))->getField('last_login_time', time());
                 session('member', $result);
+                setcookie('user_login_token', '', time()-1);
+                setcookie('user_login_token', $result['id'], time() + (3600 * 24 * 7),'/');
                 echo json_encode(array('status' => 1, 'info' => '登录成功', 'url' => $referer));
                 exit;
             } else {
+                setcookie('user_login_token', '', time()-1);
                 $this->error('登录失败，用户名或密码错误！');
             }
         } else {
@@ -587,6 +588,7 @@ class PublicController extends PublicBaseController
             unset($_SESSION['member']);
             unset($_SESSION['member_client_info']);
             session_destroy();
+            setcookie('user_login_token', '', time()-1);
             $this->redirect('Index/index');
             //$this->success('退出成功！', U('Public/login'));
         } else {
@@ -752,8 +754,8 @@ class PublicController extends PublicBaseController
 
         header("Location: $file");
     }
-    
-    
+
+
     /**
      * @地址      bdwx
      * @说明      绑定微信
@@ -851,9 +853,9 @@ class PublicController extends PublicBaseController
         }
     }
 
-    
-    
-    
+
+
+
     /**
      * @地址      getcode_email
      * @说明      邮箱注册
@@ -900,8 +902,8 @@ class PublicController extends PublicBaseController
             exit;
         }
     }
-    
-    
-    
-    
+
+
+
+
 }

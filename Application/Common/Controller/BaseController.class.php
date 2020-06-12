@@ -23,7 +23,22 @@ class BaseController extends Controller{
         if( isset($member['id']) && $member['id'] > 0 ) {
             return $member['id'];
         } else {
-            return 0;
+            //是否有登录授权
+            if($_COOKIE['user_login_token']){
+                $result = M('member')->where(array('id' => $_COOKIE['user_login_token']))->find();
+                if($result){
+                    session('member', $result);
+                    return $member['id'];
+                }else{
+                    setcookie('user_login_token', '', time()-1);
+                    return 0;
+                }
+                
+            }else{
+                setcookie('user_login_token', '', time()-1);
+                return 0;
+            }
+
         }
     }
 
@@ -41,12 +56,15 @@ class BaseController extends Controller{
         }
     }
 
-   public function get_member_status()
+    public function get_member_status()
     {
-
-
+        $member = session('member');
+        $status = M('member')->where(['id'=>$member['id']])->getField('user_status');
+        if($status==2 ) {
+            return '';
+        } else {
             return true;
-
+        }
     }
 
     /**
