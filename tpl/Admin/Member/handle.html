@@ -113,6 +113,23 @@
                                 </select>
                             </td>
                         </tr>
+
+
+
+
+                        <tr>
+                            <th>支付认证：</th>
+                            <td>
+                                <select name="is_auth" class="input col-xs-12 col-sm-2">
+                                    <option value="1" <if condition="$info['is_auth'] eq 1"> selected</if> >是</option>
+                                    <option value="0" <if condition="$info['is_auth'] eq 0"> selected</if> >否</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+
+
                         <tr>
                             <th>备注：</th>
                             <td>

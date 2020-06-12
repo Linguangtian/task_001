@@ -81,6 +81,9 @@ class MemberController extends AdminBaseController{
         $bad_member=M('member')->where(['user_status'=>'2'])->count();
         $this->assign ( 'bad_member', $bad_member );
 
+        $no_authr=M('member')->where(['is_auth'=>'0'])->count();
+        $this->assign ( 'no_auth', $no_authr );
+
         $this->assign ( 'member_level', $member_level );
 
         $this->display();

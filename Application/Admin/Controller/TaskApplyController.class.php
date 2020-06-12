@@ -49,8 +49,10 @@ class TaskApplyController extends AdminBaseController{
             ->join(C('DB_PREFIX').'member as c on a.member_id = c.id','left')
             ->where($map)
             ->field('a.*,b.title,b.level,b.type,c.username,c.phone, c.nickname')
+            ->order('a.id desc')
            ->limit("$firstRow , $listRows")
             ->select();
+     ;
         foreach( $list as &$_list ) {
             $_list['status_text'] = $apply_status[$_list['status']];
             $_list['level_text'] = $task_level[$_list['level']];

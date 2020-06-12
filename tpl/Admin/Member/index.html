@@ -21,7 +21,12 @@
     </volist>
 
 
-    <li><a style="color: red">目前封号人数：{$bad_member}人</a></li>
+    <li><a style="color: red">
+
+       封号：{$bad_member}人
+        <span style="color: #2109ff">  未认证：{$no_auth}人</span>
+
+    </a></li>
 
 </ul>
 
@@ -75,7 +80,7 @@
         <th>账号</th>
         <th>推荐人</th>
         <th>姓名</th>
-      <th>提现用户名</th>
+      <th >提现用户名</th>
         <th>地址</th>
         <th>会员等级</th>
         <th>余额</th>
@@ -84,6 +89,7 @@
         <th>关注时间</th>
         <th>销售团队</th>
         <th>状态</th>
+        <th>支付认证</th>
         <th>操作</th>
     </tr>
     <foreach name="list" item="vo">
@@ -94,7 +100,7 @@
             <td>{$vo.p1_name}</td>
             <td>{$vo.nickname}</td>
           <td>{$vo.bank_user}</td>
-            <td>{$vo.province}{$vo.province}{$vo.city}{$vo.area}{$vo.address}</td>
+            <td  style="max-width: 50px;" >{$vo.province}{$vo.city}<!--{$vo.area}--><!--{$vo.address}--></td>
             <td>
                 <span class="level_{$vo.level}"> {$vo.level_name}</span>
             </td>
@@ -110,6 +116,12 @@
             <td>
                 <if condition="$vo.user_status eq 1">正常<else /><a style="color: red">封号</a></if>
             </td>
+
+
+            <td>
+                <if condition="$vo.is_auth eq 1">是<else /><a style="color: red">否</a></if>
+            </td>
+
             <td>
               <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="set_pid(this)">调整团队</a>
                 <a href="javascript:;" class="btn btn-default btn-xs" data-id="{$vo.id}" data-username="{$vo.username}" onclick="recharge(this)">线下充值VIP</a>
