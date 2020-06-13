@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="../../Public/css/share.css?v=101">
 <style type="text/css">
 	footer li{
-		width: 33.33%;
+		width: 20% !important;
 	}
+
 </style>
 <footer class="footer">
     <ul>
@@ -18,6 +20,18 @@
              <p>任务 </p>
             </a>
         </li>
+
+
+        <li >
+
+        <a href="http://kf.kgduo.cn/index/index/home?visiter_id={$Think.session.member.id}&visiter_name={$Think.session.member.username}&avatar=&business_id=1&groupid=1">
+            <span><i class="icon_add" style="width: 30px;  height: 30px; margin-top: -10px;"></i></span>
+            <p >客服 </p>
+        </a>
+        </li>
+
+
+
         <li <if condition="CONTROLLER_NAME eq 'Task' and ACTION_NAME eq 'index' or ACTION_NAME eq 'task_list' ">
         class="active"</if> >
             <a href="{:U('Task/index')}">

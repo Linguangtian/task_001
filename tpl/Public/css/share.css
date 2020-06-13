@@ -161,19 +161,27 @@ footer{
 }
 
 .footer li span i.icon_task{
-    /*background: url("../images/f_task_1.png");*/
         background: url("../images/task_2.png");
     background-size: 100% 100%;
 }
 
+
+.footer li span i.icon_kefu{
+	background: url("../images/HTB1M2hDcHus3KVjSZKb760qkFXax.png");
+	background-size: 100% 100%;
+}
+
+
+
+
 .footer li.active span i.icon_task{
-    background: url("../images/task_1.png");
+    background: url("../images/task_1.png?v=101");
     background-size: 100% 100%;
 }
 
 
 .footer li span i.icon_add{
-    background: url("../images/f_add_1.png");
+    background: url("../images/HTB1M2hDcHus3KVjSZKb760qkFXax.png");
     background-size: 100% 100%;
 }
 .footer li.active span i.icon_add{
@@ -194,7 +202,7 @@ footer{
     background-size: 100% 100%;
 }
 .footer li.active span i.icon_xiaoxi{
-    background: url("../images/f_xiaoxi_1.png");
+    background: url("../images/f_xiaoxi_1.png?v=101");
     background-size: 100% 100%;
 }
 
