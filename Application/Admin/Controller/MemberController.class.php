@@ -161,12 +161,15 @@ class MemberController extends AdminBaseController{
             $member_id = intval(I('post.member_id'));
             $price = floatval(I('post.price'));
             //添加金额变动记录
+
+            if(!I('post.des')){
+                $this->error('说明不能为空');
+            }
             $model_member = new MemberModel();
+            $mark = '【'.session('user.id').'】备注：'.I('post.des');
             if( $price>0 ) {
-                $mark = '管理员后台充值，管理员ID：'.session('user.id');
                 $res = $model_member->incPrice($member_id,$price,98,$mark);
             } else {
-                $mark = '管理员后台充值，管理员ID：'.session('user.id');
                 $res = $model_member->decPrice($member_id,abs($price),101,$mark);
                 M('member')->where(array('id' => $member_id))->setDec('total_price', abs($price));
             }

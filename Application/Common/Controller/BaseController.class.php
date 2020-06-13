@@ -19,6 +19,9 @@ class BaseController extends Controller{
      */
     public function get_member_id()
     {
+
+
+
         $member = session('member');
         if( isset($member['id']) && $member['id'] > 0 ) {
             return $member['id'];
@@ -30,12 +33,12 @@ class BaseController extends Controller{
                     session('member', $result);
                     return $member['id'];
                 }else{
-                    setcookie('user_login_token', '', time()-1);
+                    setcookie('user_login_token', '', time()-1,'/');
                     return 0;
                 }
                 
             }else{
-                setcookie('user_login_token', '', time()-1);
+                setcookie('user_login_token', '', time()-1,'/');
                 return 0;
             }
 

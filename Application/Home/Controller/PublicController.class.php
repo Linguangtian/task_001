@@ -529,7 +529,9 @@ class PublicController extends PublicBaseController
                 echo json_encode(array('status' => 1, 'info' => '登录成功', 'url' => $referer));
                 exit;
             } else {
-                setcookie('user_login_token', '', time()-1);
+                setcookie('user_login_token', '', time()-1,'/');
+
+
                 $this->error('登录失败，用户名或密码错误！');
             }
         } else {
@@ -588,7 +590,7 @@ class PublicController extends PublicBaseController
             unset($_SESSION['member']);
             unset($_SESSION['member_client_info']);
             session_destroy();
-            setcookie('user_login_token', '', time()-1);
+            setcookie('user_login_token', '', time()-1,'/');
             $this->redirect('Index/index');
             //$this->success('退出成功！', U('Public/login'));
         } else {
