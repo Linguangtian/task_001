@@ -2,7 +2,73 @@
 
 <include file="Public:header"/>
 
-
+<style>
+    .grade-main .btm .list .sub {
+        width: 92%;
+        height: 10rem;
+        background: #fff;
+        margin: 1rem auto 0rem;
+        height: 9.2rem;
+        border-radius: 0.5rem;
+    }
+    .grade-main .btm .list p {
+        display: block;
+        text-align: left;
+    }
+    .meme_vip_ac {
+        width: 100%;
+        height: 2.5rem;
+        background: #fafbed;
+        border-bottom: 2px #FF4500 solid;
+        line-height: 2.5rem;
+        padding: 0 10px;
+        box-sizing: border-box;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .grade-main .btm .list p {
+        display: block;
+        text-align: left;
+    }
+    .meme_vip_xqq {
+        margin-top: 0.5rem;
+    }
+    .meme_vip_xq {
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-align: left;
+    }
+    grade-main .btm .list .sub img {
+        width: 50px;
+    }
+    .meme_vip_ac img {
+        height: 2rem;
+        float: left;
+        margin-top: 0.25rem;
+    }
+    .meme_vip_ac a {
+        float: left;
+        padding: 0 6px;
+        font-size: 16px;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        display: inline-block;
+        color: #FF4500;
+    }
+    .grade-main .btm .list .sub span {
+        float: right;
+        color: #1fb2f6;
+    }
+    .grade-main .btm .list{
+        padding-top:0;
+    }
+    .grade-main button{
+        margin-bottom: 200px;
+    }
+</style>
 
 <body style="background-color:#ffffff;">
 
@@ -27,11 +93,21 @@
 
             <div class="list" id="vip_sel">
                 <volist name="member_level" id="vo">
-                    <div class="sub <if condition="$vo['level'] gt $member['level']">lv</if>" data-id="{$vo.level}" data-price="{$vo.price}" style="margin-bottom:20px">
+                <!--    <div class="sub <if condition="$vo['level'] gt $member['level']">lv</if>" data-id="{$vo.level}" data-price="{$vo.price}" style="margin-bottom:20px">
                         <p class="img"><img src="__PUBLIC_IMAGES__/medal_icon_{$vo.level}.png"  /></p>
                         <p class="">{$vo.name}</p>
                         <span>￥{$vo.price}</span>
-                    </div>
+                    </div>-->
+
+
+            <div class="sub <if condition="$vo['level'] gt $member['level']">lv</if>" data-id="{$vo.level}" data-price="{$vo.price}">
+            <p class="meme_vip_ac"> <img src="/tpl/Public/images/v2.png"/> <a href="#">{$vo.name}</a> <span>会员费：¥{$vo.price}元</span></p>
+            <p class="meme_vip_xq meme_vip_xqq">每天可做任务：{$vo.day_limit_task_num}个</p>
+            <p class="meme_vip_xq">一级任务分佣：2.5%<span> </span>一级推荐奖励：{$vo.rebate_price}%</p>
+            <p class="meme_vip_xq">二级任务分佣：2.5%<span>  </span>二级推荐奖励：{$vo.rebate_price_two}%</p>
+        </div>
+
+
                 </volist>
             </div>
 
@@ -40,6 +116,7 @@
         <input type="hidden" name="payment_type" id="payment_type" value="alipay">
         <input type="hidden" name="member_vip_price" id="member_vip_price" value="{$member_vip_price}">
         <div class="dx_line">
+
            <!--
             <span>选择支付方式</span></div>
 
@@ -66,7 +143,7 @@
         <button type="submit" id="submit" >立即缴纳<span id="show_price_1"></span></button>
     </form>
 </section>
-<include file="Public:footer"/>
+
 
 </body>
 

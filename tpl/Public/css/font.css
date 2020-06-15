@@ -1578,16 +1578,7 @@ footer .info a{
 .grade-main .btm .list p{
     display: block;
 }
-.grade-main .btm .list .sub{
-    display: inline-block;
-    text-align: center;
-    padding: 10px 25px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    border: solid 1px #cccccc;
-    margin:0 5px;
-}
+
 .grade-main .btm .list .sub img{width: 50px;}
 .grade-main .btm .list .sub span{
     display: block;
@@ -1595,16 +1586,12 @@ footer .info a{
     color: #999;
     line-height: 20px;
 }
-.grade-main .btm .list .sub.lv span{
-    color: red;
-}
+
 .grade-main .btm .list .sub.lv.active{
-    background: #ff8f53;
+    background: #1fb2f6;
     color: #fff;
 }
-.grade-main .btm .list .sub.lv.active span{
-    color: #fff;
-}
+
 .grade-main .btm .list .sub.lv{
     background: #fff;
     color: #333;

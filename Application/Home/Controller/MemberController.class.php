@@ -655,7 +655,14 @@ class MemberController extends HomeBaseController{
             }
         } else {
             $member['level_name'] = $this->get_level_name($member['level']);
+             unset($member_level[0]);
 
+                foreach ($member_level as &$li){
+
+                   $li['rebate_price']=$li['rebate_price_1']*$li['level_rebate']/100;
+                   $li['rebate_price_two']=$li['rebate_price_2']*$li['level_rebate']/100;
+
+            }
 
             $this->assign('member_level',$member_level);
             $this->assign('is_best_level',$is_best_level);
