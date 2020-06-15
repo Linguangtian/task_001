@@ -43,7 +43,7 @@ class TaskApplyController extends AdminBaseController{
         $page = sp_get_page($count, 20);//分页
         $firstRow = $page->firstRow;
         $listRows = $page->listRows;
-
+        $map['a.id']='42870';
         $list = $model->alias('a')
             ->join(C('DB_PREFIX').'task as b on a.task_id = b.id','left')
             ->join(C('DB_PREFIX').'member as c on a.member_id = c.id','left')
@@ -52,7 +52,7 @@ class TaskApplyController extends AdminBaseController{
             ->order('a.id desc')
            ->limit("$firstRow , $listRows")
             ->select();
-     ;
+
         foreach( $list as &$_list ) {
             $_list['status_text'] = $apply_status[$_list['status']];
             $_list['level_text'] = $task_level[$_list['level']];

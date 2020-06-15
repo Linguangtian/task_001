@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e299543-39d2-4a15-96f0-28885ecc1e6f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Upload/systemConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/Upload/systemConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/Admin/TaskApply/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Admin/TaskApply/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpl/Home/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Home/Member/vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Member/vip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Home/Public/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Home/Public/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/Public/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/Public/css/font.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,14 +68,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="224" column="39" lean-forward="true" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
+            <state relative-caret-position="188">
+              <caret line="196" column="32" lean-forward="true" selection-start-line="196" selection-start-column="32" selection-end-line="196" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/Admin/TaskApply/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="107" column="40" lean-forward="true" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskApplyController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -98,15 +112,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
               <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemberModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Model/MemberModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5796">
-              <caret line="253" column="25" selection-start-line="253" selection-start-column="25" selection-end-line="253" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -165,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Api/Controller/EzfpayController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Public/share.html" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" />
@@ -202,7 +206,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PayController.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/db.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Admin/Member/handle.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Task/submission_task.html" />
@@ -216,6 +219,8 @@
         <option value="$PROJECT_DIR$/tpl/Home/Public/footer.html" />
         <option value="$PROJECT_DIR$/inde2222x.php" />
         <option value="$PROJECT_DIR$/tpl/Home/Index/index.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php" />
+        <option value="$PROJECT_DIR$/tpl/Admin/TaskApply/index.html" />
       </list>
     </option>
   </component>
@@ -236,10 +241,11 @@
       <server host="www.renwu1.com" id="93774192-5afc-4018-b6a3-b0e799ae55c4" name="www.renwu1.com" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-41" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="110" />
+    <option name="y" value="86" />
     <option name="width" value="1456" />
-    <option name="height" value="875" />
+    <option name="height" value="856" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,19 +269,7 @@
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ThinkPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
@@ -286,14 +280,14 @@
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
               <item name="renwubao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TaskApply" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="renwubao" type="b2602c69:ProjectViewProjectNode" />
@@ -369,21 +363,21 @@
       <workItem from="1592017527183" duration="7093000" />
       <workItem from="1592059662409" duration="1661000" />
       <workItem from="1592160106613" duration="1561000" />
-      <workItem from="1592209504048" duration="2383000" />
+      <workItem from="1592209504048" duration="4725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211728000" />
+    <option name="totallyTimeSpent" value="214070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="110" y="86" width="1456" height="856" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24097222" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.03911343" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.04016064" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -450,13 +444,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpl/Home/Task/handle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13731">
-          <caret line="597" column="53" selection-start-line="597" selection-start-column="42" selection-end-line="597" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Home/Task/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
@@ -634,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1012">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Admin/Member/handle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -798,11 +778,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Home/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="224" column="39" lean-forward="true" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
+        <state relative-caret-position="188">
+          <caret line="196" column="32" lean-forward="true" selection-start-line="196" selection-start-column="32" selection-end-line="196" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TaskApplyController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Admin/TaskApply/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="107" column="40" lean-forward="true" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
         </state>
       </provider>
     </entry>

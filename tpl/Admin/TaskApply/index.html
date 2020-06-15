@@ -78,7 +78,7 @@
             <th width="60">ID</th>
             <th>任务名称</th>
             <th>金额</th>
-            <th>类型</th>
+            <th>图</th>
             <th>任务级别</th>
             <th>用户</th>
             <th>用户名</th>
@@ -95,11 +95,7 @@
                 <td>{$vo.title}</td>
                 <td>{$vo.price}</td>
                 <td>
-                    <if condition="$vo['type'] eq 0">
-                        供应信息
-                    <else/>
-                        需求信息
-                    </if>
+                  <img src="{$vo.file}" width="100px" >
                 </td>
                 <td>{$vo.level_text}</td>
                 <td>{$vo.username}</td>
