@@ -223,7 +223,7 @@ class PayController extends AdminBaseController{
             $_list['charge'] = sp_cfg('charge');
             $_list['actual_price'] = $price - $price * sp_cfg('charge')/100;*/
         }
-
+      
         $this->assign('list',$list);
         $this->assign("Page", $page->show());
         $this->assign('tixian_status',$TIXIAN_STATUS);

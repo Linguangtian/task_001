@@ -455,7 +455,7 @@ class MemberController extends HomeBaseController{
             $limit_num = M('member_tixian')->field('price')->where($map)->select();
             $extract_money_level=C('EXTRACT_MONEY_LEVEL');
             if($tixian_limit==1){
-                $extract_money_level['5']['actived']='actived';
+            /*    $extract_money_level['5']['actived']='actived';*/
              /*   $extract_money_level['50']['actived']='actived';*/
             }
             foreach ($limit_num as $li){

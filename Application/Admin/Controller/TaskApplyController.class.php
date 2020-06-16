@@ -20,6 +20,7 @@ class TaskApplyController extends AdminBaseController{
         $member_name= I('get.member_name');
         $start_date = I('get.start_date');
         $end_date = I('get.end_date');
+        $task_name = I('get.task_name');
         $map = array();
 
 
@@ -34,6 +35,8 @@ class TaskApplyController extends AdminBaseController{
         }
          if( !empty($member_name)  ) {
             $map['c.username'] =  array('like', "%$member_name%");;
+        }  if( !empty($task_name)  ) {
+            $map['a.title'] =  array('like', "%$task_name%");;
         }
 
 
